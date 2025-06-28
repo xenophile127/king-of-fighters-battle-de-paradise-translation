@@ -1,0 +1,832 @@
+
+
+The King of Fighters: Battle de Paradise (Neo Geo Pocket Color)
+Last Updated: March 5, 2001
+
+Walkthrough written by Christina Rose. If you have anything useful to 
+contribute, please email it to me at lemina_ausa@hotmail.com and I'll give 
+you due credit, but please, no requests for updates! When I collect a large 
+enough amount of information, I'll add it.
+
+This walkthrough is intended for personal use only. If you wish to use it 
+for anything else, please contact me and ask permission first. I don't mind 
+others hosting it on their sites, as long as nothing is altered, and I keep 
+my small amount of credit.
+
+If you wish to visit Neo Geo's official KOF Battle de Paradise homepage for 
+nice info and pretty pictures, you can find it at 
+http://www.neogeo.co.jp/kof00/toppage/para_index.htm
+
+This walkthrough will contain Japanese text for all of the main commands and 
+options, so I suggest reading it with a viewer that supports SJS encoding.
+
+I would like to give special thanks to three people whose help was 
+invaluable to me in writing this. First, Andrew Egerton, for getting the 
+game and begging me to translate what people were saying. Without him 
+loaning the game (and NGPC) out to me to play around with, none of this 
+would have been possible.
+Second, I want to thank my wonderful friends and esteemed colleagues 
+Nuku-Nuku and Filia, of LNF Translations 
+(http://translations.animangarpg.org), for putting up with me on IRC when I 
+threw random words and phrases I didn't understand at them and asked them to 
+translate on the spot for me.
+
+Also, thanks to all the people who took an active interest in this FAQ and 
+emailed me with info. I got three seperate emails just about Gai within 
+hours of my posting it up. Thank you for the prompt responses! I'm very 
+grateful.
+
+Oh, and on a completely unrelated note, I'd like to add a shameless plug for 
+my own pet project web page right now 
+(http://www2.netdoor.com/~fujisawa/4koma.html), my Dragon Quest manga 
+translations page. I don't know how many SNK fans enjoy the series, but if 
+you do, please stop by- I'm sure you'll appreciate what I have there.
+
+
+UPDATES!
+In addition to the stuff I listed last time-
+Added more character details!
+Obtained the final stage!
+Also added the Robert card!
+Re-added the Stages section, now that I can list them all.
+
+TABLE OF CONTENTS
+
+Section 1: Beginning a New Game
+Section 2: Playing with Settings
+Section 3: Strikers
+Section 4: Gameplay
+Section 5: Mini Games
+Section 6: Events
+Section 7: Cards
+Section 8: Dreamcast Link
+Section 9: CHEESE GUIDE
+Section 10: Stages
+Section 11: Secrets, Etc.
+
+
+Section 1: Beginning a New Game
+
+At the title screen, there will be three options to choose from:
+
+まえのつづき Continues from a previous save, if one exists. You can only 
+have one saved game at any given time, so this will be the option you should 
+always choose, unless you haven't started a game at all yet.
+
+はじめから Starts a new game.
+
+ゲームルール Game rules. Has detailed explanations of all rules, but I don't 
+care enough to do an exact translation of everything it says right now.
+
+If you have stopped in the middle of a game and turned the cartridge off, 
+then turned it back on without removing it, then a RESUME option appears at 
+the top to let you pick up where you left off. Isn't that convenient?
+
+
+To begin a new game, choose the second option. You will be presented with 
+four different characters to choose from. I don't think it really makes a 
+difference, who you pick, but don't choose this option if you already have a 
+saved game, because if you save after playing a game, you lose all previous 
+data. All your striker levels and extra points and secrets will be flushed 
+down the toilet. I did this to myself, twice, by accident.
+
+Characters: I think the only thing this affects is the cards that you start 
+out with, although I'm not sure about that. The only person I've used so far 
+is Yuu G, who starts every game with Assassin Strike and Mirror of Yata.
+
+Yuu G: The guy with the headband.
+Masamune: The guy with the ponytail.
+Hatoko: The brown-haired pleasant-looking girl.
+Ai: The blonde, dark-skinned girl.
+
+
+Section 2: Playing with Settings
+
+This is the menu that pops up after making your new character. It's also 
+what you get when you choose the Continue option.
+
+メインゲーム Main Game
+
+ユーザー User
+Sub options:
+バトルゲーム Battle Game
+シークレットデータ Secret Data
+レベルアップ Level Up
+
+オプション Option
+Sub options:
+メッセージスピード Message Speed
+なんいど Game Difficulty
+DC通信 Dreamcast Linkup
+ゲームデータセーブ Game Data Save
+
+
+Main Game:
+
+Choose your striker, and pick whether they're Justice or Dark.
+ぜん Justice
+あく Dark
+This does seem to affect gameplay. Some cards can only be used by Justice 
+strikers, and some can only be used by Dark. Also, some cards will change 
+your alignment, as well as some events.
+
+Next, choose 1-player or 2-player mode. Unless you have a friend with 
+another NGPC and copy of this game, which is highly unlikely, stick with 
+1-player.
+Choose the amount of turns you wish to play for. 30 turns isn't long enough 
+to accomplish much, but 99 is great for earning lots of stars and coins to 
+exchange for ability points!
+Then, choose your stage. The first stage is definitely the best for 
+beginners. There are two hidden stages: Mount Rushmore (Terry's stage in 
+Fatal Fury 2), and another mystery stage I haven't unlocked yet. I'm hoping 
+it will be Southtown, or possibly Osaka!
+
+I'll cover gameplay in the sections following.
+
+User:
+This section contains all of the extra things you can toy around with, if 
+you earn them. The Battle Game section allows you to choose from any 
+mini-game you've unlocked so far and practice on it against the computer. 
+Secret Data is a collection of 20 cute pictures, which must also be unlocked 
+through ability points. Level Up allows you to invest the stars you've 
+earned in games to purchase additional levels for your strikers. I don't see 
+any reason to conserve stars for anything else, so go ahead and spend them 
+on that.
+
+Options:
+Message Speed
+はやい Fast
+ふつう Normal
+おそい Slow
+
+Game Difficulty
+かんたん Easy
+ふつう Normal
+むずかしい Difficult
+
+DC Linkup allows you to upload data to your VMU, or download data from your 
+VMU. This requires a VMU save of The King of Fighters '99 Evolution, import 
+version. I'm not sure if it works with the US version or not, since I 
+haven't played it yet.
+
+Game Data Save prompts you with a question of whether or not you want to 
+save your current data.
+はい Yes
+いいえ No
+
+
+Section 3: Strikers
+
+This is a basic rundown of the different versions of each striker. I would 
+love to list what each Striker does to the opponent on Fight panels, but 
+it's very rare for me to find those, so I only know what a few of them do.
+
+Also note, you do have to level up Justice and Dark seperately. If you level 
+up someone's Justice side to 3, but leave their Dark side at 1, then when 
+they switch alignment, that alignment will have the level it's listed with.
+
+Kyo
+The main hero of the King of Fighters series, and head of the Kusanagi clan.
+Theme music: KOF 96 Japan Team theme
+JUSTICE: Encounters Iori. On Delay/Loss panels, he goes off to study with 
+Yuki.
+DARK: Encounters Shingo. Instead of wasting a turn on Yuki, he wastes 5 
+coins. I prefer this tradeoff.
+
+Daimon
+Kyo's teammate from '94 to '97, he acts as the voice of wisdom and reason in 
+the Hero team. Although nobody likes using him, he's one of the game's 
+stronger characters.
+Theme music: KOF 94 Japan Team theme
+JUSTICE: Encounters Shermie. Loses a turn on delay panels.
+DARK: Encounters Chizuru. Loses a turn on delay panels.
+
+Chizuru
+The president in charge of the corporation sponsoring KOF 96 and 97, she is 
+also the only remaining heir to the ancient Yata clan, who participated in 
+sealing Orochi away 1800 years ago.
+Theme music: Her KOF 96 theme.
+JUSTICE: Encounters Kyo.
+DARK: Encounters Chris, who is crying, and you have to console him.
+
+Athena
+The leader of the Psycho Soldier team, as well as a famous idol singer. (She 
+makes other appearances in Athena for NES, Crystalis, Psycho Soldier, and 
+Athena for PSX)
+Theme music: Psycho Soldier, the exact same track as in every other NGPC 
+game with her in it.
+JUSTICE: Encounters Robert, loses a turn on delay panels.
+DARK: Encounters Kensou, loses a turn on delay panels.
+
+Billy
+Geese's main flunky, he's a cheap, nasty fighter originally from Fatal Fury. 
+He encounters Iori and Yamazaki, who were his teammates in '95 and '97 
+respectively.
+Theme music: London March, from KOF 97.
+JUSTICE: Has big cute round eyes, and loses a turn to get medicine for his 
+sick little sister Lily.
+DARK: Looks like normal Billy, except with ugly colors. I haven't gotten any 
+delay events with him yet.
+
+Yamazaki
+Another Fatal Fury character, this guy is a frighteningly crazy psychopath. 
+This could be due to the Orochi blood inside of him, or he could just be 
+messed up in the head.
+Theme music: His theme in KOF 97.
+JUSTICE: ABSOLUTELY ADORABLY CUTE! His smiling happy face has a striking 
+resemblence to Xelloss's, from Slayers. I never use anything but Justice for 
+him. He wastes a turn, probably to go rescue some old lady's kitten stuck in 
+a tree or something. He encounters Billy.
+DARK: He looks like his normal evil-looking psychopathic self, and 
+encounters Iori.
+
+Alfred
+A hidden striker, he's from a Fatal Fury game, I'm not sure which. His 
+goggles alone make him cool, though. Justice and Dark versions both seem to 
+be about the same.
+
+Fio
+The main hero of Metal Slug: 2nd Mission, she makes an appearance as a 
+hidden striker that you can earn after earning a lot of ability points. I've 
+only used her once, myself. The person she meets in Justice mode is Leona.
+
+Gai
+Another hidden striker, this guy is from a Neo Geo 64 fighting game called 
+Buriki One, and is a Muay Thai kickboxer. Another one. How many of those 
+guys does SNK have, anyway? He also has a card in Card Fighters' Clash. 
+Thanks to Logan Sharp (lsharp@optelnow.net) for this frighteningly obscure 
+piece of info!
+
+Syo
+You need at least 400,000 ability points to unlock him. His counterpart 
+character, at least in Justice mode, is Kyo. After doing some extensive 
+research, I finally stumbled across a picture of Syo in one of my KOF 
+artbooks, in a section full of preliminary designs that they threw out for 
+Kyo. In other words, he's a version of Kyo that could have been, but never 
+was. His full name is Syo Kirishima, and he is Kyo's Another Striker in KOF 
+2000, going along with the alternate character versions theme.
+
+If you wish to level them up, go to the User menu, and select Level Up. 
+Raising a level from 1 to 2 costs 2 Stars. Raising a level from 2 to 3 costs 
+5 Stars. 3 is the maximum level, as far as I can tell. I'm not sure exactly 
+what relevance the strikers' level has to the actual game, aside from the 
+Chizuru's Cash card, but if you upload the strikers to your KOF 99 Evolution 
+VMU save at level 3, they become truly nasty and powerful.
+
+
+Section 4: Gameplay
+
+When the game begins, both characters will roll a dice to see who goes 
+first, higher number wins. When your turn comes up, you get three options.
+
+サイコロ Dice - Rolls dice and moves
+ストライカー Striker Status - Lets you view the current level and alignment 
+of your striker. This can change in the course of the game.
+カード Card - Lets you use any special cards in your current inventory. I'll 
+explain more about cards further on.
+
+Remember, if you hold down the B button and push the direction pad, you can 
+have a full view of the entire board. Make sure to get a good look at where 
+you're going when choosing the direction you take at a fork.
+
+PANELS
+
+Blue Coin: +5 coins
+Red Coin: -5 coins
+[ ! ]: Event Panel, many different effects
+[VS]: Mini Game Panel!
+[/F/]: Star Panel. Heidern sells you up to 3 stars per visit, at 20 coins 
+apiece.
+Card Panel: Vanessa's Card Shop. There are many panels, but only 4 
+distinctive shops.
+Cone Panel: Toll booth. If you don't have 3 coins to lose, you can't stop 
+there.
+Skull Panel: BAD Panel. Depending on the stage, it can have Rugal, Goenitz, 
+Krizalid, Omega Rugal, or Orochi. Sometimes they'll force both you and the 
+opponent through some horrible mini game ordeal which is nearly impossible 
+to win, and causes both sides to lose money if you don't. Other times, they 
+just cut the pretense and take your stuff.
+Switch Panel: Switches the location of the Skull Panel and Star Panel.
+
+
+Section 5: Mini Games
+
+Matching Game: This is your basic game of Memory. You flip two cards, and if 
+they're alike, you keep them and gain points. The gold bars and bags of gold 
+offer more points than the single coins, piggy banks, and purses. If you 
+flip over Shingo's card, he'll steal 50 points from the opponent's side for 
+you. If you flip over the card showing the hand with the X, you lose that 
+turn. You can get a maximum of 500 points in Easy mode, and if you do, you 
+get a nice bonus. Normal and Difficult modes also have a K' card worth 200 
+points.
+
+Synchronize Game: This is a Quick-Draw type of game, where you wait for the 
+exact moment when Benimaru uses Raijinken, and quickly press the A button. 
+He'll wink at you if you do it right. To win, you need 3 successes.
+
+Arm Wrestling Game: Tap A and B alternately, and do it fast, in order to 
+beat the opponent. The faster you do it, the more points you get, and the 
+better bonus you recieve.
+
+Bouzu? Mekuri: This is a card game featuring Art of Fighting characters. You 
+choose a card from one of three stacks. If the card is Ryo or Robert, it's 
+automatically put into the discard pile. If the card is the almighty MR 
+KARATE, you keep it. If you happen to draw Mr Big, you're forced to discard 
+4 cards in your hand. However, if you draw Yuri or King, you get to take 
+everything in the discard pile! Whoever has the most cards by the end of the 
+game is the winner. This is the only game that you can't win with skill; 
+only luck will help you.
+
+Nikuman Road: In this Pac Man ripoff, your character, one of two Kensou's, 
+walks around the screen eating meatbuns. Their movement is very difficult to 
+control, so be careful when trying to guide them to the center of the stage, 
+to get the giant meatbun. If your character runs into the opponent, the game 
+ends, and whoever has the most points wins.
+
+Let's Copy Mai: The screen will show Mai dancing, and display instructions 
+for each move.  You have to copy them with the same rhythm. As far as I've 
+seen, this game lasts until both characters miss a step. This, and Bouzu? 
+Mekuri, are the two most annoying mini-games to deal with.
+
+Ikari Target: Playing Ralf and Clark, you have to shoot the enemy units, 
+while avoiding Leona, Whip, and Heidern. If you hit any of them, you become 
+slowed down or paralyzed temporarily. This game doesn't offer much, 
+bonus-wise.
+
+Escape: Chang and Choi make a break for it! Help them pick the right door to 
+make it outside. Doors with coins give nice point bonuses, but, if you open 
+a door that Kim or Jhun happen to be standing behind, it's Game Over. In 
+Easy mode, pick Middle, then Left, Left, Right, Right, and Middle to get 
+every possible bonus, and make it outside.
+
+Fly! Brian!: Rotate your direction pad as quickly as you can, to build up 
+power for Brian Battler's mighty leap into the sky! Whoever can stay in the 
+air the longest wins. Although this game doesn't offer many bonuses, it's 
+easy and fun.
+
+Sunset Carnival: While this isn't a BAD mini-game, it's easily the most 
+exhausting one of the bunch. You have to tap the A button as rapidly as 
+possible, to help Shermie pull various and sundry vegetables from the 
+ground. This may very well be the most taxing 30-second button mashing 
+experience since Metal Gear Solid.
+
+You're in Doubt!: There will be three people on the screen. A hint appears 
+at the bottom, which is very helpful for people who can actually read it, 
+but a good tip for those of you that can't is to just try and pick the odd 
+one out of the group. Usually, there will be two people with something in 
+common, and then the other person will stand out. 3 successful picks wins.
+
+Silhouette Shatter: At the top of the screen, a shadowy silhouette of a 
+character appears. Below that, three characters are displayed. You have to 
+pick the character that the silhouette corresponds to. Sometimes the 
+silhouette will face a different direction than the character displayed, so 
+don't let that throw you off. The winner is the one who has the most points 
+after 8 matchups.
+
+Top Present: In this game, your striker vies with the opponent's striker to 
+jump and pull the ring that appears in the upper center area of the screen. 
+This action causes several random objects to fall, including coins, gold 
+blocks, rocks, and bombs. Avoid the rocks and bombs; they'll trip you up and 
+put you out of commission for a few seconds. At random intervals, a large 
+boulder will roll across the screen. You can jump over it, if you time it 
+carefully. The object is to grab as many of the coins and G blocks as 
+possible before time runs out. The winner is the one with the most points.
+
+Zaku Zaku Jump: Here, you press A to make your striker jump up and hit the 
+treasure bag overhead. Tap A again just after the striker lands, and the 
+striker will jump up faster the next time. The most important part of this 
+game is the timing of those taps. If you can slowly build up a rapid pace, 
+and then keep it up, it's easy to win.
+
+TANK?: Remember the old Atari game, Battle? It's like that. You pilot a 
+little tank that rolls around the screen picking up coins and gold blocks, 
+while avoiding bombs. You can shoot the enemy tank with the A button. A 
+direct hit will destroy their tank and leave plenty of money behind for you 
+to grab. They'll come back, though. The game ends when time runs out, and 
+the winner is the one with the most money by then.
+
+Eyes in the Dark: In this game, your striker is placed in a dark building 
+with a very limited vision range. The object is to reach the goal on the 
+opposite side of the building, but it also helps to grab as many coins and 
+extras as you can find along the way.
+
+BOOM! Escape: Run from the fire and leap over obstacles to evacuate Rugal's 
+private ship before it sinks and takes you down with it! Screw up, and 
+you're dead.
+
+Krizalid Game: This is a very difficult timing game. Keep a careful eye on 
+the meter above your character. When the red line touches the yellow line, 
+hit A to have your character swing a giant mallet and knock away a section 
+of pillar. If neither side knocks the entire pillar down, including Krizalid 
+on top, before the timer runs out, both sides lose.
+
+Koko desu ka? 2000: I don't know about you, but after having to dodge 
+Goenitz's damn wind pillars in KOF 96, the phrase "Koko desu ka?" brings 
+back that old nervous twitch. As you might guess, this is a game where you 
+get to run around dodging as many as three wind pillars at once! The only 
+way to see where they'll pop up is the arrows that briefly flash at the 
+bottom area of the screen. If you get hit three times, you die. Living 
+constitutes running like MAD and managing to survive for 60 entire seconds.
+
+Orochi Game: This is the same thing as Goenitz's game, except, you're 
+dodging Orochi's pillars of light, and the indication of where they'll 
+appear next is at the top of the screen instead of the bottom. Remember, if 
+both players die, they both lose 10 coins! Ouch!
+
+BOOM! Escape - Omega: Same as BOOM! Escape, which is listed above. The only 
+difference is, instead of normal Rugal, you deal with Omega Rugal shouting 
+taunts at you as you run for your life.
+
+I left out one mini-game from the list---
+Track Race - This is a straightforward button mashing game. Keep tapping the 
+A button as fast as you can, until your character reaches the finish line! 
+Nice bonuses for times under 9.5 seconds.
+
+Section 6: Events
+
+Meet Kim: If Justice, your character gains 12 coins. If Dark, Kim beats the 
+crap out of him or her and you lose one turn.
+
+Meet Chang and Choi: If you're Justice, they beat you up and you lose a 
+turn. However, if you're Dark, you gain 12 coins.
+
+Meet Ryo: If you're Justice, Ryo will beat the crap out of you and take 10 
+coins. If you're Dark, he'll just beat the crap out of you, and you lose a 
+turn.
+
+Meet Robert: If you're Justice Athena, and encounter him, it'll be a normal 
+response prompt event most of the time. But, otherwise, he'll sell you a 
+Star for a cool 10 coins!
+
+Meet Ralf: Ralf, being the generous and caring soul that he is, will attack 
+the enemy with his Galactica Phantom super. If the opponent has more stars 
+than you, Ralf will steal one of theirs for you.
+
+Meet Leona: Steals 5 or 10 coins from the enemy for you.
+
+Meet Shingo: "Kusanagi-san, are you watching?! I'm doing my best!" He 
+attacks the opponent's striker, delaying that person for a turn, even if the 
+opponent's striker is Kyo.
+
+Meet Iori: Stupid dork causes both players to lose 25% of their coins.
+
+Meet Seth: Get 12 coins.
+
+Meet Vanessa: Get 3 cards.
+
+Meet Shermie: Get up to 3 cards.
+
+Meet Chris: Feeds you a tainted meal, and you lose a turn.
+
+Meet Kensou: "Meatbun 4 U" You add 25% of your current coins to your stock.
+
+Alignment Change: Depending on your striker, a different character will 
+approach you and ask you a question. If you answer nicely, you become 
+Justice. If you answer in a mean or inconsiderate way, such as Athena asking 
+Robert to join his team with Kensou standing right there, or Kyo calling 
+Iori by his other alias, Miss X, you become Dark.
+
+Fight: Your striker attacks the other striker and attempts to get rid of 
+their cards or coins.
+
+Delay/Loss: Something happens to delay you for a turn, or to make you lose 
+money. For instance, with Athena, she'll have forgotten to attend a CD 
+signing, apologize, and run off for a turn. With Billy, his little sister 
+Lily becomes sick and he needs to take a turn to get medicine for her. 
+Justice Kyo forgot his date, so he runs off to go out with Yuki. Dark Kyo 
+needs 5 coins to buy her a present.
+
+
+Section 7: Cards
+
+I'll list them in order by color. Unfortunately, I don't have the time to 
+type all of these up in Japanese. If you really want to read them, find a 
+hiragana/katakana chart. Most of it is written very simplistically, and none 
+of the characters' names are written with their normal associated Kanji, so 
+it's easy for anyone to read.
+
+Some of these names may not be entirely accurate translations, as well, 
+especially some of the Red cards. But, the effects are all accurately 
+listed.
+
+This is not an entirely complete listing; I'm still missing Choi's yellow 
+card, and a few others that I've only gotten from Vanessa or Shermie.
+
+RED CARDS:
+These cards allow you to control your dice roll once. If you can't read 
+Japanese, but still want to buy one, just look at the number in the 
+description. There's a card for every possible dice roll, and when used, you 
+go forward a certain number of spaces, nonstop. This is very useful for when 
+you happen to find yourself right in front of a Skull panel and want to 
+avoid it. I always keep at least one Blackout on hand in case of emergency.
+They all cost 3 coins apiece.
+
+Violent Advance: Moves forward 1 space.
+Scramble Dash: Moves forward 2 spaces.
+Assassin Strike: Moves forward 3 spaces.
+Lucky Vision: Moves forward 4 spaces.
+Shadow Movement: Moves forward 5 spaces.
+Blackout: Moves forward 6 spaces.
+
+YELLOW CARDS:
+These cards have an immediate effect on your inventory.
+
+Chizuru's Cash: (5 coins) This is a cheap and very useful Yellow card for 
+any player that has a high level striker. It gives you a certain number of 
+coins, which raises with each level of your striker. With my Level 3 
+characters, I get 12 coins each time I use this, making a nice profit from 
+the 5 coins I pay for the card. So, when you find a shop with this card, buy 
+as many as you can, and use them ASAP.
+Yuri's Change Purse: (15 coins) Don't let the computer buy this if you can 
+help it! It's a card to switch your coins with your opponents, very 
+inconvenient unless they have more money.
+Kim's Wallet: (15 coins) Divides both players' money equally between them. 
+Typical of Mr. Justice.
+Ryo's Pocket: Both players gain 10 coins. Justice only.
+Robert's Wallet: Adds 25% to your current coin total. Justice only.
+
+
+GREEN CARDS:
+These cards have an immediate effect on your cards.
+
+Cloning: (15 coins) I haven't used it, but I think it makes 5 copies of any 
+card. Dark only.
+Lily's Laundry: (10 coins) Reduces the enemy's cards to none. Justice only.
+Billy's Laundry: (10 coins) Reduces the enemy's cards to none. Dark only.
+Mai's Bouquet: (15 coins) Gives you up to 5 random cards. Justice only.
+Vanessa's Lucky Cat Statue: (15 coins) Lets you warp to a Card Shop. Whether 
+it's random or not, I can't be sure, but the one time I used it, I ended up 
+at a card store right in front of a Skull panel, and subsequently got to 
+deal with happy fun Rugal. So I caution you to use it only in dire emergency 
+if you have it.
+
+LIGHT BLUE CARDS:
+These cards, while expensive, are very nice.
+
+Burning Shingo: (20 coins) Takes 25 coins, and you get a Star.
+Ryuuhaku's Wish: (25 coins) Gives you one star. Justice only. Just who 
+Ryuuhaku is, I'm not sure.
+Eiji's Grudge: (25 coins) Causes the opponent to lose 1 star. Dark only.
+
+DARK BLUE CARDS:
+These cards have drastic effects on both players. Use them wisely.
+
+Blood Riot Iori: (10 coins) Cuts both players' money in half.
+Blood Riot Leona: (10 coins) Reduces everyone's cards to none.
+
+PURPLE CARDS:
+These seem to be all the cards that don't fit in any other category.
+
+Double Strike: (5 coins) You gain or lose double coins from the red and blue 
+coin panels, for 3 turns. Save this card for when you know you won't touch 
+any red ones.
+Mirror of Yata: (3 coins.. awfully cheap for a historical artifact) Switches 
+your character's alignment.
+Loser Blues: (5 coins) The player currently behind gets a coin present. 
+(Remember Joe's victory quote in '99?)
+California Romance: (15 coins) You lose your cards, and both sides get an 
+amount of coins equal to 25% of their current inventory.
+Psychic Teleport: (10 coins) When you use this card, tap the A button as 
+many times as you want to move forward.
+
+There are four distinct card shops in the game. I'll list them here.
+
+Shop #1:
+RED Scramble Dash
+RED Shadow Movement
+GREEN Cloning
+GREEN Lily's Laundry
+LIGHT BLUE Burning Shingo
+DARK BLUE Blood Riot Iori
+PURPLE Double Strike
+PURPLE Psychic Teleport
+
+Shop #2:
+YELLOW Chizuru's Cash
+YELLOW Kim's Wallet
+YELLOW Yuri's Change Purse
+LIGHT BLUE Burning Shingo
+DARK BLUE Blood Riot Iori
+DARK BLUE Blood Riot Leona
+PURPLE California Romance
+PURPLE Loser Blues
+
+Shop #3:
+RED Assassin Strike
+RED Black Out
+GREEN Billy's Laundry
+LIGHT BLUE Ryuuhaku's Wish (Just who is this Ryuuhaku person?)
+DARK BLUE Blood Riot Leona
+PURPLE Double Strike
+PURPLE Mirror of Yata
+PURPLE Psychic Teleport
+
+Shop #4:
+RED Violent Advance
+RED Lucky Vision
+YELLOW Chizuru's Cash
+YELLOW Kim's Wallet
+GREEN Mai's Bouquet
+GREEN Vanessa's Lucky Cat Statue
+LIGHT BLUE Eiji's Grudge
+PURPLE Loser Blues
+
+
+Section 8: Dreamcast Link
+
+This is the fun part!
+
+(If you don't have an import copy of KOF 99 Evolution, I suggest getting 
+one, since it has an option for full English text and dialogue, as well as 
+an amusing web page you can view by putting the CD in your computer's CD ROM 
+drive.)
+
+Dreamcast --> Neo Geo Pocket Color
+This option lets you download the ability points you earn in KOF 99 
+Evolution from your VMU to your Neo Geo Pocket Color. Don't even bother with 
+this, since you can earn tens of thousands of points in Battle de Paradise, 
+in the same time it takes to earn 500-1000 points in KOF 99 Evolution.
+
+Neo Geo Pocket Color --> Dreamcast
+This option allows you to upload all of your striker data and levels to your 
+KOF 99 VMU, unlocking them if you haven't bought them in that game already. 
+The advantage to this is the fact that, in KOF 99, you can't level them up, 
+and you're stuck with Level 1 Extra Strikers. Using this, you can raise 
+their level in KOF 99 as high as 3, making many of them frighteningly 
+powerful.
+
+I'll give you a few of my favorite examples:
+
+Level 3 Justice Athena: She leaps into the screen, and if she doesn't 
+connect with the enemy, she assumes her Shining Crystal Bit posture, and 
+instead of summoning her two crystal balls, she sprouts giant brilliant 
+orange phoenix wings, a homage to the old Nintendo/Arcade game, Athena. This 
+raises your power level by one and a half bars. If she does connect, she 
+does a series of light and strong punches, followed up by a Psycho Sword.
+Level 3 Dark Billy: Has the best range of any striker I've seen. He runs 
+into the screen, nearly all the way across it, and grabs the opponent, 
+hoisting them up with his staff and juggling them for a good few seconds, 
+leaving them WIDE open for a combo.
+Level 3 Dark Yamazaki: PAIN.
+Level 3 Dark Alfred: Runs in with a swift leaping attack, with a range of 
+about 3/4 of the screen.
+
+
+Section 9: CHEESE GUIDE
+
+A brand new section, devoted to all the different techniques I've found for 
+dealing with all the nasty stuff the opponent can throw at you.
+I can guarantee the effectiveness of my methods on the Easy setting, but I 
+can't guarantee that it will turn out as well on Normal or Hard, where the 
+computer is far, far more devious.
+
+Tip 1: Choose the version of your Striker that loses Money on Delay panels, 
+instead of a turn. It's much easier to simply absorb the loss of a lousy 5 
+coins, than it is to sit through two turns where you lie at the mercy of the 
+computer opponent.
+
+Tip 2: Go out of your way to get to any card shop you can. If you can 
+remember the specific locations of shops with Red cards and Yellow cards, it 
+helps a lot. Even if you end up in front of a Skull panel, if you're at a 
+card shop and you have money, you can usually buy a Shadow Movement or Black 
+Out card to pass by the Skull, in addition to whatever else you're getting.
+
+Tip 3: Although you don't have to get it at the very start, make sure that 
+once you have a lot of money, you should always have at least one Yuri card 
+on hand, in addition to whatever other cards you have. This is the safest 
+way to guarantee that if the computer steals your money, you can just steal 
+it right back.
+
+Tip 4: Also go out of your way to find as many VS panels as you can. While 
+there are a few games, like Let's Copy Mai, which are difficult and nearly 
+impossible to win, you'll generally be able to win far more often than the 
+computer does. On Easy mode, every victory nets you 3 coins plus up to 10 
+more coins in bonuses, and it also causes the computer to lose 3 coins. This 
+is a very effective way to constantly drain the opponent's money, making 
+their chances of getting potentially dangerous cards or Stars very slim to 
+none.
+
+Tip 5: While Double Strike seems like a nice enough card for getting money, 
+the serious drawbacks pose a problem. To avoid this, simply buy Chizuru's 
+Cash cards, which guarantee a 7 coin profit over what you paid for each 
+card. If you fill your inventory up with these, and use them once per turn, 
+you'll quickly find yourself a far richer person than before.
+
+Tip 6: Try to keep at least one Red card on hand at any given time. Not only 
+are they useful for getting past problem areas, but, for instance, if you 
+find yourself 5 spaces away from a particular card shop panel that you like, 
+with a Shadow Movement card, you can use that card to guarantee that you 
+won't pass it and miss it completely.
+
+Tip 7: Be very wary. Sometimes, the computer chooses routes with no regard 
+for its own welfare, only with the intent of causing you to lose money. The 
+computer can be very vicious and spiteful if you let it. So don't hesitate 
+to do the same to it.
+
+Tip 8: Unless you need them for levelling your Striker up, save your coins 
+and don't bother buying stars. As far as I've been able to tell, there is no 
+further use for them after every striker reaches Level 3. Also, this way, if 
+you have less stars than the computer, and you happen to land on a Ralf 
+event panel, you cause the computer to lose a star! Winning is still 
+important, though, so once it's about 20 turns from the end of the game, try 
+to have the same amount of stars, or just one more, than the computer. This 
+will guarantee that your coin total is doubled before being calculated into 
+Ability Points.
+
+
+Section 10: Stages
+
+Stage 1: Construction site, easy. Best beginner stage, although the music is 
+annoying.
+Stage 2: Krizalid's lab, easy. Second best beginner stage! Music is less 
+annoying.
+Stage 3: Neo Geo Land, normal. A good stage to play when you're sick of the 
+other music.
+Stage 4: Dinosaor World, difficult. That's not a typo, either. It's the ONLY 
+freaking English text in the entire game, aside from the names in the 
+credits, and it's misspelled. Ahh, SNK. Same museum as the one in the KOF 99 
+stage.
+Stage 5: Mount Rushmore, easy. Earn through ability points. Terry's stage in 
+Fatal Fury 2.
+Stage 6: Athena Land! Difficult and confusing. You have to get a whopping 
+600,000 ability points for this one! This stage seems to be based around the 
+Athena NES game. They probably made the layout difficult and confusing in 
+order to capture the feel of the original game. (The original game is one of 
+the hardest things I've ever played in my life, and that's including Section 
+Z and Ninja Gaiden 1.)
+
+
+Section 11: Secrets, Etc.
+
+Every secret in this game is unlocked by gaining more and more ability 
+points. The best way to do this is to try and have at least 200 coins at the 
+end of every game. When you win, the coins you earn are multiplied by two, 
+then multiplied by around a thousand points. These then become the ability 
+points added to your consecutive total.
+
+Once you earn 600,000 ability points, you can safely say you've "beaten" the 
+game. You earn the final stage, and some very cute credits roll. Don't 
+worry, it still lets you save afterwards. Every time you win a game after 
+that, you'll get the same funny credits. Yoyuuchi!
+
+Secret Data Section:
+Hit Right and Left on the direction pad to scroll through the images.
+
+1. Picture of Zero and Lin.
+2. Hinako, looking cute
+3. KOF 2000 Athena!
+4. Something beating up on a straw dummy with Kyo's face taped to the top.
+5. I think it's Fio, carrying a teddy bear.
+6. Two guys from Metal Slug being squished by a tank.
+7. Fio and the guy from Metal Slug 1, whatshisface, gossiping while sitting 
+against a cliff face cleaning their guns.
+8. Trust me, you don't want to know.
+9. The Fatal Fury Team!
+10. A full body shot of Whip, with a closeup of Krizalid's face in the 
+background.
+11. Chris with all of Orochi's body tattoos, standing there looking all cute 
+and innocent and shirtless, with Kensou in the background freaking out and 
+covering a confused Athena's eyes.
+12. Seth and Vanessa.
+13. Cool Cool Toon shameless plug.
+14. Athena, as she originally appeared in her NES debut, complete with a 
+tiny red bikini, and a giant spiked shield strapped to her back.
+15. Athena again, this time in full Greek goddess regalia, with plate mail, 
+a sword and shield, and angel wings.
+16. Hatoko and Ai strike a cute pose in front, while the guys try to get in 
+the picture in the background.
+17. Oops! Shermie accidentally hits Chris in the face with a turnip from the 
+Sunset Carnival game.
+18. Kyo and Shingo avert their eyes, terrified of the horror that pursues 
+them. I won't tell you what it is; such things should not be seen by human 
+eyes. Okay, fine. It's Iori in a pink dress with braided hair. See?! I told 
+you!
+19. Chinese-style image of Xiang Fei hogging a lot of meatbuns away from 
+Kensou, who looks hungry.
+20. Vice and Mature make their only appearance in the game in this picture, 
+striking a cool pose with a dark silhouette of Iori's distinctive face and 
+hair in the background.
+
+Battle Game:
+
+This is where you can play all of the mini-games you've unlocked. The 
+mini-games section has them all listed in the order that they appear here, 
+so you can use that for reference to pick the right one, if you can't read 
+the names.
+
+
+Etc:
+
+Future Updates---
+I have a few more character profiles to completely finish. Gaining encounter 
+events is harder than it seems, and it took me a while just to gain the ones 
+I have.
+There are also a few more stray cards floating around that I haven't managed 
+to translate and document yet, due to the fact that it seems you can only 
+get them from Vanessa. Her encounter event is pretty rare; you'll only meet 
+her an average of twice per 60 turn game, if that.
+
+
+This text is copyright Christina Rose, all rights reserved, blah blah blah, 
+last updated March 5, 2001.
+

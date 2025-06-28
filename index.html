@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+	<meta charset="UTF-8">
+	<title>KOF Battle De Paradise Translation Tool</title>
+	<link rel="shortcut icon" href="./app/favicon.png" type="image/png" sizes="16x16"/>
+    <link rel="stylesheet" href="./app/style.css">
+	<script src="./app/script.js"></script>
+	<script src="./app/HashCalculator.js"></script>
+	<script src="./app/BinFile.js"></script>
+	<script src="./app/console-graphics.ngpc.js"></script>
+
+	<script src="./translation/game.js"></script>
+	<script src="./translation/texts.js"></script>
+	<script src="./translation/graphics.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<aside>
+			<div id="aside-sticky-wrapper">
+				<header>
+					<div>
+						<img src="app/game.jpg" alt="KOF: Battle De Paradise boxart" />
+					</div>
+					<strong>Translation Tool</strong>
+				</header>
+				<div id="header-buttons">
+					<button id="btn-export-texts" disabled>Export translations</button>
+					<button id="btn-export-rom" disabled><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .14.11.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path fill="currentColor" d="M7.25 7.69V2a.75.75 0 0 1 1.5 0v5.69l1.97-1.97a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 6.78a.75.75 0 1 1 1.06-1.06l1.97 1.97Z"/></svg> Save translated ROM</button>
+				</div>
+			</div>
+		</aside>
+		<main id="container-texts">
+			<h1>The King of Fighters: Battle de Paradise - Translation</h1>
+			<p>
+				This project aims to translate the Neo Geo Pocket Color exclusive game <strong>The King of Fighters: Battle de Paradise</strong> into English.
+			</p>
+			<p>
+				This site acts as a patcher but also as a translation tool that allows anyone to contribute to the translation easily, just by editing the texts directly in the browser.<br/>
+				Although the game is not very complex, it does have a lot of text and graphics that need to be translated. So the tool makes this a collaborative project :-)
+			</p>
+
+			<div id="container-file">
+				Load game ROM here: <input type="file" id="input-file" accept=".ngc" />
+			</div>
+
+			<h2>How to contribute</h2>
+			<ol>
+				<li>Open the original <em>King of Fighters, The - Battle de Paradise (Japan).ngc</em> ROM at the form above</li>
+				<li>Translate any untranslated text you found in-game</li>
+				<li>Click the <em>Save translated ROM button</em> and open the generated ROM in an emulator or flashcard</li>
+				<li>Check that your new translated texts shows correctly</li>
+				<li>Click the <em>Export translations</em> button and follow the instructions on screen</li>
+			</ol>
+
+			<h2>How to obtain the current translated ROM</h2>
+			<ol>
+				<li>Open the original <em>King of Fighters, The - Battle de Paradise (Japan).ngc</em> ROM at the form above</li>
+				<li>Click the <em>Save translated ROM button</em></li>
+			</ol>
+
+			<h2>More information</h2>
+			<ul>
+				<li><a href="https://github.com/marcrobledo/king-of-fighters-battle-de-paradise-translation/issues" target="_blank">Report a bug</a></li>
+				<li><a href="https://github.com/marcrobledo/king-of-fighters-battle-de-paradise-translation/" target="_blank">GitHub repository</a></li>
+			</ul>
+
+			<h2>Disclaimer</h2>
+			<p>
+				This is a fan created translation, no copyright or trademark infringement is intended.<br/>
+				The King of Fighters is a trademark &copy; of SNK. We are not affiliated nor endorsed by SNK.
+			</p>
+			<p>
+				This project is released as a patch file that does not include copyrighted material and requires a copy of the original game.<br/>
+				We do not condone piracy, we are not related to any site making profit of this project with unauthorized copies.
+			</p>
+		</main>
+	</div>
+
+	<footer>
+		The King of Fighters: Battle De Paradise - Translation<br/>
+		by <a href="https://www.marcrobledo.com" target="_blank">Marc Robledo</a>
+		<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 0 1 8 8 8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38l.01-2.2c0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95a3.1 3.1 0 0 0-.82-2.15c.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82a7.42 7.42 0 0 0-4 0c-1.53-1.03-2.2-.82-2.2-.82a2.87 2.87 0 0 0-.08 2.12 3.11 3.11 0 0 0-.82 2.15c0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94l.01 1.49c0 .21-.15.45-.55.38A8 8 0 0 1 0 8a8 8 0 0 1 8-8Z"/></svg> <a href="https://github.com/marcrobledo/king-of-fighters-battle-de-paradise-translation/" target="_blank">See sourcecode in GitHub</a>
+	</footer>
+
+	<dialog id="dialog-export-texts">
+		<p>
+			Before contributing, check the new translated texts show correctly in an emulator and that the game does not crash or glitch.
+		</p>
+		<p>
+			Contribute with the translation by appending the following lines into <span class="mono">translation/texts.js</span> and <a href="https://github.com/marcrobledo/king-of-fighters-battle-de-paradise-translation/pulls" target="_blank">doing a PR to the GitHub repository</a>.<br/>
+			If you don't know what a PR is, just <a href="https://github.com/marcrobledo/king-of-fighters-battle-de-paradise-translation/issues">open a new issue in the GitHub repository</a> and paste these lines.<br/>
+		</p>
+		<p>
+			Please, always try to comment and provide as much context as possible (like where the text appears in-game).
+		</p>
+		<textarea id="textarea-export" readonly autofocus rows="8"></textarea>
+		<button onclick="this.parentElement.close()">Close window</button>
+	</dialog>
+</body>
+</html>

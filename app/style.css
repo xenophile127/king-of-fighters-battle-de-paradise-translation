@@ -1,0 +1,196 @@
+body{
+	background-color:#4d4e66;
+	font-family:'Segoe UI';
+	font-size:15px;
+	margin: 8px;
+}
+header{
+	text-align:center;
+}
+button{
+	font-family:inherit;
+	font-size:inherit;
+}
+
+.mono{
+	font-family:'Consolas', monospace;
+}
+
+#wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
+	display:flex;
+	gap:16px;
+}
+aside{
+	width:208px;
+	flex-shrink:0;
+}
+#aside-sticky-wrapper{
+	position:sticky;
+	top:8px;
+}
+header strong{
+	font-size:125%;
+	font-weight:bold;
+	color:#b8b9d7;
+	margin:0;
+}
+header img{
+	max-width:90%;
+	border-radius:4px;
+}
+#header-buttons button{
+	display:block;
+	width:100%;
+	box-sizing:border-box;
+	border: 1px solid #818299;
+	border-radius: 3px;
+	margin-top: 4px;
+	background-color:transparent;
+	color:#818299;
+	padding: 8px;
+	transition: all .2s;
+}
+
+#header-buttons button:not(:disabled){
+	border-color: white;
+	color:white;
+}
+
+#header-buttons button:not(:disabled):hover{
+	cursor:pointer;
+	background-color:white;
+	color: #656684;
+}
+#header-buttons button>svg{
+	height:16px;
+	display:inline-block;
+	vertical-align: middle;;
+}
+
+
+
+
+
+
+
+#container-texts{
+	background-color:white;
+	padding:24px;
+	border-radius:4px;
+	flex-grow:1;
+}
+h1{
+	margin-top:0;
+	border-bottom: 1px solid #9ab;
+	padding-bottom: 4px;
+}
+
+#container-file{
+	max-width:400px;
+	background-color:#fd6;
+	padding: 16px;
+	box-sizing:border-box;
+	margin: 0 auto;
+	border-radius: 4px;
+	text-align:center;
+}
+
+
+.container-text{
+	display:flex;
+	justify-content:space-between;
+	position:relative;
+}
+.container-text.modified{
+	background-color:#d7dfec;
+}
+.container-text:not(:first-child){
+	padding-top:12px;
+}
+.container-text:not(:last-child){
+	border-bottom:1px dotted #4d4e66;
+	padding-bottom:12px;
+}
+.container-text small{
+	font-family:'Consolas';
+	color:grey;
+}
+
+#link-translate{
+	position:absolute;
+	bottom:-8px;
+	right:calc(50% - 80px);
+	background-color:white;
+	z-index: 1;
+}
+div.comment:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+textarea{
+	outline:none;
+	border-radius:2px;
+	border: 1px solid #ccc;
+}
+textarea[readonly]{
+	background-color: #f0f0f0;
+	color: #333;
+}
+textarea:hover{
+	border-color: #888;
+}
+textarea:focus{
+	border-color: #64e2ff;
+	box-shadow: #affff8 0 0 0 3px;
+}
+
+
+
+footer{
+	margin-top:12px;
+	color:#b8b9d7;
+	font-size:13px;
+	text-align:center;
+}
+footer a{
+	color:#ddddf0;
+}
+footer a:hover{
+	color:white;
+}
+footer svg{
+	vertical-align: middle;
+	height:16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+dialog{
+	background-color:white;
+	border:none;
+	border-radius: 4px;
+	box-shadow:rgba(0,0,0,.9) 0 0 24px;
+}
+dialog::backdrop{
+	background-color:rgba(0,0,0,.8);
+}
+
+dialog textarea{
+	width:100%;
+	box-sizing:border-box;
+}
+
+
+
