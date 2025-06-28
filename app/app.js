@@ -22,7 +22,8 @@ const _loadRom=function(arrayBuffer, fileName){
 	document.getElementById('container-texts').innerHTML='';
 	currentPointers.forEach(function(pointer){
 		const knownPointer=_findKnownPointer(pointer.pointerIndex);
-		pointer.modified=false;
+		const pretranslatedText=(knownPointer && knownPointer.translation);
+		pointer.modified=pretranslatedText? 1:0;
 
 		const div=document.createElement('div');
 		div.className='container-text';
@@ -52,13 +53,12 @@ const _loadRom=function(arrayBuffer, fileName){
 		textareaOriginal.value=decodedText;
 		textareaOriginal.readOnly=true;
 
-		const pretranslatedText=(knownPointer && knownPointer.translation);
 		if(pretranslatedText)
 			pointer.data=GAME_INFO.encodeText(knownPointer.translation);
 		const textareaTranslated=document.createElement('textarea');
 		textareaTranslated.value=pretranslatedText? knownPointer.translation : '';
 		textareaTranslated.addEventListener('change', function(evt){
-			pointer.modified=true;
+			pointer.modified=2;
 			pointer.data=GAME_INFO.encodeText(this.value);
 			document.getElementById('btn-export-texts').disabled=false;
 			div.classList.add('modified');
@@ -154,10 +154,8 @@ window.addEventListener('load', function(evt){
 	document.getElementById('btn-export-texts').addEventListener('click', function(evt){
 		const textarea=document.getElementById('textarea-export');
 		let textareaValue='';
-		currentPointers.filter(pointer => pointer.modified).forEach(function(pointer){
+		currentPointers.filter(pointer => pointer.modified>1).forEach(function(pointer){
 			const knownPointer=_findKnownPointer(pointer.pointerIndex);
-			console.log(pointer);
-			console.log(knownPointer);
 			const object={
 				pointerIndex:pointer.pointerIndex,
 				comment: (knownPointer && knownPointer.comment) || '-- Add comment here --',
@@ -189,7 +187,7 @@ window.addEventListener('load', function(evt){
 	});
 
 	document.getElementById('btn-export-rom').addEventListener('click', function(evt){
-		const translatedRom=GAME_INFO.saveTexts(currentRom, currentPointers.filter(pointer => pointer.modified));
+		const translatedRom=GAME_INFO.saveTexts(currentRom, currentPointers.filter(pointer => !!pointer.modified));
 		translatedRom.setName(currentRom.getName() + ' (translated)');
 		translatedRom.save();
 	});
