@@ -92,7 +92,7 @@ const _loadRom=function(arrayBuffer, fileName){
 		}
 		const header=document.createElement('div');
 		header.innerHTML='<strong>Graphic replacement #'+i+'</strong> <small>0x'+graphicReplacement.offset.toString(16).padStart(6, '0')+'</small><br/>';
-		header.innerHTML+='<div class="comment">'+(graphicReplacement.comment || '-')+'</div>';
+		header.innerHTML+='<div>'+(graphicReplacement.comment || '-')+'</div>';
 
 
 
