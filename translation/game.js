@@ -501,7 +501,7 @@ const CHAR_TABLE=[
 	{id:0x0165, char:'選'},
 	{id:0x0166, char:'択'},
 	{id:0x0167, char:'左'},
-	{id:0x0168, char:'石'},
+	{id:0x0168, char:'右'},
 	{id:0x0169, char:'移'},
 	{id:0x016a, char:'動'}, //not sure
 	{id:0x016b, char:'先'},
@@ -511,10 +511,18 @@ const CHAR_TABLE=[
 	//{id:0x016f, char:''}, //unused
 
 	//to-do
+	{id:0x017a, char:'画'},
 	{id:0x0183, char:'血'},
+	{id:0x018e, char:'死'},
+	{id:0x018f, char:'私'},
 	{id:0x019a, char:'少'},
+	{id:0x019c, char:'上'},
+	{id:0x019e, char:'人'},
 	{id:0x01a0, char:'性'},
 	{id:0x01a4, char:'属'},
+	{id:0x01bd, char:'目'},
+	{id:0x01c7, char:'更'},
+	{id:0x01d8, char:'終'},
 
 
 	//02xx
@@ -581,6 +589,9 @@ const CHAR_TABLE=[
 	{id:0x023c, char:'実'},
 	{id:0x023d, char:'案'}, //not sure
 	{id:0x023e, char:'外'},
-	{id:0x023f, char:'第'}
+	{id:0x023f, char:'第'},
+	{id:0x0260, char:'遊'},
+	{id:0x0271, char:'計'},
+	{id:0x0289, char:'生'}
 ];
 
