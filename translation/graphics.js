@@ -10,10 +10,9 @@ const GRAPHIC_REPLACEMENTS=[
 
 	{offset:0x106e60, width: 9, height: 9, comment:'Start menu - Turns', file:'start_menu_turns'},
 	{offset:0x0dfe80, width: 10, height: 2, comment:'Options - Header'},
-	{offset:0x0db504, width: 14, height: 2, comment:'Options - Difficulty'},
-	{offset:0x110c83, width: 14, height: 2, comment:'Options - DC Link'},
-	{offset:0x129b4b, width: 14, height: 2, comment:'Options - Message speed'},
-	{offset:0x155570, width: 3, height: 1, comment:'Options - Message speed - Medium'},
+	{offset:0x129b4b, width: 14, height: 2, comment:'Options - Message speed', file:'options_message_speed'},
+	{offset:0x0db504, width: 14, height: 2, comment:'Options - Difficulty', file:'options_difficulty'},
+	{offset:0x110c83, width: 14, height: 2, comment:'Options - DC Link', file:'options_dc_link'},
 
 	{offset:0x108bad, width: 4, height: 1, comment:'Gameplay - HUD', file:'gameplay_hud'},
 	{offset:0x148a07, width: 4, height: 1, comment:'Gameplay - Icon text - Dice', file:'gameplay_icon_text_dice'},
