@@ -13,6 +13,9 @@ const GRAPHIC_REPLACEMENTS=[
 	{offset:0x129b4b, width: 14, height: 2, comment:'Options - Message speed', file:'options_message_speed'},
 	{offset:0x0db504, width: 14, height: 2, comment:'Options - Difficulty', file:'options_difficulty'},
 	{offset:0x110c83, width: 14, height: 2, comment:'Options - DC Link', file:'options_dc_link'},
+	{offset:0x10c29a, width: 15, height: 2, comment:'Options - Save data', file:'options_save_data'},
+	{offset:0x0f2b3c, width: 12, height: 1, comment:'Options - Message speed (choose)', file:'options_message_speed_choose'},
+	{offset:0x11e0f5, width: 14, height: 1, comment:'Options - Difficulty (choose)', file:'options_difficulty_choose'},
 
 	{offset:0x108bad, width: 4, height: 1, comment:'Gameplay - HUD', file:'gameplay_hud'},
 	{offset:0x148a07, width: 4, height: 1, comment:'Gameplay - Icon text - Dice', file:'gameplay_icon_text_dice'},
