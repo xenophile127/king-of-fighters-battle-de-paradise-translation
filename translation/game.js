@@ -64,6 +64,24 @@ const GAME_INFO={
 			clonedRomFile.seek(graphicReplacement.offset);
    			clonedRomFile.writeBytes(resultData);
 		});
+
+		MAP_REPLACEMENTS.filter((mapReplacement) => mapReplacement.data && Array.isArray(mapReplacement.data)).forEach(function(graphicReplacement, i){
+			const newData=graphicReplacement.data.map((b) => {
+				if(typeof b==='string'){
+					const char=CHAR_TABLE.find((char) => char.char===b).id;
+					if(typeof char!=='number'){
+						console.warn('unknown character in map replacement');
+						return 0x00;
+					}
+					return char;
+				}
+				return b
+			}).slice(0, graphicReplacement.length);
+
+			clonedRomFile.seek(graphicReplacement.offset);
+   			clonedRomFile.writeBytes(newData);
+		});
+
 		return clonedRomFile;
 	},
 	decodeText:function(bytes){
