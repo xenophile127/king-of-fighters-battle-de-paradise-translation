@@ -62,6 +62,7 @@ const _loadRom=function(arrayBuffer, fileName){
 		textareaTranslated.addEventListener('change', function(evt){
 			pointer.modified=2;
 			pointer.data=GAME_INFO.encodeText(this.value);
+			this.value=GAME_INFO.decodeText(pointer.data);
 			document.getElementById('btn-export-texts').disabled=false;
 			div.classList.add('modified');
 		});
