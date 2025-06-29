@@ -360,7 +360,7 @@ const CHAR_TABLE=[
 	{id:0xfe, char:'ペ'},
 	{id:0xff, char:'ポ'},
 
-	//CONTROL CHARACTER 01	
+	//01xx
 	{id:0x0101, char:'a'},
 	{id:0x0102, char:'b'},
 	{id:0x0103, char:'c'},
@@ -391,7 +391,7 @@ const CHAR_TABLE=[
 	//{id:0x011c, char:'｜'},
 	//{id:0x011d, char:'｝'},
 	//{id:0x011e, char:'～UPPER'},
-	//{id:0x011f, char:'　'},
+	//{id:0x011f, char:''}, //unused
 	//{id:0x0120, char:'―'},
 	{id:0x0121, char:'。'},
 	{id:0x0122, char:'「'},
@@ -403,22 +403,147 @@ const CHAR_TABLE=[
 	{id:0x0128, char:'↑'},
 	{id:0x0129, char:'↓'},
 	{id:0x012a, char:'～'},
+	//{id:0x012b, char:''}, //unused
+	//{id:0x012c, char:''}, //unused
+	//{id:0x012d, char:''}, //unused
+	{id:0x012e, char:'ヴ'},
+	{id:0x012f, char:'ゔ'},
+	{id:0x0130, char:'×'},
+	{id:0x0131, char:'±'},
+	{id:0x0132, char:'…'},
+	{id:0x0133, char:'○'},
+	{id:0x0134, char:'△'},
+	{id:0x0135, char:'□'},
+	{id:0x0136, char:'◇'},
+	{id:0x0137, char:'●'},
+	{id:0x0138, char:'■'},
+	//{id:0x0139, char:''}, //unused
+	//{id:0x013a, char:''}, //unused
+	//{id:0x013b, char:''}, //unused
+	//{id:0x013c, char:''}, //unused
+	{id:0x013d, char:'♪'},
+	//{id:0x013e, char:'[heart]'},
+	//{id:0x013f, char:'[coin]'},
+	//{id:0x0140, char:'[ngp]'},
+	{id:0x0141, char:'★'},
+	{id:0x0142, char:'Ω'},
+	//{id:0x0143, char:''}, //unused
+	//{id:0x0144, char:''}, //unused
+	//{id:0x0145, char:''}, //unused
+	//{id:0x0146, char:''}, //unused
+	//{id:0x0147, char:''}, //unused
+	//{id:0x0148, char:''}, //unused
+	//{id:0x0149, char:''}, //unused
+	//{id:0x014a, char:''}, //unused
+	//{id:0x014b, char:''}, //unused
+	//{id:0x014c, char:''}, //unused
+	//{id:0x014d, char:''}, //unused
+	//{id:0x014e, char:''}, //unused
+	//{id:0x014f, char:''}, //unused
+	{id:0x0150, char:'悪'},
+	{id:0x0151, char:'員'},
+	{id:0x0152, char:'回'},
+	{id:0x0153, char:'換'},
+	{id:0x0154, char:'休'},
+	{id:0x0155, char:'交'},
+	{id:0x0156, char:'自'},
+	{id:0x0157, char:'手'},
+	{id:0x0158, char:'進'},
+	{id:0x0159, char:'善'},  //not sure
+	{id:0x015a, char:'全'},
+	{id:0x015b, char:'相'},
+	//{id:0x015c, char:'奪'}, //probably incorrect
+	{id:0x015d, char:'得'},
+	{id:0x015e, char:'入'},
+	{id:0x015f, char:'倍'},
+	{id:0x0160, char:'半'},
+	{id:0x0161, char:'分'},
+	{id:0x0162, char:'枚'}, //not sure
+	{id:0x0163, char:'消'},
+	{id:0x0164, char:'数'},
+	{id:0x0165, char:'選'},
+	{id:0x0166, char:'択'},
+	{id:0x0167, char:'左'},
+	{id:0x0168, char:'石'},
+	{id:0x0169, char:'移'},
+	{id:0x016a, char:'動'}, //not sure
+	{id:0x016b, char:'先'},
+	{id:0x016c, char:'矢'},
+	//{id:0x016d, char:''}, //unused
+	//{id:0x016e, char:''}, //unused
+	//{id:0x016f, char:''}, //unused
 
-	{id:0x0165, char:'選'}, //???
-	{id:0x0166, char:'択'}, //???
-	{id:0x0167, char:'左'}, //???
-	{id:0x0168, char:'石'}, //???
+	//to-do
+	{id:0x0183, char:'血'},
+	{id:0x019a, char:'少'},
+	{id:0x01a0, char:'性'},
+	{id:0x01a4, char:'属'},
 
-	{id:0x0183, char:'血'}, //???
-	{id:0x019a, char:'少'}, //???
-	{id:0x01a0, char:'性'}, //???
-	{id:0x01a4, char:'属'}, //???
 
-	//CONTROL CHARACTER 02
-	{id:0x021b, char:'何'}, //???
-	{id:0x0222, char:'女'}, //???
-	{id:0x0239, char:'熱'}, //???
-	{id:0x023a, char:'明'}, //???
-	{id:0x023b, char:'子'} //???
+	//02xx
+	{id:0x0200, char:'経'}, //not sure
+	{id:0x0201, char:'拳'}, //not sure
+	{id:0x0202, char:'高'},
+	{id:0x0203, char:'山'},
+	{id:0x0204, char:'弱'},
+	{id:0x0205, char:'準'},
+	{id:0x0206, char:'勝'},
+	{id:0x0207, char:'照'},
+	{id:0x0208, char:'衰'}, //not sure
+	{id:0x0209, char:'走'},
+	{id:0x020a, char:'速'},
+	{id:0x020b, char:'太'},
+	{id:0x020c, char:'短'},
+	{id:0x020d, char:'転'},
+	{id:0x020e, char:'当'},
+	{id:0x020f, char:'年'},
+	{id:0x0210, char:'敗'},
+	{id:0x0211, char:'反'},
+	{id:0x0212, char:'百'},
+	{id:0x0213, char:'復'}, //not sure
+	{id:0x0214, char:'忘'},
+	{id:0x0215, char:'名'},
+	{id:0x0216, char:'離'}, //not sure
+	{id:0x0217, char:'郎'},
+	{id:0x0218, char:'条'},
+	{id:0x0219, char:'件'},
+	{id:0x021a, char:'門'},
+	{id:0x021b, char:'何'},
+	{id:0x021c, char:'覚'},
+	{id:0x021d, char:'寄'},
+	{id:0x021e, char:'付'},
+	{id:0x021f, char:'合'},
+	{id:0x0220, char:'今'},
+	{id:0x0221, char:'度'},
+	{id:0x0222, char:'女'},
+	{id:0x0223, char:'日'},
+	{id:0x0224, char:'食'},
+	{id:0x0225, char:'茶'},
+	{id:0x0226, char:'売'},
+	{id:0x0227, char:'店'},
+	{id:0x0228, char:'流'},
+	{id:0x0229, char:'購'}, //not sure
+	{id:0x022a, char:'危'},
+	{id:0x022b, char:'機'},
+	{id:0x022c, char:'ー'}, //not sure
+	{id:0x022d, char:'髪'}, //not sure
+	{id:0x022e, char:'最'}, //not sure
+	{id:0x022f, char:'殿'},
+	{id:0x0230, char:'下'},
+	{id:0x0231, char:'業'},
+	{id:0x0232, char:'務'},
+	{id:0x0233, char:'参'},
+	{id:0x0234, char:'考'},
+	{id:0x0235, char:'思'},
+	{id:0x0236, char:'花'},
+	{id:0x0237, char:'愛'},
+	{id:0x0238, char:'優'},
+	{id:0x0239, char:'熱'},
+	{id:0x023a, char:'明'},
+	{id:0x023b, char:'子'},
+	{id:0x023c, char:'実'},
+	{id:0x023d, char:'案'}, //not sure
+	{id:0x023e, char:'外'},
+	{id:0x023f, char:'第'}
 ];
 
