@@ -5,10 +5,15 @@ const KNOWN_POINTERS=[
 	{pointerIndex:2, comment:'Title screen menu', translation:'CREATE'},
 	{pointerIndex:3, comment:'Title screen menu', translation:'RULES'},
 
-	{pointerIndex:5, comment:'Start game - Intro', translation:'Choose\nhelper'},
-	{pointerIndex:6, comment:'Start game - Intro', translation:'···and\nskill?'},
+	{pointerIndex:5, comment:'Start game - Intro (helper)', translation:'Choose\nhelper'},
+	{pointerIndex:6, comment:'Start game - Intro (skill)', translation:'···and\nskill?'},
 	{pointerIndex:7, comment:'Start game - Intro (bottom text)', translation:'USE ←/→'},
 	{pointerIndex:8, comment:'Start game - Intro (bottom text filler)'},
+	{pointerIndex:10, comment:'Start game - Intro (players)', translation:'Player\nnumber'},
+	{pointerIndex:12, comment:'Start game - Intro (turns)', translation:'How\nmany\nturns?'},
+	{pointerIndex:13, comment:'Start game - Intro (map)', translation:'And at\nlast…\nMap?'},
+
+
 	{pointerIndex:69, comment:'Start game - Striker names', translation:'GORO'},
 	{pointerIndex:70, comment:'Start game - Striker names', translation:'BLLY'},
 	{pointerIndex:71, comment:'Start game - Striker names', translation:'RYUJ'},
