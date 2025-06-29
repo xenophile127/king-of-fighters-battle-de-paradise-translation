@@ -9,6 +9,8 @@ const GRAPHIC_REPLACEMENTS=[
 	{offset:0x13c068, width: 12, height: 3, comment:'Main menu - Options (selected)', file:'main_menu_options_selected'},
 
 	{offset:0x106e60, width: 9, height: 9, comment:'Start menu - Turns', file:'start_menu_turns'},
+	{offset:0x10fa32, width: 9, height: 1, comment:'Start menu - Players'},
+
 	{offset:0x0dfe80, width: 10, height: 2, comment:'Options - Header'},
 	{offset:0x129b4b, width: 14, height: 2, comment:'Options - Message speed', file:'options_message_speed'},
 	{offset:0x0db504, width: 14, height: 2, comment:'Options - Difficulty', file:'options_difficulty'},
