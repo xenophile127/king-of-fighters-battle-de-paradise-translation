@@ -51,6 +51,10 @@ const GAME_INFO={
 
 		GRAPHIC_REPLACEMENTS.filter((graphicReplacement) => graphicReplacement.file).forEach(function(graphicReplacement, i){
 			const image=document.getElementById('graphic-replacement-' + graphicReplacement.offset);
+			if(!image){
+				console.error('Image for graphic replacement not found: ', graphicReplacement);
+				return false;
+			}
 			const canvas = document.createElement('canvas');
 			canvas.width = image.width;
 			canvas.height = image.height;
