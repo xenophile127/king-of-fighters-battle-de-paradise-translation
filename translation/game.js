@@ -131,6 +131,21 @@ const GAME_INFO={
 
 				text=text.replace(/^\[[0-9a-f]{2,4}\]/, '');
 			}else{
+				if(/^\[[a-z0-9]{3,5}\]/i.test(text)){
+					const wordMatch=text.match(/^\[(.*?)\]/i);
+					const specialChar=CHAR_TABLE.find((char) => char.char===wordMatch[0]);
+					console.log(specialChar);
+					if(specialChar){
+						if(specialChar.id>0xff){
+							bytes.push(specialChar.id >> 8);
+							bytes.push(specialChar.id & 0xff);
+						}else{
+							bytes.push(specialChar.id);
+						}
+						text=text.replace(/^\[.*?\]/, '');
+						continue;
+					}
+				}
 				const foundChar=CHAR_TABLE.find((char) => char.char===text.charAt(0));
 				if(foundChar){
 					if(foundChar.id>0xff){
@@ -444,9 +459,9 @@ const CHAR_TABLE=[
 	//{id:0x013b, char:''}, //unused
 	//{id:0x013c, char:''}, //unused
 	{id:0x013d, char:'♪'},
-	//{id:0x013e, char:'[heart]'},
-	//{id:0x013f, char:'[coin]'},
-	//{id:0x0140, char:'[ngp]'},
+	{id:0x013e, char:'[heart]'},
+	{id:0x013f, char:'[coin]'},
+	{id:0x0140, char:'[ngp]'},
 	{id:0x0141, char:'★'},
 	{id:0x0142, char:'Ω'},
 	//{id:0x0143, char:''}, //unused
