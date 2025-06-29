@@ -3,8 +3,8 @@ const GAME_INFO={
 	version: '0.1',
 	checkFile:function(romFile){
 		currentRom.littleEndian=true;
-		romFile.seek(0x24);
-		return romFile.fileSize===0x200000 && romFile.readString(0x0c)==='BATTLEDEPARA';
+		const crc32=romFile.hashCRC32();
+		return romFile.fileSize===0x200000 && crc32===0x77e37bac;
 	},
 	getTexts:function(romFile){
 		const texts=[];
