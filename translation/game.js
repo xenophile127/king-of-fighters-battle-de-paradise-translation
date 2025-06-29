@@ -509,7 +509,7 @@ const CHAR_TABLE=[
 	//{id:0x016d, char:''}, //unused
 	//{id:0x016e, char:''}, //unused
 	//{id:0x016f, char:''}, //unused
-	
+
 	//to-do
 	{id:0x017a, char:'画'},
 	{id:0x0183, char:'血'},
