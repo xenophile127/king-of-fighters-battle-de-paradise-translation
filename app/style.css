@@ -15,6 +15,7 @@ button{
 .mono{
 	font-family:'Consolas', monospace;
 }
+.text-danger{color:red}
 
 #wrapper{
 	max-width: 1080px;

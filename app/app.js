@@ -14,8 +14,10 @@ const _loadRom=function(arrayBuffer, fileName){
 	currentRom=new BinFile(arrayBuffer);
 	currentRom.fileName=fileName;
 
-	if(!GAME_INFO.checkFile(currentRom))
+	if(!GAME_INFO.checkFile(currentRom)){
+		alert('Invalid ROM file');
 		throw new Error('Invalid ROM');
+	}
 
 	currentPointers=GAME_INFO.getTexts(currentRom);
 
@@ -93,32 +95,45 @@ const _loadRom=function(arrayBuffer, fileName){
 
 
 
-		const imgTranslated=new Image();
-		imgTranslated.onload=function(evt){
-			const image=this;
-			const canvas = document.createElement('canvas');
-			canvas.id='graphic-replacement-'+graphicReplacement.offset;
-			canvas.width = image.width;
-			canvas.height = image.height;
-			const ctx = canvas.getContext('2d');
-			ctx.drawImage(image, 0, 0);
-			const imageData = ctx.getImageData(0, 0, image.width, image.height);
-
-			const result = Tileset.fromImageData(imageData, ConsoleGraphicsNGPC);
-			const resultImageData=result.tileset.toImageData();
-			canvas.width = resultImageData.width;
-			canvas.height = resultImageData.height;
-			ctx.putImageData(resultImageData, 0, 0);
-			this.parentElement.replaceChild(canvas, this);
-		};
-		if(graphicReplacement.file)
-			imgTranslated.src='translation/graphics/'+graphicReplacement.file+'.png';
 
 		const div=document.createElement('div');
 		div.className='container-text';
 		div.appendChild(header);
 		div.appendChild(canvasOriginal);
-		div.appendChild(imgTranslated);
+
+		if(graphicReplacement.file){
+			const imgTranslated=new Image();
+			imgTranslated.onload=function(evt){
+				const image=this;
+				if(image.width%8!==0){
+					const divMessage=document.createElement('div');
+					divMessage.className='text-danger';
+					divMessage.innerHTML=graphicReplacement.file+'.png width is not a multiple of 8 ('+image.width+'px)';
+					div.appendChild(divMessage);
+				}else if(image.height%8!==0){
+					const divMessage=document.createElement('div');
+					divMessage.className='text-danger';
+					divMessage.innerHTML=graphicReplacement.file+'.png height is not a multiple of 8 ('+image.height+'px)';
+					div.appendChild(divMessage);
+				}
+				const canvas = document.createElement('canvas');
+				canvas.id='graphic-replacement-'+graphicReplacement.offset;
+				canvas.width = image.width;
+				canvas.height = image.height;
+				const ctx = canvas.getContext('2d', {willReadFrequently: true});
+				ctx.drawImage(image, 0, 0);
+				const imageData = ctx.getImageData(0, 0, image.width, image.height);
+
+				const result = Tileset.fromImageData(imageData, ConsoleGraphicsNGPC);
+				const resultImageData=result.tileset.toImageData();
+				canvas.width = resultImageData.width;
+				canvas.height = resultImageData.height;
+				ctx.putImageData(resultImageData, 0, 0);
+				div.appendChild(canvas);
+			};
+			imgTranslated.src='translation/graphics/'+graphicReplacement.file+'.png';
+		}
+
 		document.getElementById('container-texts').appendChild(div);
 	});
 
