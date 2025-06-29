@@ -206,14 +206,14 @@ window.addEventListener('load', function(evt){
 		translatedRom.setName(currentRom.getName() + ' (translated)');
 		translatedRom.save();
 	});
-	if(typeof GAME_INFO.autoloadFile==='string'){
+	if(location.protocol==='file:' && typeof GAME_INFO.autoloadFile==='string'){
 		this.fetch('./translation/'+GAME_INFO.autoloadFile)
 			.then(response => response.arrayBuffer())
 			.then(arrayBuffer => {
 				_loadRom(arrayBuffer, GAME_INFO.autoloadFile);
 			})
 			.catch(error => {
-				//console.error('Failed to autoload ROM:', error);
+				console.error('Failed to autoload ROM:', error);
 			});
 	}
 });
