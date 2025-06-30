@@ -23,8 +23,11 @@ const GAME_INFO={
 			while(true){
 				const charCode=romFile.readU8();
 				readBytes.push(charCode);
-				if(charCode===0x00)
+				if(charCode===0x01 || charCode===0x02){
+					readBytes.push(romFile.readU8());
+				}else if(charCode===0x00){
 					break;
+				}
 			}
 
 			texts.push({
