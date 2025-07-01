@@ -10,6 +10,9 @@ const GRAPHIC_REPLACEMENTS=[
 
 	{offset:0x106e60, width: 9, height: 9, comment:'Start menu - Turns', file:'start_menu_turns'},
 	{offset:0x10fa32, width: 9, height: 1, comment:'Start menu - Players'},
+	{offset:0x0fc295, width: 7, height: 1, comment:'Start menu - Map difficulty (1)'},
+	{offset:0x155210, width: 5, height: 1, comment:'Start menu - Map difficulty (2,3)'},
+	{offset:0x15661c, width: 5, height: 1, comment:'Start menu - Map difficulty (4)'},
 
 	{offset:0x0dfe80, width: 10, height: 2, comment:'Options - Header'},
 	{offset:0x129b4b, width: 14, height: 2, comment:'Options - Message speed', file:'options_message_speed'},

@@ -5,6 +5,9 @@ const KNOWN_POINTERS=[
 	{pointerIndex:2, comment:'Title screen menu', translation:'CREATE'},
 	{pointerIndex:3, comment:'Title screen menu', translation:'RULES'},
 
+	{pointerIndex:46, comment:'Options - Save Data', translation:'Save data?'},
+	{pointerIndex:47, comment:'Options - Save Data', translation:'Saved!'},
+
 	{pointerIndex:5, comment:'Start game - Intro (helper)', translation:'Choose\nhelper'},
 	{pointerIndex:6, comment:'Start game - Intro (skill)', translation:'···and\nskill?'},
 	{pointerIndex:7, comment:'Start game - Intro (bottom text)', translation:'USE ←/→'},
@@ -13,7 +16,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:12, comment:'Start game - Intro (turns)', translation:'How\nmany\nturns?'},
 	{pointerIndex:13, comment:'Start game - Intro (map)', translation:'And at\nlast…\nMap?'},
 
-
+	
 	{pointerIndex:69, comment:'Start game - Striker names', translation:'GORO'},
 	{pointerIndex:70, comment:'Start game - Striker names', translation:'BLLY'},
 	{pointerIndex:71, comment:'Start game - Striker names', translation:'RYUJ'},
@@ -48,4 +51,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:144, comment:'User screen - Menu', translation:'LEVEL UP'},
 	{pointerIndex:147, comment:'User screen - Dialogue (leave)', translation:'Good\nluck!'},
 
+	{pointerIndex:150, comment:"User screen - Level up - Total stars", translation:"STARS="},
+	{pointerIndex:151, comment:"User screen - Level up - Cost for Lv2", translation:"ゔ2 UPGRADE COST=2"},
+	{pointerIndex:152, comment:"User screen - Level up - Cost for Lv3", translation:"ゔ3 UPGRADE COST=5"}
 ];
