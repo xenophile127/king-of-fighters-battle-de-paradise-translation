@@ -6,6 +6,18 @@ const GAME_INFO={
 		const crc32=romFile.hashCRC32();
 		return romFile.fileSize===0x200000 && crc32===0x77e37bac;
 	},
+	getStatus:function(){
+		const total=1154 + GRAPHIC_REPLACEMENTS.length + MAP_REPLACEMENTS.length;
+		const done=
+			KNOWN_POINTERS.filter((pointer) => pointer.translation).length +
+			GRAPHIC_REPLACEMENTS.filter((graphicReplacement) => graphicReplacement.file).length +
+			MAP_REPLACEMENTS.filter((mapReplacement) => mapReplacement.data).length;
+		
+		return {
+			done,
+			total
+		}
+	},
 	getTexts:function(romFile){
 		const texts=[];
 		romFile.seek(0x080004);
@@ -523,6 +535,7 @@ const CHAR_TABLE=[
 	{id:0x019e, char:'人'},
 	{id:0x01a0, char:'性'},
 	{id:0x01a4, char:'属'},
+	{id:0x01b4, char:'買'},
 	{id:0x01bd, char:'目'},
 	{id:0x01c7, char:'更'},
 	{id:0x01d8, char:'終'},

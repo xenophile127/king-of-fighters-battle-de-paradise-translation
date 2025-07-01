@@ -222,6 +222,13 @@ window.addEventListener('load', function(evt){
 		translatedRom.setName(currentRom.getName() + ' (translated)');
 		translatedRom.save();
 	});
+
+	const translationStatus=GAME_INFO.getStatus();
+	this.document.getElementById('progress-status').max=translationStatus.total;
+	this.document.getElementById('progress-status').value=translationStatus.done;
+	this.document.getElementById('span-status-done').innerHTML=translationStatus.done;
+	this.document.getElementById('span-status-total').innerHTML=translationStatus.total;
+
 	if(location.protocol==='file:' && typeof GAME_INFO.autoloadFile==='string'){
 		this.fetch('./translation/'+GAME_INFO.autoloadFile)
 			.then(response => response.arrayBuffer())

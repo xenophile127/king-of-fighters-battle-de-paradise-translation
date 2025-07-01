@@ -12,9 +12,8 @@ button{
 	font-size:inherit;
 }
 
-.mono{
-	font-family:'Consolas', monospace;
-}
+.mono{font-family:'Consolas', monospace;}
+.text-center{text-align:center;}
 .text-danger{color:red}
 
 #wrapper{
@@ -175,6 +174,38 @@ footer svg{
 
 
 
+
+progress {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	border:none;
+	margin:0;
+	padding:0;
+	width:192px;
+	height: 6px;
+}
+
+/* webkit */
+progress::-webkit-progress-bar{
+	background-color:#f0f0f0;
+	border-radius:8px;
+}
+progress::-webkit-progress-value{
+	background-color:#357bff;
+	border-radius:8px;
+}
+
+/* gecko */
+progress{
+	background-color:#f0f0f0;
+	border-radius:8px;
+}
+progress::-moz-progress-bar{
+	background-color:#357bff;
+	border-radius:8px;
+}
 
 
 
