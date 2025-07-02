@@ -540,7 +540,7 @@ const CHAR_TABLE=[
 	{id:0x0183, char:'血'},
 	{id:0x0184, char:'見'},
 	{id:0x0187, char:'効'},
-	{id:0x0187, char:'好'},
+	{id:0x0188, char:'好'},
 	{id:0x0189, char:'作'},
 	{id:0x018a, char:'札'},
 	{id:0x018e, char:'死'},
