@@ -25,7 +25,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:37, comment:'Minigame instructions', translation:'BOOM!ESCAPE\nRun from the\nexplosion!\nJump cracks!\n(A:Tap run )\n(B:Jump    )'},
 	{pointerIndex:38, comment:'Minigame instructions', translation:'DARUMAOTOSHI\nKrizalid\'s\nclose call.\nTime your\nswing!\n(A:Swing   )'},
 	{pointerIndex:39, comment:'Minigame instructions', translation:'IS IT 2000?\nDodge when\nGoenitz at-\ntacks!\n(←→:Move   )\n(A:Dash!!  )'},
-	{pointerIndex:40, comment:'Minigame instructions', translation:'Move: \'None\'\nWhen Orochi\nattacks you\nmust dodge.\n(←→:Move   )\n(A:Dash!!  )'},
+	{pointerIndex:40, comment:'Minigame instructions', translation:'MOVE: \'NONE\'\nWhen Orochi\nattacks you\nmust dodge.\n(←→:Move   )\n(A:Dash!!  )'},
 	{pointerIndex:41, comment:'Minigame instructions', translation:'BOOM!ESCAPEΩ\nThe blast is\neven bigger!\nJump faults!\n(A:Tap Run )\n(B:Jump    )'},
 	{pointerIndex:42, comment:'Minigame instructions', translation:'  YO·SA·KU\nThe classic!\nCut down all\nthe trees.\n(←→:Move   )\n(A:Axe     )'},
 
