@@ -29,7 +29,7 @@ const GRAPHIC_REPLACEMENTS=[
 
 	{offset:0x0e0715, width: 15, height: 2, comment:'User - Minigame titles (selected)?'},
 	{offset:0x0e0e9d, width: 15, height: 2, comment:'User - Minigame titles (selected)?'},
-	{offset:0x0e14bc, width: 15, height: 2, comment:'User - Minigame titles (selected)?'},
+	{offset:0x0e14ac, width: 15, height: 2, comment:'User - Minigame titles (selected)?'},
 	{offset:0x0e17e0, width: 15, height: 2, comment:'User - Minigame titles (selected)?'},
 	{offset:0x0e20d7, width: 15, height: 2, comment:'User - Minigame titles (selected)?'},
 	{offset:0x0e241e, width: 15, height: 2, comment:'User - Minigame titles (selected)?'},
