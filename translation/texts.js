@@ -27,6 +27,8 @@ const KNOWN_POINTERS=[
 	{pointerIndex:76, comment:'Start game - Striker names', translation:'FIO'},
 	{pointerIndex:77, comment:'Start game - Striker names', translation:'GAI'},
 	{pointerIndex:78, comment:'Start game - Striker names', translation:'SYO'},
+	{pointerIndex:79, comment:'Start game - Justice side', translation:'ゔ[0b]JS'},
+	{pointerIndex:80, comment:'Start game - Dark side', translation:'ゔ[0b]DS'},
 
 	{pointerIndex:66, comment:'Common text - Accept', translation:'YS'},
 	{pointerIndex:67, comment:'Common text - Cancel', translation:'NO'},
@@ -51,7 +53,12 @@ const KNOWN_POINTERS=[
 	{pointerIndex:144, comment:'User screen - Menu', translation:'LEVEL UP'},
 	{pointerIndex:147, comment:'User screen - Dialogue (leave)', translation:'Good\nluck!'},
 
+	{pointerIndex:149, comment:"User screen - Level up - Continue upgrading question", translation:"Keep upgrading?"},
 	{pointerIndex:150, comment:"User screen - Level up - Total stars", translation:"STARS="},
 	{pointerIndex:151, comment:"User screen - Level up - Cost for Lv2", translation:"ゔ2 UPGRADE COST=2"},
-	{pointerIndex:152, comment:"User screen - Level up - Cost for Lv3", translation:"ゔ3 UPGRADE COST=5"}
+	{pointerIndex:152, comment:"User screen - Level up - Cost for Lv3", translation:"ゔ3 UPGRADE COST=5"},
+	{pointerIndex:153, comment:"User screen - Level up - Ask?", translation:"Upgrade to next ゔ?"},
+	{pointerIndex:154, comment:"User screen - Level up - LvX Justice side", translation:"ゔ[0b] JS"},
+	{pointerIndex:155, comment:"User screen - Level up - LvX Dark side", translation:"ゔ[0b] DS"},
+	{pointerIndex:1806, comment:'User screen - Level up - Striker names', translation:'ALFRED'},
 ];
