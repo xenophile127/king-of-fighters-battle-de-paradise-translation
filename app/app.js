@@ -1,13 +1,20 @@
-const TRANSLATION_URL='https://www.deepl.com/es/translator#ja/en-us/%s'
+const TRANSLATION_URL_GOOGLE='https://translate.google.com/?sl=ja&tl=en&text=%s&op=translate'
+const TRANSLATION_URL_DEEPL='https://www.deepl.com/es/translator#ja/en-us/%s'
 
 var currentRom, currentPointers;
 
 
 
-const translateLink=document.createElement('a');
-translateLink.id='link-translate';
-translateLink.target='_blank';
-translateLink.textContent='Translate with DeepL';
+const translateLinks=document.createElement('a');
+translateLinks.id='links-translate';
+translateLinks.innerHTML='Translate with: ';
+translateLinks.appendChild(document.createElement('a'));
+translateLinks.innerHTML+=' ';
+translateLinks.appendChild(document.createElement('a'));
+translateLinks.children[0].target='_blank';
+translateLinks.children[0].innerHTML='Google';
+translateLinks.children[1].target='_blank';
+translateLinks.children[1].innerHTML='DeepL';
 
 
 const _loadRom=function(arrayBuffer, fileName){
@@ -72,8 +79,9 @@ const _loadRom=function(arrayBuffer, fileName){
 		div.appendChild(textareaTranslated);
 		document.getElementById('container-texts').appendChild(div);
 		div.addEventListener('mouseenter', function(evt){
-			translateLink.href=TRANSLATION_URL.replace('%s', encodeURIComponent(decodedText));
-			this.appendChild(translateLink);
+			translateLinks.children[0].href=TRANSLATION_URL_GOOGLE.replace('%s', encodeURIComponent(decodedText));
+			translateLinks.children[1].href=TRANSLATION_URL_DEEPL.replace('%s', encodeURIComponent(decodedText));
+			this.appendChild(translateLinks);
 		})
 	});
 
