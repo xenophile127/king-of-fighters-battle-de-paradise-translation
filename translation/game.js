@@ -601,6 +601,7 @@ const CHAR_TABLE=[
 	{id:0x01ed, char:'方'},
 	{id:0x01ee, char:'本'},
 	{id:0x01ef, char:'味'},
+	{id:0x01f0, char:'無'},
 	{id:0x01f1, char:'命'},
 	{id:0x01f2, char:'迷'},
 	{id:0x01f3, char:'雷'},
