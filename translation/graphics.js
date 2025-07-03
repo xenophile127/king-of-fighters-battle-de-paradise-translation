@@ -43,7 +43,7 @@ const GRAPHIC_REPLACEMENTS=[
 	{offset:0x149dac, width: 15, height: 2, comment:'User - Minigame title #14 (selected)', file:'user_minigame_title_selected_14'},
 	{offset:0x0e20d7, width: 15, height: 2, comment:'User - Minigame title #15 (selected)', file:'user_minigame_title_selected_15'},
 	//{offset:0x101bff, width: 15, height: 2, comment:'User - Minigame title #16 (selected)'}, //TANK?
-	//MISSING DARK MAZE
+	{offset:0x0de050, width: 15, height: 2, comment:'User - Minigame title #17 (selected)', file:'user_minigame_title_selected_17'},
 	{offset:0x0e241e, width: 15, height: 2, comment:'User - Minigame title #18 (selected)', file:'user_minigame_title_selected_18'},
 	{offset:0x1531c1, width: 15, height: 2, comment:'User - Minigame title #19 (selected)', file:'user_minigame_title_selected_19'},
 	{offset:0x1358d1, width: 15, height: 2, comment:'User - Minigame title #20 (selected)', file:'user_minigame_title_selected_20'},
