@@ -1,2 +1,16 @@
 02a8 (4 bytes) = Ability Points (set to 1000000 to unlock everything)
 02ac (1 byte)  = stars
+
+
+02ba (2 bytes) = current PLAYER coins
+02bc (2 bytes) = current PLAYER stars
+08a4 (2 bytes) = current PLAYER coins (copies from above)
+08a6 (2 bytes) = current PLAYER stars (copies from above)
+
+02fc (2 bytes) = current CPU coins
+02fe (2 bytes) = current CPU stars
+08e6 (2 bytes) = current CPU coins (copies from above)
+08e8 (2 bytes) = current CPU stars (copies from above)
+
+021e (2 bytes) = current turns
+0808 (2 bytes) = current turns (copies from above)
