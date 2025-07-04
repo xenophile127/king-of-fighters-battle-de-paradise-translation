@@ -1,8 +1,8 @@
 
 const KNOWN_POINTERS=[
 	{pointerIndex:0, comment:'Title screen menu', translation:'RESUME'},
-	{pointerIndex:1, comment:'Title screen menu', translation:'START'},
-	{pointerIndex:2, comment:'Title screen menu', translation:'CREATE'},
+	{pointerIndex:1, comment:'Title screen menu', translation:'CONTINUE'},
+	{pointerIndex:2, comment:'Title screen menu', translation:'START'},
 	{pointerIndex:3, comment:'Title screen menu', translation:'RULES'},
 
 	{"pointerIndex":14,"comment":"Card shop buy confirm instructions","translation":"A=Buy   B=Cancel"},

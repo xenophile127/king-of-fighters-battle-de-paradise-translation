@@ -146,11 +146,11 @@ const _loadRom=function(arrayBuffer, fileName){
 		document.getElementById('container-texts').appendChild(div);
 	});
 
-	MAP_REPLACEMENTS.forEach(function(mapReplacement, i){
+	PATCHES.forEach(function(mapReplacement, i){
 		currentRom.seek(mapReplacement.offset);
 
 		const header=document.createElement('div');
-		header.innerHTML='<strong>Map replacement #'+i+'</strong> <small>0x'+mapReplacement.offset.toString(16).padStart(6, '0')+'</small><br/>';
+		header.innerHTML='<strong>Patch #'+i+'</strong> <small>0x'+mapReplacement.offset.toString(16).padStart(6, '0')+'</small><br/>';
 		header.innerHTML+='<div class="comment">'+(mapReplacement.comment || '-')+'</div>';
 
 		const div=document.createElement('div');

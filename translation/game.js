@@ -7,11 +7,11 @@ const GAME_INFO={
 		return romFile.fileSize===0x200000 && crc32===0x77e37bac;
 	},
 	getStatus:function(){
-		const total=1154 + GRAPHIC_REPLACEMENTS.length + MAP_REPLACEMENTS.length;
+		const total=1154 + GRAPHIC_REPLACEMENTS.length + PATCHES.length;
 		const done=
 			KNOWN_POINTERS.filter((pointer) => pointer.translation).length +
 			GRAPHIC_REPLACEMENTS.filter((graphicReplacement) => graphicReplacement.file).length +
-			MAP_REPLACEMENTS.filter((mapReplacement) => mapReplacement.data).length;
+			PATCHES.filter((mapReplacement) => mapReplacement.data).length;
 		
 		return {
 			done,
@@ -84,7 +84,7 @@ const GAME_INFO={
    			clonedRomFile.writeBytes(resultData);
 		});
 
-		MAP_REPLACEMENTS.filter((mapReplacement) => mapReplacement.data && Array.isArray(mapReplacement.data)).forEach(function(graphicReplacement, i){
+		PATCHES.filter((mapReplacement) => mapReplacement.data && Array.isArray(mapReplacement.data)).forEach(function(graphicReplacement, i){
 			const newData=graphicReplacement.data.map((b) => {
 				if(typeof b==='string'){
 					const char=CHAR_TABLE.find((char) => char.char===b).id;
