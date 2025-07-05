@@ -52,8 +52,8 @@ const GRAPHIC_REPLACEMENTS=[
 	{offset:0x0e2a0c, width: 15, height: 2, comment:'User - Minigame title #22 (selected)', file:'user_minigame_title_selected_22'},
 	//{offset:0x12e685, width: 15, height: 2, comment:'User - Minigame title #23 (selected)'}, //YO·SA·KU
 
-	//{offset:0x1c94a6, width: 16, height: 10, comment:'Game rules Home'},
-	{offset:0x1c9dd6, width: 6, height: 2, comment:'Game rules Home - Legend', file:'game_rules_legend_home'},
+	{offset:0x1c94a6, width: 16, height: 10, comment:'Game rules Home', file:'game_rules_home'}, //to-do: implement a map quantizer into the tool
+
 	{offset:0x1d4342, width: 15, height: 2, comment:'Game rules 1.1 - Legend', file:'game_rules_legend_page_first15'},
 	{offset:0x1df35d, width: 15, height: 2, comment:'Game rules 1.2 - Legend', file:'game_rules_legend_page_middle'},
 	{offset:0x1e1f66, width: 15, height: 2, comment:'Game rules 1.3 - Legend', file:'game_rules_legend_page_last15'},
