@@ -68,9 +68,17 @@ const KNOWN_POINTERS=[
 	{pointerIndex:52, comment:'Default player name - Masamune', translation:'MASA'},
 	{pointerIndex:53, comment:'Default player name - Ai', translation:'AI'},
 
-	{pointerIndex:101,comment:'Minigame - PairPair Get (your turn)',translation:'[08]\'s turn.[0f]'},
-	{pointerIndex:102,comment:'Minigame - PairPair Get (rival turn)',translation:'[09]\'s turn.[0f]'},
+	{pointerIndex:101,comment:'Minigame - your turn',translation:'[08]\'s turn.[0f]'},
+	{pointerIndex:102,comment:'Minigame - rival turn',translation:'[09]\'s turn.[0f]'},
 	{pointerIndex:103,comment:'Minigame - PairPair Get - waiting',translation:'Choosing...'},
+
+	{"pointerIndex":120,"comment":"Bouzu Mekuri - Princess","translation":"Prin[heart]:Got [0c][0b][0f]"},
+	{"pointerIndex":121,"comment":"Bouzu Mekuri - Princess","translation":"Prin[heart]:Got [0b].[0f]"},
+	{"pointerIndex":122,"comment":"Bouzu Mekuri - Great Lord","translation":"Boss:Got 1.[0f]"},
+	{"pointerIndex":123,"comment":"Bouzu Mekuri - Lord","translation":"Lord:Drop 1.[0f]"},
+	{"pointerIndex":124,"comment":"Bouzu Mekuri - Monk","translation":"Monk:Drop [0c][0b][0f]"},
+	{"pointerIndex":125,"comment":"Bouzu Mekuri - Monk","translation":"Monk:Drop [0b].[0f]"},
+
 	{pointerIndex:166,comment:'Minigame - PairPair Get - wallet',translation:'Wallet.'},
 	{pointerIndex:167,comment:'Minigame - PairPair Get - coin',translation:'Coin.'},
 	{pointerIndex:168,comment:'Minigame - PairPair Get - moneybag',translation:'$bag.'},
