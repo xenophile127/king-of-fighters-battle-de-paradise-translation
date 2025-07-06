@@ -223,6 +223,8 @@ const KNOWN_POINTERS=[
 	{"pointerIndex":1978,"comment":"Card description","translation":"Lose cards. +25%c."},
 	{"pointerIndex":1979,"comment":"Card description","translation":"Loser gets coins!"},
 
+	{pointerIndex:43, comment:'Minigames - YO·SA·KU - B&W intro'},
+
 	{pointerIndex:1999, comment:'You Doubt minigame', translation:'Round one.'},
 	{pointerIndex:2000, comment:'You Doubt minigame', translation:'Round two.'},
 	{pointerIndex:2001, comment:'You Doubt minigame', translation:'Round three.'},
