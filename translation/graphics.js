@@ -4,8 +4,8 @@ const GRAPHIC_REPLACEMENTS=[
 	{offset:0x15284c, width: 14, height: 3, comment:'Logo', file:'logo'},
 
 	{offset:0x1bed84, width: 18, height: 7, comment:'Main menu', file:'main_menu'},
-	{offset:0x0ec532, width: 12, height: 3, comment:'Main menu - Options (selected)'},
-	{offset:0x0eca0e, width: 12, height: 3, comment:'Main menu - Options (selected)'},
+	{offset:0x0ec532, width: 12, height: 3, comment:'Main menu - Options (selected)', file:'main_menu_main_game_selected'},
+	{offset:0x0eca0e, width: 12, height: 3, comment:'Main menu - Options (selected)', file:'main_menu_user_mode_selected'},
 	{offset:0x13c068, width: 12, height: 3, comment:'Main menu - Options (selected)', file:'main_menu_options_selected'},
 
 	{offset:0x106e60, width: 9, height: 9, comment:'Start menu - Turns', file:'start_menu_turns'},
