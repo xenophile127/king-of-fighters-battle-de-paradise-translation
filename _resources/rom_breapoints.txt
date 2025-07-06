@@ -1,1 +1,1 @@
-0x206219 = load static screen map (XIY has offset to map)
+0x206219 = load static screen map (XIY has offset to map, which seems to be -0x200000 in ROM)
