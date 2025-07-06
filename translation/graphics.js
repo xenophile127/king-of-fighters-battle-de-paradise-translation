@@ -58,7 +58,7 @@ const GRAPHIC_REPLACEMENTS=[
 	{offset:0x1df35d, width: 15, height: 2, comment:'Game rules 1.2 - Legend', file:'game_rules_legend_page_middle'},
 	{offset:0x1e1f66, width: 15, height: 2, comment:'Game rules 1.3 - Legend', file:'game_rules_legend_page_last15'},
 	{offset:0x1d709a, width: 14, height: 2, comment:'Game rules 2.1 - Legend', file:'game_rules_legend_page_first14'},
-	{offset:0x1cccc2, width: 14, height: 2, comment:'Game rules 2.2 - Legend', file:'game_rules_legend_page_last14'},
+	{offset:0x1cccc2, width: 14, height: 2, comment:'Game rules 2.2 - Legend'/*, file:'game_rules_legend_page_last14'*/}, //glitches USER MODE screen?
 	{offset:0x1acd25, width: 15, height: 2, comment:'Game rules 3.1 - Legend', file:'game_rules_legend_page_first15'},
 	{offset:0x1b42fd, width: 15, height: 2, comment:'Game rules 3.2 - Legend', file:'game_rules_legend_page_middle'},
 	{offset:0x1bd6de, width: 15, height: 2, comment:'Game rules 3.3 - Legend', file:'game_rules_legend_page_middle'},
