@@ -1,6 +1,8 @@
 
 
 const GRAPHIC_REPLACEMENTS=[
+	{offset:0xb0218, width: 16, height: 23, comment:'Small font', file:'font_small'},
+
 	{offset:0x15284c, width: 14, height: 3, comment:'Logo', file:'logo'},
 
 	{offset:0x1bed84, width: 18, height: 7, comment:'Main menu', file:'main_menu'},
