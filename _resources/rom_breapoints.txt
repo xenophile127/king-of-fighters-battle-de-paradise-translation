@@ -1,1 +1,14 @@
 0x206219 = load static screen map (XIY has offset to map, which seems to be -0x200000 in ROM)
+
+0x252c6c = write text - check text type
+		text types:
+		- c=1: ???
+		- c=2: 12x16 dialogue text (???)
+		- c=any other: 8x8 static texts (title screen menu, character names, etc)
+
+0x252d3b = write text (type 1)
+0x252d4c = write text (type 2)
+0x252c76 = write text (any other type)
+	XDE=pointer to next string settings, 4 bytes:
+		VRAM tile index to write, unknown, length, unknown
+		these four bytes should be in ROM
