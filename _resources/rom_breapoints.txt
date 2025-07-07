@@ -9,6 +9,11 @@
 
 0x252d3b = write text (type 1)
 0x252d4c = write text (type 2)
+	XIZ=pointer to next string data
+		XIZ+32=VRAM writing destination (first letter in line)
+		XIZ+36=VRAM writing destination (current letter in line)
+		XIZ+52=width
+		XIZ+53=height
 0x252c76 = write text (any other type)
 	XDE=pointer to next string settings, 4 bytes:
 		VRAM tile index to write, unknown, length, unknown
