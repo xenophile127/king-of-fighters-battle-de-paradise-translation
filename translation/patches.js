@@ -2,6 +2,15 @@ const PATCHES=[
 	{offset:0x8f62, comment:'Main menu - CONTINUE tiles starting index', length:1, data:[0x20]}, // originally 0x0a, 0x20 seems to be a safe index at Pattern Table (leftover tiles from SNK logo intro)
 	{offset:0x8f62 + 2, comment:'Main menu - CONTINUE string length', length:1, data:[0x06 + 2]},
 
+	{offset:0x014034, comment:'Create character - Prepare YES word', length:5, data:[
+		/* we add two more columns to write the new YES word, which is longer than the japanese one */
+		0xba, 0x34, 0x02, 0x03 + 2, 0x01 //ld (XDE+0x34), 0x0103
+	]},
+	{offset:0x014066, comment:'Create character - Prepare NO word', length:5, data:[
+		/* since YES is longer no, NO word must be moved and written to the following tiles in VRAM*/
+		0xba, 0x32, 0x02, 0xc4 + 8, 0x00 //ld (XDE+0x32), 0x00c4
+	]},
+
 	{offset:0x019d5b + 2, comment:'Options - Save prompt - YES string length', length:1, data:[0x02 + 1]},
 	{offset:0x019d6d, comment:'Options - Save prompt - NO starting index', length:1, data:[0xc4 + 1]},
 
