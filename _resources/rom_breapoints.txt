@@ -1,4 +1,5 @@
-0x206219 = load static screen map (XIY has offset to map, which seems to be -0x200000 in ROM)
+0x206219 = load static screen map (XIY has offset to map [-0x200000 in ROM])
+0x205f87 = load rectangle map (XIY has offset to rectangle map [-0x200000 in ROM])
 
 0x252c6c = write text - check text type
 		text types:
@@ -12,3 +13,19 @@
 	XDE=pointer to next string settings, 4 bytes:
 		VRAM tile index to write, unknown, length, unknown
 		these four bytes should be in ROM
+
+
+
+
+
+
+
+
+MAME
+----
+RUN:
+	mame ngpc kofpara -debug
+SET BREAKPOINT:
+	bp 0x252c6c
+SET WATCHPOINT:
+	wpset 0x9406,1,w,wpdata == 0xb4
