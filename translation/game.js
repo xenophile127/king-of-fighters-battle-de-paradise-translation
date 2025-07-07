@@ -546,6 +546,8 @@ const CHAR_TABLE=[
 	{id:0x018d, char:'使'},
 	{id:0x018e, char:'死'},
 	{id:0x018f, char:'私'},
+	{id:0x0191, char:'持'},
+	{id:0x0193, char:'次'},
 	{id:0x0196, char:'集'},
 	{id:0x0198, char:'出'},
 	{id:0x019a, char:'少'},
@@ -682,6 +684,7 @@ const CHAR_TABLE=[
 	{id:0x023d, char:'案'}, //not sure
 	{id:0x023e, char:'外'},
 	{id:0x023f, char:'第'},
+	{id:0x0245, char:'新'},
 	{id:0x0255, char:'行'},
 	{id:0x025a, char:'向'},
 	{id:0x025d, char:'後'},
@@ -691,6 +694,8 @@ const CHAR_TABLE=[
 	{id:0x0269, char:'中'},
 	{id:0x0271, char:'計'},
 	{id:0x0272, char:'任'},
+	{id:0x0279, char:'封'},
+	{id:0x027a, char:'印'},
 	{id:0x027b, char:'平'},
 	{id:0x027c, char:'卒'},
 	{id:0x0289, char:'生'}
