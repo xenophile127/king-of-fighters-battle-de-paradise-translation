@@ -103,15 +103,25 @@ const KNOWN_POINTERS=[
 	{pointerIndex:109, comment:'Minigame - Dusk Carnival - win', translation:'Aha! What?'},
 	{pointerIndex:110, comment:'Minigame - Dusk Carnival - lose'},
 
-
+	/* MINIGAME - BOOM ESCAPE (AND BOOM ESCAPE OMEGA) */
+	{pointerIndex:111, comment:'Minigame - Boom Escape','translation':'No escape'},
+	{pointerIndex:112, comment:'Minigame - Boom Escape','translation':'Hahaha!'},
+	{pointerIndex:113, comment:'Minigame - Boom Escape','translation':'Grr!'},
+	{pointerIndex:114, comment:'Minigame - Boom Escape','translation':'Damn!!'},
+	{pointerIndex:115, comment:'Minigame - Boom Escape','translation':'I win!'},
+	{pointerIndex:116, comment:'Minigame - Boom Escape','translation':'What!!'},
+	{pointerIndex:117, comment:'Minigame - Boom Escape','translation':'GUOAAaa!!'},
+	{pointerIndex:118, comment:'Minigame - Boom Escape','translation':'Game over'},
 
 	/* MINIGAME - BOUZU MEKURI */
+	{pointerIndex:120, comment:'Minigame - Bouzu Mekuri - take a card (unused)'},
 	{pointerIndex:120, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0c][0b][0f]'},
 	{pointerIndex:121, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0b].[0f]'},
 	{pointerIndex:122, comment:'Minigame - Bouzu Mekuri - Great Lord', translation:'Boss:Got 1.[0f]'},
 	{pointerIndex:123, comment:'Minigame - Bouzu Mekuri - Lord', translation:'Lord:Drop 1.[0f]'},
 	{pointerIndex:124, comment:'Minigame - Bouzu Mekuri - Monk', translation:'Monk:Drop [0c][0b][0f]'},
 	{pointerIndex:125, comment:'Minigame - Bouzu Mekuri - Monk', translation:'Monk:Drop [0b].[0f]'},
+	{pointerIndex:126, comment:'Minigame - Bouzu Mekuri - card counter','translation':'[ngp]'},
 
 
 
@@ -154,7 +164,18 @@ const KNOWN_POINTERS=[
 
 
 
-	/* MINIGAME -PAIRPAIR GET */
+	/* MINIGAME - YOSAKU */
+	{pointerIndex:159, comment:'Minigame - Yosaku - play'},
+	{pointerIndex:160, comment:'Minigame - Yosaku - press a'},
+	{pointerIndex:161, comment:'Minigame - Yosaku - snk'},
+	{pointerIndex:162, comment:'Minigame - Yosaku - game over'},
+	{pointerIndex:163, comment:'Minigame - Yosaku - score1'},
+	{pointerIndex:164, comment:'Minigame - Yosaku - stage clear'},
+
+	/* MINIGAME - BOOM ESCAPE */
+	{pointerIndex:165, comment:'Minigame - Boom Escape','translation':'So funny!'},
+
+	/* MINIGAME - PAIRPAIR GET */
 	{pointerIndex:166, comment:'Minigame - PairPair Get - wallet', translation:'Wallet.'},
 	{pointerIndex:167, comment:'Minigame - PairPair Get - coin', translation:'Coin.'},
 	{pointerIndex:168, comment:'Minigame - PairPair Get - moneybag', translation:'$bag.'},
