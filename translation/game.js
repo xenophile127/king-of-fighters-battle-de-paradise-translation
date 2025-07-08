@@ -7,11 +7,10 @@ const GAME_INFO={
 		return romFile.fileSize===0x200000 && crc32===0x77e37bac;
 	},
 	getStatus:function(){
-		const total=1154 + GRAPHIC_REPLACEMENTS.length + PATCHES.length;
+		const total=1154 + GRAPHIC_REPLACEMENTS.length;
 		const done=
 			KNOWN_POINTERS.filter((pointer) => pointer.translation).length +
-			GRAPHIC_REPLACEMENTS.filter((graphicReplacement) => graphicReplacement.file).length +
-			PATCHES.filter((mapReplacement) => mapReplacement.data).length;
+			GRAPHIC_REPLACEMENTS.filter((graphicReplacement) => graphicReplacement.file).length;
 		
 		return {
 			done,
@@ -84,20 +83,24 @@ const GAME_INFO={
    			clonedRomFile.writeBytes(resultData);
 		});
 
-		PATCHES.filter((mapReplacement) => mapReplacement.data && Array.isArray(mapReplacement.data)).forEach(function(graphicReplacement, i){
-			const newData=graphicReplacement.data.map((b) => {
+		PATCHES.filter((patchInfo) => patchInfo.data && Array.isArray(patchInfo.data)).forEach(function(patchInfo, i){
+			const newData=patchInfo.data.map((b) => {
 				if(typeof b==='string'){
-					const char=CHAR_TABLE.find((char) => char.char===b).id;
-					if(typeof char!=='number'){
-						console.warn('unknown character in map replacement');
+					const char=CHAR_TABLE.find((char) => char.char===b);
+					if(typeof char==='undefined'){
+						console.warn('unknown character in patch data');
 						return 0x00;
 					}
-					return char;
+					return char.id;
+				}else if(typeof b==='number' && b>=0 && b<=0xff){
+					return b;
+				}else{
+					console.warn('unknown value in patch data', b);
+					return 0x00;
 				}
-				return b
-			}).slice(0, graphicReplacement.length);
+			});
 
-			clonedRomFile.seek(graphicReplacement.offset);
+			clonedRomFile.seek(patchInfo.offset);
    			clonedRomFile.writeBytes(newData);
 		});
 
