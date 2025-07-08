@@ -67,6 +67,7 @@ const _loadRom=function(arrayBuffer, fileName){
 		const textareaTranslated=document.createElement('textarea');
 		textareaTranslated.value=pretranslatedText? knownPointer.translation : '';
 		textareaTranslated.addEventListener('change', function(evt){
+			this.value=this.value.replace(/\r?\n/g, '\n').replace(/\r/g, '\n').replace(/\\n/g, '\n');
 			pointer.modified=2;
 			pointer.data=GAME_INFO.encodeText(this.value);
 			this.value=GAME_INFO.decodeText(pointer.data);
