@@ -149,7 +149,6 @@ const GAME_INFO={
 				if(/^\[[a-z0-9]{3,5}\]/i.test(text)){
 					const wordMatch=text.match(/^\[(.*?)\]/i);
 					const specialChar=CHAR_TABLE.find((char) => char.char===wordMatch[0]);
-					console.log(specialChar);
 					if(specialChar){
 						if(specialChar.id>0xff){
 							bytes.push(specialChar.id >> 8);
