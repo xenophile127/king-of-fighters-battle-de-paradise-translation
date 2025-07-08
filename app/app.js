@@ -198,9 +198,15 @@ window.addEventListener('load', function(evt){
 			const object={
 				pointerIndex:pointer.pointerIndex,
 				comment: (knownPointer && knownPointer.comment) || '-- Add comment here --',
-				translation:GAME_INFO.decodeText(pointer.data)
+				translation:GAME_INFO.decodeText(pointer.data).replace(/"/g, '&quot;').replace(/'/g, '&#39;')
 			};
-			textareaValue+=JSON.stringify(object) + ',\n';
+			textareaValue+=JSON.stringify(object)
+				.replace('"pointerIndex"', 'pointerIndex')
+				.replace('"comment"', ' comment')
+				.replace(/"/g, "'")
+				.replace(/&quot;/g, '"')
+				.replace(/&#39;/g, '\\\'')
+				.replace('"translation"', ' translation') + ',\n';
 		});
 		textarea.value=textareaValue;
 		textarea.focus();
