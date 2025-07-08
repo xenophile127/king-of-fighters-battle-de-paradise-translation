@@ -1,83 +1,9 @@
 const KNOWN_POINTERS=[
-	/* COMMON TEXTS */
-	{pointerIndex:66, comment:'Common text - Accept', translation:'YES'},
-	{pointerIndex:67, comment:'Common text - Cancel', translation:'NO'},
-
-
-
 	/* TITLE SCREEN */
 	{pointerIndex:0, comment:'Title screen menu', translation:'RESUME'},
 	{pointerIndex:1, comment:'Title screen menu', translation:'CONTINUE'},
 	{pointerIndex:2, comment:'Title screen menu', translation:'START'},
 	{pointerIndex:3, comment:'Title screen menu', translation:'RULES'},
-
-
-
-	/* OPTIONS SCREEN */
-	{pointerIndex:46, comment:'Options - Save Data', translation:'Save data?'},
-	{pointerIndex:47, comment:'Options - Save Data', translation:'Saved!'},
-
-
-
-	/* USER SCREEN */
-	{pointerIndex:139, comment:'User screen - Dialogue', translation:'Choose\noption'},
-	{pointerIndex:147, comment:'User screen - Dialogue (leave)', translation:'Good\nluck!'},
-	{pointerIndex:140, comment:'User screen - Legend', translation:'A=Accept'},
-	{pointerIndex:141, comment:'User screen - Legend', translation:'B=Cancel'},
-	{pointerIndex:142, comment:'User screen - Menu', translation:'BATTLE GAMES'},
-	{pointerIndex:143, comment:'User screen - Menu', translation:'SECRET DATA'},
-	{pointerIndex:144, comment:'User screen - Menu', translation:'LEVEL UP'},
-
-	{pointerIndex:149, comment:'User screen - Level up - Continue upgrading question', translation:'Keep upgrading?'},
-	{pointerIndex:150, comment:'User screen - Level up - Total stars', translation:'STARS='},
-	{pointerIndex:151, comment:'User screen - Level up - Cost for Lv2', translation:'ゔ2 UPGRADE COST=2'},
-	{pointerIndex:152, comment:'User screen - Level up - Cost for Lv3', translation:'ゔ3 UPGRADE COST=5'},
-	{pointerIndex:153, comment:'User screen - Level up - Ask?', translation:'Upgrade to next ゔ?'},
-	{pointerIndex:154, comment:'User screen - Level up - LvX Justice side', translation:'ゔ[0b] JS'},
-	{pointerIndex:155, comment:'User screen - Level up - LvX Dark side', translation:'ゔ[0b] DS'},
-	{pointerIndex:1806, comment:'User screen - Level up - Striker names', translation:'ALFRED'},
-
-	{pointerIndex:145, comment:'User screen - Minigame battle - Choose first turn', translation:'Who goes first?                         YOU    CPU'},
-	{pointerIndex:148, comment:'User screen - Minigame battle - Choose striker', translation:'Select a striker.'},
-	{pointerIndex:146, comment:'User screen - Minigame battle - Confirm start', translation:'Is this OK?                             YES    NO'},
-	{pointerIndex:2059, comment:'User screen - Minigame titles', translation:'PAIRPAIR GET'},
-	{pointerIndex:2060, comment:'User screen - Minigame titles', translation:'SYNCRO-FIST'},
-	{pointerIndex:2061, comment:'User screen - Minigame titles', translation:'IT\'S BACK!'},
-	{pointerIndex:2062, comment:'User screen - Minigame titles', translation:'BOUZU?MEKURI'},
-	{pointerIndex:2063, comment:'User screen - Minigame titles', translation:'NIKUMAN ROAD'},
-	{pointerIndex:2064, comment:'User screen - Minigame titles', translation:'LET\'S DANCE'},
-	{pointerIndex:2065, comment:'User screen - Minigame titles', translation:'IKARI TARGET'},
-	{pointerIndex:2066, comment:'User screen - Minigame titles', translation:'GREAT ESCAPE'},
-	{pointerIndex:2067, comment:'User screen - Minigame titles', translation:'BRIAN FLIES!'},
-	{pointerIndex:2068, comment:'User screen - Minigame titles', translation:'DUSKCARNIVAL'},
-	{pointerIndex:2069, comment:'User screen - Minigame titles', translation:'YOU DOUBT!'},
-	{pointerIndex:2070, comment:'User screen - Minigame titles', translation:'SHADOW PLAY'},
-	{pointerIndex:2071, comment:'User screen - Minigame titles', translation:'FAST FIGHTER'},
-	{pointerIndex:2072, comment:'User screen - Minigame titles', translation:'TOP PRESENTS'},
-	{pointerIndex:2073, comment:'User screen - Minigame titles', translation:'COIN JUMP'},
-	{pointerIndex:2074, comment:'User screen - Minigame titles', translation:'TANK?'},
-	{pointerIndex:2075, comment:'User screen - Minigame titles', translation:'DARK MAZE'},
-	{pointerIndex:2076, comment:'User screen - Minigame titles', translation:'BOOM!ESCAPE'},
-	{pointerIndex:2077, comment:'User screen - Minigame titles', translation:'DARUMAOTOSHI'},
-	{pointerIndex:2078, comment:'User screen - Minigame titles', translation:'IS IT 2000?'},
-	{pointerIndex:2079, comment:'User screen - Minigame titles', translation:'MOVE: \'NONE\''},
-	{pointerIndex:2080, comment:'User screen - Minigame titles', translation:'BOOM!ESCAPEΩ'},
-	{pointerIndex:2081, comment:'User screen - Minigame titles', translation:'YO·SA·KU'},
-	{pointerIndex:2082, comment:'Empty'},
-
-
-
-	/* CREATE CHARACTER */
-	{pointerIndex:50, comment:'Default player name - Yu G', translation:'YU G'},
-	{pointerIndex:51, comment:'Default player name - Hatoko', translation:'HATO'},
-	{pointerIndex:52, comment:'Default player name - Masamune', translation:'MASA'},
-	{pointerIndex:53, comment:'Default player name - Ai', translation:'AI'},
-	{pointerIndex:133, comment:'Default player description - Yu G'},
-	{pointerIndex:134, comment:'Default player description - Hatoko', translation:'A clumsy\ncheerful\ngirl.'},
-	{pointerIndex:135, comment:'Default player description - Masamune'},
-	{pointerIndex:136, comment:'Default player description - Ai'},
-	{pointerIndex:137, comment:'Player select confirmation', translation:'Is it OK?'},
-	{pointerIndex:132, comment:'Set player name - Legend', translation:' A=Accept  B=Del '},
 
 
 
@@ -90,6 +16,65 @@ const KNOWN_POINTERS=[
 	{pointerIndex:12, comment:'Start game - Intro (turns)', translation:'How\nmany\nturns?'},
 	{pointerIndex:13, comment:'Start game - Intro (map)', translation:'And at\nlast…\nMap?'},
 
+
+
+	/* CARD SHOP */
+	{pointerIndex:14, comment:'Card shop buy confirm instructions', translation:'A=Buy   B=Cancel'},
+	{pointerIndex:15, comment:'Card shop', translation:'Buy a\ncard?'},
+	{pointerIndex:16, comment:'Card shop buy confirm', translation:'This\ncard?'},
+	{pointerIndex:17, comment:'Card shop goodbye', translation:'Come\nagain!'},
+	{pointerIndex:18, comment:'Card shop full', translation:'Hand\'s\nfull!'},
+
+
+
+	/* MINIGAMES */
+	{pointerIndex:20, comment:'Minigame instructions', translation:'PAIRPAIR GET\nMatch pairs\nof cards for\npoints!\n(Joy:Cursor)\n(A:Choose  )'},
+	{pointerIndex:21, comment:'Minigame instructions', translation:'SYNCRO-FIST\nPress A when\nBenimaru\ncompletes\nhis move!\n(A:Respond )'},
+	{pointerIndex:22, comment:'Minigame instructions', translation:' IT\'S BACK!\nMash buttons\nto beat the\nmachine.\n(A,B:Mash  )'},
+	{pointerIndex:23, comment:'Minigame instructions', translation:'BOUZU?MEKURI\nDraw a card.\nPrincess [heart].\nMonk...?\n(←→:Select )\n(A:Choose  )'},
+	{pointerIndex:24, comment:'Minigame instructions', translation:'NIKUMAN ROAD\nGuide Kensou\nto eat buns.\nWatch out\nfor enemies!\n(Joy:Route )'},
+	{pointerIndex:25, comment:'Minigame instructions', translation:'LET\'S DANCE\nRepeat the\ndance! Time\nit well and\nMai dances[heart]\n(How:Follow)'},
+	{pointerIndex:26, comment:'Minigame instructions', translation:'IKARI TARGET\nShoot the\nenemies! Not\nIkari elite!\n(Joy:Aim   )\n(A:Shoot   )'},
+	{pointerIndex:27, comment:'Minigame instructions', translation:'GREAT ESCAPE\nUse doors to\nescape from\nKim & John.\n(←→:Select )\n(A:Choose  )'},
+	{pointerIndex:28, comment:'Minigame instructions', translation:'BRIAN FLIES!\nRotate the\nJoystick as\nfast as you\ncan!\n(Joy:Rotate)'},
+	{pointerIndex:29, comment:'Minigame instructions', translation:'DUSKCARNIVAL\nTap rapidly\nto help\nShermie pull\nvegetables!\n(A:Tap fast)'},
+	{pointerIndex:30, comment:'Minigame instructions', translation:' YOU DOUBT!\nUse clues to\nfind the odd\none out!\n(←→:Select )\n(A:Choose  )'},
+	{pointerIndex:31, comment:'Minigame instructions', translation:'SHADOW PLAY\nIdentify the\ncharacters\'\nsilhouettes. \n(←→:Select )\n(A:Choose  )'},
+	{pointerIndex:32, comment:'Minigame instructions', translation:'FAST FIGHTER\nStriker race\nchallenge!\nHit A fast\nas you can!\n(A:Tap fast)'},
+	{pointerIndex:33, comment:'Minigame instructions', translation:'TOP PRESENTS\nPull ring to\ndrop items!\nAvoid rocks!\n(←→:Move   )\n(A:Jump    )'},
+	{pointerIndex:34, comment:'Minigame instructions', translation:' COIN JUMP\nJump to drop\ncoins. Good\ntiming for a\nspeed-up!\n(A:Jump    )'},
+	{pointerIndex:35, comment:'Minigame instructions', translation:'   TANK?\nGrab treas-\nure with a\nkawaii TANK!\n(Joy:Move )\n(A:Shoot'},
+	{pointerIndex:36, comment:'Minigame instructions', translation:' DARK MAZE\nIn the dark\nmaze collect\ntreasure and\nfind a goal!\n(Joy:Move )'},
+	{pointerIndex:37, comment:'Minigame instructions', translation:'BOOM!ESCAPE\nRun from the\nexplosion!\nJump cracks!\n(A:Tap run )\n(B:Jump    )'},
+	{pointerIndex:38, comment:'Minigame instructions', translation:'DARUMAOTOSHI\nKrizalid\'s\nclose call.\nTime your\nswing!\n(A:Swing   )'},
+	{pointerIndex:39, comment:'Minigame instructions', translation:'IS IT 2000?\nDodge when\nGoenitz at-\ntacks!\n(←→:Move   )\n(A:Dash!!  )'},
+	{pointerIndex:40, comment:'Minigame instructions', translation:'MOVE: \'NONE\'\nWhen Orochi\nattacks you\nmust dodge.\n(←→:Move   )\n(A:Dash!!  )'},
+	{pointerIndex:41, comment:'Minigame instructions', translation:'BOOM!ESCAPEΩ\nThe blast is\neven bigger!\nJump faults!\n(A:Tap Run )\n(B:Jump    )'},
+	{pointerIndex:42, comment:'Minigame instructions', translation:'  YO·SA·KU\nThe classic!\nCut down all\nthe trees.\n(←→:Move   )\n(A:Axe     )'},
+	{pointerIndex:43, comment:'Minigame - YO·SA·KU - B&W intro'},
+
+
+
+	/* OPTIONS SCREEN */
+	{pointerIndex:46, comment:'Options - Save Data', translation:'Save data?'},
+	{pointerIndex:47, comment:'Options - Save Data', translation:'Saved!'},
+
+
+
+	/* CREATE CHARACTER - NAME */
+	{pointerIndex:50, comment:'Default player name - Yu G', translation:'YU G'},
+	{pointerIndex:51, comment:'Default player name - Hatoko', translation:'HATO'},
+	{pointerIndex:52, comment:'Default player name - Masamune', translation:'MASA'},
+	{pointerIndex:53, comment:'Default player name - Ai', translation:'AI'},
+
+
+	
+	/* COMMON TEXTS */
+	{pointerIndex:66, comment:'Common text - Accept', translation:'YES'},
+	{pointerIndex:67, comment:'Common text - Cancel', translation:'NO'},
+
+
+	/* START GAME - STRIKERS */
 	{pointerIndex:69, comment:'Start game - Striker names', translation:'GORO'},
 	{pointerIndex:70, comment:'Start game - Striker names', translation:'BLLY'},
 	{pointerIndex:71, comment:'Start game - Striker names', translation:'RYUJ'},
@@ -104,19 +89,106 @@ const KNOWN_POINTERS=[
 	{pointerIndex:80, comment:'Start game - Dark side', translation:'ゔ[0b]DS'},
 
 
+	/* MINIGAME - COMMON */
+	{pointerIndex:101, comment:'Minigame - your turn', translation:'[08]\'s turn.[0f]'},
+	{pointerIndex:102, comment:'Minigame - rival turn', translation:'[09]\'s turn.[0f]'},
+	{pointerIndex:103, comment:'Minigame - PairPair Get - waiting', translation:'Choosing...'},
 
-	/* GAMEPLAY */
-	{pointerIndex:2129, comment:'Game intro - Turns', translation:'[0b][0c] TURNS'},
-	{pointerIndex:2130, comment:'Game intro - Stage names', translation:'BATTLEFIELD'},
-	
-	{pointerIndex:14, comment:'Card shop buy confirm instructions', translation:'A=Buy   B=Cancel'},
-	{pointerIndex:15, comment:'Card shop', translation:'Buy a\ncard?'},
-	{pointerIndex:16, comment:'Card shop buy confirm', translation:'This\ncard?'},
-	{pointerIndex:17, comment:'Card shop goodbye', translation:'Come\nagain!'},
-	{pointerIndex:18, comment:'Card shop full', translation:'Hand\'s\nfull!'},
+	/* MINIGAME - DUSK CARNIVAL */
+	{pointerIndex:104, comment:'Minigame - Dusk Carnival', translation:'Grrr.'},
+	{pointerIndex:105, comment:'Minigame - Dusk Carnival', translation:'I can do it!'},
+	{pointerIndex:106, comment:'Minigame - Dusk Carnival', translation:'Grunt!'},
+	{pointerIndex:107, comment:'Minigame - Dusk Carnival', translation:'Done?'},
+	{pointerIndex:108, comment:'Minigame - Dusk Carnival', translation:'Toh!'},
+	{pointerIndex:109, comment:'Minigame - Dusk Carnival - win', translation:'Aha! What?'},
+	{pointerIndex:110, comment:'Minigame - Dusk Carnival - lose'},
 
 
-	/* CARDS */
+
+	/* MINIGAME - BOUZU MEKURI */
+	{pointerIndex:120, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0c][0b][0f]'},
+	{pointerIndex:121, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0b].[0f]'},
+	{pointerIndex:122, comment:'Minigame - Bouzu Mekuri - Great Lord', translation:'Boss:Got 1.[0f]'},
+	{pointerIndex:123, comment:'Minigame - Bouzu Mekuri - Lord', translation:'Lord:Drop 1.[0f]'},
+	{pointerIndex:124, comment:'Minigame - Bouzu Mekuri - Monk', translation:'Monk:Drop [0c][0b][0f]'},
+	{pointerIndex:125, comment:'Minigame - Bouzu Mekuri - Monk', translation:'Monk:Drop [0b].[0f]'},
+
+
+
+	/* CREATE CHARACTER */
+	{pointerIndex:132, comment:'Set player name - Legend', translation:' A=Accept  B=Del '},
+	{pointerIndex:133, comment:'Default player description - Yu G'},
+	{pointerIndex:134, comment:'Default player description - Hatoko', translation:'A clumsy\ncheerful\ngirl.'},
+	{pointerIndex:135, comment:'Default player description - Masamune'},
+	{pointerIndex:136, comment:'Default player description - Ai'},
+	{pointerIndex:137, comment:'Player select confirmation', translation:'Is it OK?'},
+
+
+
+	/* USER SCREEN */
+	{pointerIndex:139, comment:'User screen - Dialogue', translation:'Choose\noption'},
+	{pointerIndex:140, comment:'User screen - Legend', translation:'A=Accept'},
+	{pointerIndex:141, comment:'User screen - Legend', translation:'B=Cancel'},
+	{pointerIndex:142, comment:'User screen - Menu', translation:'BATTLE GAMES'},
+	{pointerIndex:143, comment:'User screen - Menu', translation:'SECRET DATA'},
+	{pointerIndex:144, comment:'User screen - Menu', translation:'LEVEL UP'},
+
+	/* USER SCREEN - MINIGAME BATTLE */
+	{pointerIndex:145, comment:'User screen - Minigame battle - Choose first turn', translation:'Who goes first?                         YOU    CPU'},
+	{pointerIndex:148, comment:'User screen - Minigame battle - Choose striker', translation:'Select a striker.'},
+	{pointerIndex:146, comment:'User screen - Minigame battle - Confirm start', translation:'Is this OK?                             YES    NO'},
+
+	/* USER SCREEN - leave */
+	{pointerIndex:147, comment:'User screen - Dialogue (leave)', translation:'Good\nluck!'},
+
+
+
+	/* USER SCREEN - LEVEL UP */
+	{pointerIndex:149, comment:'User screen - Level up - Continue upgrading question', translation:'Keep upgrading?'},
+	{pointerIndex:150, comment:'User screen - Level up - Total stars', translation:'STARS='},
+	{pointerIndex:151, comment:'User screen - Level up - Cost for Lv2', translation:'ゔ2 UPGRADE COST=2'},
+	{pointerIndex:152, comment:'User screen - Level up - Cost for Lv3', translation:'ゔ3 UPGRADE COST=5'},
+	{pointerIndex:153, comment:'User screen - Level up - Ask?', translation:'Upgrade to next ゔ?'},
+	{pointerIndex:154, comment:'User screen - Level up - LvX Justice side', translation:'ゔ[0b] JS'},
+	{pointerIndex:155, comment:'User screen - Level up - LvX Dark side', translation:'ゔ[0b] DS'},
+
+
+
+	/* MINIGAME -PAIRPAIR GET */
+	{pointerIndex:166, comment:'Minigame - PairPair Get - wallet', translation:'Wallet.'},
+	{pointerIndex:167, comment:'Minigame - PairPair Get - coin', translation:'Coin.'},
+	{pointerIndex:168, comment:'Minigame - PairPair Get - moneybag', translation:'$bag.'},
+	{pointerIndex:169, comment:'Minigame - PairPair Get - gold', translation:'Gold.'},
+	{pointerIndex:170, comment:'Minigame - PairPair Get - K\'', translation:'K\'.'},
+	{pointerIndex:171, comment:'Minigame - PairPair Get - piggy bank', translation:'Piggy bank.'},
+	{pointerIndex:172, comment:'Minigame - PairPair Get - no match wallet', translation:'Sorry!Wallet'},
+	{pointerIndex:173, comment:'Minigame - PairPair Get - no match coin', translation:'Sorry! Coin.'},
+	{pointerIndex:174, comment:'Minigame - PairPair Get - no match moneybag', translation:'Sorry! $bag.'},
+	{pointerIndex:175, comment:'Minigame - PairPair Get - no match gold', translation:'Sorry! Gold.'},
+	{pointerIndex:176, comment:'Minigame - PairPair Get - no match K\'', translation:'Sorry! K\'.'},
+	{pointerIndex:177, comment:'Minigame - PairPair Get - no match piggy bank', translation:'Sorry!P\'bank'},
+	{pointerIndex:178, comment:'Minigame - PairPair Get - got coin', translation:'Got coin!'},
+	{pointerIndex:179, comment:'Minigame - PairPair Get - 50 points', translation:'50 points.'},
+	{pointerIndex:180, comment:'Minigame - PairPair Get - got wallet', translation:'Got wallet!'},
+	{pointerIndex:181, comment:'Minigame - PairPair Get - 80 points', translation:'80 points.'},
+	{pointerIndex:182, comment:'Minigame - PairPair Get - got piggy bank', translation:'Got p\'bank.'},
+	{pointerIndex:183, comment:'Minigame - PairPair Get - 100 points', translation:'100 points.'},
+	{pointerIndex:184, comment:'Minigame - PairPair Get - got moneybag', translation:'Got $bag!'},
+	{pointerIndex:185, comment:'Minigame - PairPair Get - 120 points', translation:'120 points.'},
+	{pointerIndex:186, comment:'Minigame - PairPair Get - got gold', translation:'Got gold!'},
+	{pointerIndex:187, comment:'Minigame - PairPair Get - 150 points', translation:'150 points.'},
+	{pointerIndex:188, comment:'Minigame - PairPair Get - got K\'', translation:'Got K\'!'},
+	{pointerIndex:189, comment:'Minigame - PairPair Get - 200 points', translation:'200 points.'},
+	{pointerIndex:193, comment:'Minigame - PairPair Get - otetsuki', translation:'Stop![0f]'},
+	{pointerIndex:194, comment:'Minigame - PairPair Get - otetsuki switch turn', translation:'Turn\'s over.'},
+	{pointerIndex:195, comment:'Minigame - PairPair Get - Orochi Iori', translation:'KYOOOOOOO![0f]'},
+	{pointerIndex:196, comment:'Minigame - PairPair Get - Orochi Iori - Chi no Bousou minus 150 points', translation:'Riot! -150p'},
+	{pointerIndex:197, comment:'Minigame - PairPair Get - choice 1', translation:'1st choice.'},
+	{pointerIndex:198, comment:'Minigame - PairPair Get - choice 2', translation:'2nd choice.'},
+
+
+
+	/* CARD NAMES SHOP */
 	{pointerIndex:1700, comment:'Card name long', translation:'Violent Rush    3[coin]'},
 	{pointerIndex:1701, comment:'Card name long', translation:'Scramble        3[coin]'},
 	{pointerIndex:1702, comment:'Card name long', translation:'Code: BB        3[coin]'},
@@ -148,6 +220,14 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1728, comment:'Card name long', translation:'Cali Romance   15[coin]'},
 	{pointerIndex:1729, comment:'Card name long', translation:'Loser\'s Blues   5[coin]'},
 
+
+
+	/* USER SCREEN - LEVEL UP - NAMES */
+	{pointerIndex:1806, comment:'User screen - Level up - Striker names', translation:'ALFRED'},
+
+
+
+	/* CARD NAMES SHORT */
 	{pointerIndex:1900, comment:'Card name short', translation:'Violent Rush'},
 	{pointerIndex:1901, comment:'Card name short', translation:'Scramble'},
 	{pointerIndex:1902, comment:'Card name short', translation:'Code: BB'},
@@ -179,6 +259,9 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1928, comment:'Card name short', translation:'Cali Romance'},
 	{pointerIndex:1929, comment:'Card name short', translation:'Loser Blues'},
 
+
+
+	/* CARD DESCRIPTIONS */
 	{pointerIndex:1950, comment:'Card description', translation:'Move 1.'},
 	{pointerIndex:1951, comment:'Card description', translation:'Move 2 nonstop.'},
 	{pointerIndex:1952, comment:'Card description', translation:'Move 3 nonstop.'},
@@ -212,87 +295,7 @@ const KNOWN_POINTERS=[
 
 
 
-	/* MINIGAMES */
-	{pointerIndex:20, comment:'Minigame instructions', translation:'PAIRPAIR GET\nMatch pairs\nof cards for\npoints!\n(Joy:Cursor)\n(A:Choose  )'},
-	{pointerIndex:21, comment:'Minigame instructions', translation:'SYNCRO-FIST\nPress A when\nBenimaru\ncompletes\nhis move!\n(A:Respond )'},
-	{pointerIndex:22, comment:'Minigame instructions', translation:' IT\'S BACK!\nMash buttons\nto beat the\nmachine.\n(A,B:Mash  )'},
-	{pointerIndex:23, comment:'Minigame instructions', translation:'BOUZU?MEKURI\nDraw a card.\nPrincess [heart].\nMonk...?\n(←→:Select )\n(A:Choose  )'},
-	{pointerIndex:24, comment:'Minigame instructions', translation:'NIKUMAN ROAD\nGuide Kensou\nto eat buns.\nWatch out\nfor enemies!\n(Joy:Route )'},
-	{pointerIndex:25, comment:'Minigame instructions', translation:'LET\'S DANCE\nRepeat the\ndance! Time\nit well and\nMai dances[heart]\n(How:Follow)'},
-	{pointerIndex:26, comment:'Minigame instructions', translation:'IKARI TARGET\nShoot the\nenemies! Not\nIkari elite!\n(Joy:Aim   )\n(A:Shoot   )'},
-	{pointerIndex:27, comment:'Minigame instructions', translation:'GREAT ESCAPE\nUse doors to\nescape from\nKim & John.\n(←→:Select )\n(A:Choose  )'},
-	{pointerIndex:28, comment:'Minigame instructions', translation:'BRIAN FLIES!\nRotate the\nJoystick as\nfast as you\ncan!\n(Joy:Rotate)'},
-	{pointerIndex:29, comment:'Minigame instructions', translation:'DUSKCARNIVAL\nTap rapidly\nto help\nShermie pull\nvegetables!\n(A:Tap fast)'},
-	{pointerIndex:30, comment:'Minigame instructions', translation:' YOU DOUBT!\nUse clues to\nfind the odd\none out!\n(←→:Select )\n(A:Choose  )'},
-	{pointerIndex:31, comment:'Minigame instructions', translation:'SHADOW PLAY\nIdentify the\ncharacters\'\nsilhouettes. \n(←→:Select )\n(A:Choose  )'},
-	{pointerIndex:32, comment:'Minigame instructions', translation:'FAST FIGHTER\nStriker race\nchallenge!\nHit A fast\nas you can!\n(A:Tap fast)'},
-	{pointerIndex:33, comment:'Minigame instructions', translation:'TOP PRESENTS\nPull ring to\ndrop items!\nAvoid rocks!\n(←→:Move   )\n(A:Jump    )'},
-	{pointerIndex:34, comment:'Minigame instructions', translation:' COIN JUMP\nJump to drop\ncoins. Good\ntiming for a\nspeed-up!\n(A:Jump    )'},
-	{pointerIndex:35, comment:'Minigame instructions', translation:'   TANK?\nGrab treas-\nure with a\nkawaii TANK!\n(Joy:Move )\n(A:Shoot'},
-	{pointerIndex:36, comment:'Minigame instructions', translation:' DARK MAZE\nIn the dark\nmaze collect\ntreasure and\nfind a goal!\n(Joy:Move )'},
-	{pointerIndex:37, comment:'Minigame instructions', translation:'BOOM!ESCAPE\nRun from the\nexplosion!\nJump cracks!\n(A:Tap run )\n(B:Jump    )'},
-	{pointerIndex:38, comment:'Minigame instructions', translation:'DARUMAOTOSHI\nKrizalid\'s\nclose call.\nTime your\nswing!\n(A:Swing   )'},
-	{pointerIndex:39, comment:'Minigame instructions', translation:'IS IT 2000?\nDodge when\nGoenitz at-\ntacks!\n(←→:Move   )\n(A:Dash!!  )'},
-	{pointerIndex:40, comment:'Minigame instructions', translation:'MOVE: \'NONE\'\nWhen Orochi\nattacks you\nmust dodge.\n(←→:Move   )\n(A:Dash!!  )'},
-	{pointerIndex:41, comment:'Minigame instructions', translation:'BOOM!ESCAPEΩ\nThe blast is\neven bigger!\nJump faults!\n(A:Tap Run )\n(B:Jump    )'},
-	{pointerIndex:42, comment:'Minigame instructions', translation:'  YO·SA·KU\nThe classic!\nCut down all\nthe trees.\n(←→:Move   )\n(A:Axe     )'},
-
-	{pointerIndex:101, comment:'Minigame - your turn', translation:'[08]\'s turn.[0f]'},
-	{pointerIndex:102, comment:'Minigame - rival turn', translation:'[09]\'s turn.[0f]'},
-	{pointerIndex:2088, comment:'Minigame - end early', translation:'B to skip.[0f]'},
-
-	{pointerIndex:103, comment:'Minigame - PairPair Get - waiting', translation:'Choosing...'},
-	{pointerIndex:166, comment:'Minigame - PairPair Get - wallet', translation:'Wallet.'},
-	{pointerIndex:167, comment:'Minigame - PairPair Get - coin', translation:'Coin.'},
-	{pointerIndex:168, comment:'Minigame - PairPair Get - moneybag', translation:'$bag.'},
-	{pointerIndex:169, comment:'Minigame - PairPair Get - gold', translation:'Gold.'},
-	{pointerIndex:170, comment:'Minigame - PairPair Get - K\'', translation:'K\'.'},
-	{pointerIndex:171, comment:'Minigame - PairPair Get - piggy bank', translation:'Piggy bank.'},
-	{pointerIndex:172, comment:'Minigame - PairPair Get - no match wallet', translation:'Sorry!Wallet'},
-	{pointerIndex:173, comment:'Minigame - PairPair Get - no match coin', translation:'Sorry! Coin.'},
-	{pointerIndex:174, comment:'Minigame - PairPair Get - no match moneybag', translation:'Sorry! $bag.'},
-	{pointerIndex:175, comment:'Minigame - PairPair Get - no match gold', translation:'Sorry! Gold.'},
-	{pointerIndex:176, comment:'Minigame - PairPair Get - no match K\'', translation:'Sorry! K\'.'},
-	{pointerIndex:177, comment:'Minigame - PairPair Get - no match piggy bank', translation:'Sorry!P\'bank'},
-	{pointerIndex:178, comment:'Minigame - PairPair Get - got coin', translation:'Got coin!'},
-	{pointerIndex:179, comment:'Minigame - PairPair Get - 50 points', translation:'50 points.'},
-	{pointerIndex:180, comment:'Minigame - PairPair Get - got wallet', translation:'Got wallet!'},
-	{pointerIndex:181, comment:'Minigame - PairPair Get - 80 points', translation:'80 points.'},
-	{pointerIndex:182, comment:'Minigame - PairPair Get - got piggy bank', translation:'Got p\'bank.'},
-	{pointerIndex:183, comment:'Minigame - PairPair Get - 100 points', translation:'100 points.'},
-	{pointerIndex:184, comment:'Minigame - PairPair Get - got moneybag', translation:'Got $bag!'},
-	{pointerIndex:185, comment:'Minigame - PairPair Get - 120 points', translation:'120 points.'},
-	{pointerIndex:186, comment:'Minigame - PairPair Get - got gold', translation:'Got gold!'},
-	{pointerIndex:187, comment:'Minigame - PairPair Get - 150 points', translation:'150 points.'},
-	{pointerIndex:188, comment:'Minigame - PairPair Get - got K\'', translation:'Got K\'!'},
-	{pointerIndex:189, comment:'Minigame - PairPair Get - 200 points', translation:'200 points.'},
-	{pointerIndex:193, comment:'Minigame - PairPair Get - otetsuki', translation:'Stop![0f]'},
-	{pointerIndex:194, comment:'Minigame - PairPair Get - otetsuki switch turn', translation:'Turn\'s over.'},
-	{pointerIndex:195, comment:'Minigame - PairPair Get - Orochi Iori', translation:'KYOOOOOOO![0f]'},
-	{pointerIndex:196, comment:'Minigame - PairPair Get - Orochi Iori - Chi no Bousou minus 150 points', translation:'Riot! -150p'},
-	{pointerIndex:197, comment:'Minigame - PairPair Get - choice 1', translation:'1st choice.'},
-	{pointerIndex:198, comment:'Minigame - PairPair Get - choice 2', translation:'2nd choice.'},
-	{pointerIndex:2083, comment:'Minigame - PairPair Get - Shingo - appears', translation:'Shingo!'},
-	{pointerIndex:2084, comment:'Minigame - PairPair Get - Shingo - tries to steal points', translation:'Takes points'},
-	{pointerIndex:2085, comment:'Minigame - PairPair Get - Shingo - 50 points', translation:'Got +50p!![0f]'},
-	{pointerIndex:2086, comment:'Minigame - PairPair Get - Shingo - minus 50 points', translation:'Lost -50p![0f]'},
-	{pointerIndex:2087, comment:'Minigame - PairPair Get - Shingo - no points to steal', translation:'No points.[0f]'},
-
-	{pointerIndex:104, comment:'Minigame - Dusk Carnival', translation:'Grrr.'},
-	{pointerIndex:105, comment:'Minigame - Dusk Carnival', translation:'I can do it!'},
-	{pointerIndex:106, comment:'Minigame - Dusk Carnival', translation:'Grunt!'},
-	{pointerIndex:107, comment:'Minigame - Dusk Carnival', translation:'Done?'},
-	{pointerIndex:108, comment:'Minigame - Dusk Carnival', translation:'Toh!'},
-	{pointerIndex:109, comment:'Minigame - Dusk Carnival - win', translation:'Aha! What?'},
-	{pointerIndex:110, comment:'Minigame - Dusk Carnival - lose'},
-
-	{pointerIndex:120, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0c][0b][0f]'},
-	{pointerIndex:121, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0b].[0f]'},
-	{pointerIndex:122, comment:'Minigame - Bouzu Mekuri - Great Lord', translation:'Boss:Got 1.[0f]'},
-	{pointerIndex:123, comment:'Minigame - Bouzu Mekuri - Lord', translation:'Lord:Drop 1.[0f]'},
-	{pointerIndex:124, comment:'Minigame - Bouzu Mekuri - Monk', translation:'Monk:Drop [0c][0b][0f]'},
-	{pointerIndex:125, comment:'Minigame - Bouzu Mekuri - Monk', translation:'Monk:Drop [0b].[0f]'},
-
+	/* MINIGAME - YOU DOUBT */
 	{pointerIndex:1999, comment:'Minigame - You Doubt', translation:'Round one.'},
 	{pointerIndex:2000, comment:'Minigame - You Doubt', translation:'Round two.'},
 	{pointerIndex:2001, comment:'Minigame - You Doubt', translation:'Round three.'},
@@ -349,5 +352,46 @@ const KNOWN_POINTERS=[
 	{pointerIndex:2052, comment:'Minigame - You Doubt - Hints', translation:'Remove shoes'},
 	{pointerIndex:2053, comment:'Minigame - You Doubt - Hints', translation:'Not in QOF.'},
 
-	{pointerIndex:43, comment:'Minigame - YO·SA·KU - B&W intro'}
+
+
+	/* USER SCREEN - MINIGAME TITTLES */
+	{pointerIndex:2059, comment:'User screen - Minigame titles', translation:'PAIRPAIR GET'},
+	{pointerIndex:2060, comment:'User screen - Minigame titles', translation:'SYNCRO-FIST'},
+	{pointerIndex:2061, comment:'User screen - Minigame titles', translation:'IT\'S BACK!'},
+	{pointerIndex:2062, comment:'User screen - Minigame titles', translation:'BOUZU?MEKURI'},
+	{pointerIndex:2063, comment:'User screen - Minigame titles', translation:'NIKUMAN ROAD'},
+	{pointerIndex:2064, comment:'User screen - Minigame titles', translation:'LET\'S DANCE'},
+	{pointerIndex:2065, comment:'User screen - Minigame titles', translation:'IKARI TARGET'},
+	{pointerIndex:2066, comment:'User screen - Minigame titles', translation:'GREAT ESCAPE'},
+	{pointerIndex:2067, comment:'User screen - Minigame titles', translation:'BRIAN FLIES!'},
+	{pointerIndex:2068, comment:'User screen - Minigame titles', translation:'DUSKCARNIVAL'},
+	{pointerIndex:2069, comment:'User screen - Minigame titles', translation:'YOU DOUBT!'},
+	{pointerIndex:2070, comment:'User screen - Minigame titles', translation:'SHADOW PLAY'},
+	{pointerIndex:2071, comment:'User screen - Minigame titles', translation:'FAST FIGHTER'},
+	{pointerIndex:2072, comment:'User screen - Minigame titles', translation:'TOP PRESENTS'},
+	{pointerIndex:2073, comment:'User screen - Minigame titles', translation:'COIN JUMP'},
+	{pointerIndex:2074, comment:'User screen - Minigame titles', translation:'TANK?'},
+	{pointerIndex:2075, comment:'User screen - Minigame titles', translation:'DARK MAZE'},
+	{pointerIndex:2076, comment:'User screen - Minigame titles', translation:'BOOM!ESCAPE'},
+	{pointerIndex:2077, comment:'User screen - Minigame titles', translation:'DARUMAOTOSHI'},
+	{pointerIndex:2078, comment:'User screen - Minigame titles', translation:'IS IT 2000?'},
+	{pointerIndex:2079, comment:'User screen - Minigame titles', translation:'MOVE: \'NONE\''},
+	{pointerIndex:2080, comment:'User screen - Minigame titles', translation:'BOOM!ESCAPEΩ'},
+	{pointerIndex:2081, comment:'User screen - Minigame titles', translation:'YO·SA·KU'},
+	{pointerIndex:2082, comment:'Empty'},
+
+	/* MINIGAME - PAIRPAIR GET - SHINGO */
+	{pointerIndex:2083, comment:'Minigame - PairPair Get - Shingo - appears', translation:'Shingo!'},
+	{pointerIndex:2084, comment:'Minigame - PairPair Get - Shingo - tries to steal points', translation:'Takes points'},
+	{pointerIndex:2085, comment:'Minigame - PairPair Get - Shingo - 50 points', translation:'Got +50p!![0f]'},
+	{pointerIndex:2086, comment:'Minigame - PairPair Get - Shingo - minus 50 points', translation:'Lost -50p![0f]'},
+	{pointerIndex:2087, comment:'Minigame - PairPair Get - Shingo - no points to steal', translation:'No points.[0f]'},
+
+	{pointerIndex:2088, comment:'Minigame - end early', translation:'B to skip.[0f]'},
+
+
+
+	/* GAMEPLAY */
+	{pointerIndex:2129, comment:'Game intro - Turns', translation:'[0b][0c] TURNS'},
+	{pointerIndex:2130, comment:'Game intro - Stage names', translation:'BATTLEFIELD'}
 ];
