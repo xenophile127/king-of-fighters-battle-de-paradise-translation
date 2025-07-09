@@ -207,6 +207,30 @@ const KNOWN_POINTERS=[
 
 
 
+	/* EVENT SQUARE: Robert Garcia */
+	{pointerIndex:1450, comment:'Event Square - Robert Garcia','translation':'●Ease and\ncomfort.[0f]'},
+	{pointerIndex:1451, comment:'Event Square - Robert Garcia','translation':'Psst! Buy a\n★ for [coin]10?[0f]'},
+	{pointerIndex:1452, comment:'Event Square - Robert Garcia','translation':'★ for [coin]10...'},
+	{pointerIndex:1453, comment:'Event Square - Robert Garcia','translation':'Buy.'},
+	{pointerIndex:1454, comment:'Event Square - Robert Garcia','translation':'Don\'t buy.'},
+	{pointerIndex:1455, comment:'Event Square - Robert Garcia','translation':'Great deal![0f]'},
+	{pointerIndex:1456, comment:'Event Square - Robert Garcia','translation':'Don\'t have\n[coin]10?[06] I can\'t\ngo lower.[0f]'},
+	{pointerIndex:1457, comment:'Event Square - Robert Garcia','translation':'See you\nlater.[0f]'},
+
+
+
+	{pointerIndex:1612, comment:'Player - Got coins (big font)','translation':'[08] got [coin][0b][0c][0f]'},
+	{pointerIndex:1613, comment:'Player - Got cards (big font)','translation':'[08] got [ngp][0b].[0f]'},
+	{pointerIndex:1614, comment:'Player - Got stars (big font)','translation':'[08] got ★[0b].[0f]'},
+
+
+
+	{pointerIndex:1641, comment:'Rival - Got coins (big font)','translation':'[09] got [coin][0b][0c][0f]'},
+	{pointerIndex:1642, comment:'Rival - Got cards (big font)','translation':'[09] got [ngp][0b].[0f]'},
+	{pointerIndex:1643, comment:'Rival - Got stars (big font)','translation':'[09] got ★[0b].[0f]'},
+
+
+
 	/* CARD NAMES SHOP */
 	{pointerIndex:1700, comment:'Card name long', translation:'Violent Rush    3[coin]'},
 	{pointerIndex:1701, comment:'Card name long', translation:'Scramble        3[coin]'},
@@ -243,6 +267,16 @@ const KNOWN_POINTERS=[
 
 	/* USER SCREEN - LEVEL UP - NAMES */
 	{pointerIndex:1806, comment:'User screen - Level up - Striker names', translation:'ALFRED'},
+
+
+
+	/* STAR SQUARE: Heidern sells you up to three stars for 20 coins each. */
+	{pointerIndex:1870, comment:'Star Square - Heidern','translation':'A ★ for [coin]20?'},
+	{pointerIndex:1871, comment:'Star Square - Heidern (unused)','translation':'Yes.'},	/* Unused. Uses #66 instead. */
+	{pointerIndex:1872, comment:'Star Square - Heidern (unused)','translation':'No.'},	/* Unused. Uses #67 instead. */
+
+	{pointerIndex:1875, comment:'Star Square - Heidern','translation':'Another ★?'},
+	{pointerIndex:1876, comment:'Star Square - Heidern','translation':'That\'s all!'},
 
 
 
