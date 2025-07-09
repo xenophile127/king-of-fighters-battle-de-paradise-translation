@@ -528,6 +528,7 @@ const CHAR_TABLE=[
 	//{id:0x016f, char:''}, //unused
 
 	{id:0x0170, char:'以'},
+	{id:0x0172, char:'引'},
 	{id:0x0173, char:'演'},
 	{id:0x0174, char:'炎'},
 	{id:0x0175, char:'俺'},
@@ -541,6 +542,7 @@ const CHAR_TABLE=[
 	{id:0x0182, char:'決'},
 	{id:0x0183, char:'血'},
 	{id:0x0184, char:'見'},
+	{id:0x0186, char:'言'},
 	{id:0x0187, char:'効'},
 	{id:0x0188, char:'好'},
 	{id:0x0189, char:'作'},
@@ -688,6 +690,7 @@ const CHAR_TABLE=[
 	{id:0x023e, char:'外'},
 	{id:0x023f, char:'第'},
 	{id:0x0245, char:'新'},
+	{id:0x0246, char:'意'},
 	{id:0x0255, char:'行'},
 	{id:0x025a, char:'向'},
 	{id:0x025d, char:'後'},
@@ -696,6 +699,9 @@ const CHAR_TABLE=[
 	{id:0x0263, char:'頭'},
 	{id:0x0266, char:'番'},
 	{id:0x0269, char:'中'},
+	{id:0x026c, char:'前'},
+	{id:0x026d, char:'通'},
+	{id:0x0270, char:'計'},
 	{id:0x0271, char:'計'},
 	{id:0x0272, char:'任'},
 	{id:0x0279, char:'封'},
