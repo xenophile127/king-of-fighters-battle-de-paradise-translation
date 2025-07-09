@@ -5,7 +5,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:2, comment:'Title screen menu', translation:'START'},
 	{pointerIndex:3, comment:'Title screen menu', translation:'RULES'},
 
-
+	{pointerIndex:4, comment:'Communication Error', translation:'CommErr'},
 
 	/* START GAME */
 	{pointerIndex:5, comment:'Start game - Intro (helper)', translation:'Choose\nhelper'},
@@ -15,8 +15,6 @@ const KNOWN_POINTERS=[
 	{pointerIndex:10, comment:'Start game - Intro (players)', translation:'Player\nnumber'},
 	{pointerIndex:12, comment:'Start game - Intro (turns)', translation:'How\nmany\nturns?'},
 	{pointerIndex:13, comment:'Start game - Intro (map)', translation:'And at\nlast…\nMap?'},
-
-
 
 	/* CARD SHOP */
 	{pointerIndex:14, comment:'Card shop buy confirm instructions', translation:'A=Buy   B=Cancel'},
