@@ -49,9 +49,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:40, comment:'Minigame instructions', translation:'MOVE: \'NONE\'\nWhen Orochi\nattacks you\nmust dodge.\n(←→:Move   )\n(A:Dash!!  )'},
 	{pointerIndex:41, comment:'Minigame instructions', translation:'BOOM!ESCAPEΩ\nThe blast is\neven bigger!\nJump faults!\n(A:Tap Run )\n(B:Jump    )'},
 	{pointerIndex:42, comment:'Minigame instructions', translation:'  YO·SA·KU\nThe classic!\nCut down all\nthe trees.\n(←→:Move   )\n(A:Axe     )'},
-	{pointerIndex:43, comment:'Minigame - YO·SA·KU - B&W intro'},
-
-
+	{pointerIndex:43, comment:'Minigame - YO·SA·KU - B&W intro', translation:'This game\nonly works\non NGPC,\nnot B&W.[06].[06].[06]\nBut...'},
 
 	/* OPTIONS SCREEN */
 	{pointerIndex:46, comment:'Options - Save Data', translation:'Save data?'},
