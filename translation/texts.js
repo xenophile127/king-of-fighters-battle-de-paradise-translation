@@ -207,6 +207,12 @@ const KNOWN_POINTERS=[
 
 
 
+	/* EVENT SQUARE: Athena */
+	{pointerIndex:1355, comment:'Event Square - Athena - Now On Sale'},
+	{pointerIndex:1356, comment:'Event Square - Athena - Now On Sale','translation':'Oh I forgot![06]\nI have a\nsigning at[0f]the record\nshop soon.\nSorry.[heart][0f]'},
+
+
+	
 	/* EVENT SQUARE: Robert Garcia */
 	{pointerIndex:1450, comment:'Event Square - Robert Garcia','translation':'●Ease and\ncomfort.[0f]'},
 	{pointerIndex:1451, comment:'Event Square - Robert Garcia','translation':'Psst! Buy a\n★ for [coin]10?[0f]'},
@@ -219,6 +225,14 @@ const KNOWN_POINTERS=[
 
 
 
+	/* LOSE TURN */
+	/* Used in both big font (for events) and small font (for the result of your Rival's events. */
+	/* This means as is that I can't perfectly format this. */
+	/* When used in events there is a leading space at the beginning of line two before the word 'turn'. */
+	{pointerIndex:1600, comment:'Player - Lose Turn','translation':'[08] loses a turn.[0f]'},
+	{pointerIndex:1601, comment:'Rival - Lose Turn','translation':'[09] loses a turn.[0f]'},
+
+	
 	{pointerIndex:1612, comment:'Player - Got coins (big font)','translation':'[08] got [coin][0b][0c][0f]'},
 	{pointerIndex:1613, comment:'Player - Got cards (big font)','translation':'[08] got [ngp][0b].[0f]'},
 	{pointerIndex:1614, comment:'Player - Got stars (big font)','translation':'[08] got ★[0b].[0f]'},
