@@ -589,6 +589,7 @@ const CHAR_TABLE=[
 	{id:0x01c6, char:'変'},
 	{id:0x01c7, char:'更'},
 	{id:0x01c9, char:'押'},
+	{id:0x01cb, char:'会'},
 	{id:0x01cc, char:'改'},
 	{id:0x01cd, char:'挌'},
 	{id:0x01ce, char:'獲'},
