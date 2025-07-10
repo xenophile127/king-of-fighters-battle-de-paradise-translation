@@ -71,8 +71,8 @@ const KNOWN_POINTERS=[
 	{pointerIndex:66, comment:'Common text - Accept', translation:'YES'},
 	{pointerIndex:67, comment:'Common text - Cancel', translation:'NO'},
 
-
 	/* START GAME - STRIKERS */
+	{pointerIndex:68, comment:'Start game - Striker names - hidden'},
 	{pointerIndex:69, comment:'Start game - Striker names', translation:'GORO'},
 	{pointerIndex:70, comment:'Start game - Striker names', translation:'BLLY'},
 	{pointerIndex:71, comment:'Start game - Striker names', translation:'RYUJ'},
