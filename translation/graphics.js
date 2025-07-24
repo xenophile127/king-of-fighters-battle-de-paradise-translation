@@ -2,8 +2,11 @@
 
 const GRAPHIC_REPLACEMENTS=[
 	{offset:0xb0218, width: 16, height: 23, comment:'Small font', file:'font_small'},
+	{offset:0xb27d8, width: 64, height: 19, comment:'Big font', file:'font_big'},
 
-	{offset:0x15284c, width: 14, height: 3, comment:'Logo', file:'logo'},
+	{offset:0x15284c, width: 14, height: 3, comment:'Logo (sprite)', file:'logo_sprites'},
+	{offset:0x113eb9, width: 16, height: 5, comment:'Logo (layer 1)', file:'logo_layer1'},
+	//{offset:0x0fd266, width: 20, height: 5, comment:'Logo (layer 2)', file:'logo'},
 
 	{offset:0x1bed84, width: 18, height: 7, comment:'Main menu', file:'main_menu'},
 	{offset:0x0ec532, width: 12, height: 3, comment:'Main menu - Options (selected)', file:'main_menu_main_game_selected'},
