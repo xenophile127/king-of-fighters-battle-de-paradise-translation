@@ -190,10 +190,10 @@ window.addEventListener('load', function(evt){
 			textareaValue+=JSON.stringify(object)
 				.replace('"pointerIndex"', 'pointerIndex')
 				.replace('"comment"', ' comment')
+				.replace('"translation"', ' translation')
 				.replace(/"/g, "'")
 				.replace(/&quot;/g, '"')
-				.replace(/&#39;/g, '\\\'')
-				.replace('"translation"', ' translation') + ',\n';
+				.replace(/&#39;/g, '\\\'') + ',\n';
 		});
 		textarea.value=textareaValue;
 		textarea.focus();

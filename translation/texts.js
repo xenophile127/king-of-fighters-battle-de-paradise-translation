@@ -100,14 +100,14 @@ const KNOWN_POINTERS=[
 	{pointerIndex:110, comment:'Minigame - Dusk Carnival - lose'},
 
 	/* MINIGAME - BOOM ESCAPE (AND BOOM ESCAPE OMEGA) */
-	{pointerIndex:111, comment:'Minigame - Boom Escape','translation':'No escape'},
-	{pointerIndex:112, comment:'Minigame - Boom Escape','translation':'Hahaha!'},
-	{pointerIndex:113, comment:'Minigame - Boom Escape','translation':'Grr!'},
-	{pointerIndex:114, comment:'Minigame - Boom Escape','translation':'Damn!!'},
-	{pointerIndex:115, comment:'Minigame - Boom Escape','translation':'I win!'},
-	{pointerIndex:116, comment:'Minigame - Boom Escape','translation':'What!!'},
-	{pointerIndex:117, comment:'Minigame - Boom Escape','translation':'GUOAAaa!!'},
-	{pointerIndex:118, comment:'Minigame - Boom Escape','translation':'Game over'},
+	{pointerIndex:111, comment:'Minigame - Boom Escape', translation:'No escape'},
+	{pointerIndex:112, comment:'Minigame - Boom Escape', translation:'Hahaha!'},
+	{pointerIndex:113, comment:'Minigame - Boom Escape', translation:'Grr!'},
+	{pointerIndex:114, comment:'Minigame - Boom Escape', translation:'Damn!!'},
+	{pointerIndex:115, comment:'Minigame - Boom Escape', translation:'I win!'},
+	{pointerIndex:116, comment:'Minigame - Boom Escape', translation:'What!!'},
+	{pointerIndex:117, comment:'Minigame - Boom Escape', translation:'GUOAAaa!!'},
+	{pointerIndex:118, comment:'Minigame - Boom Escape', translation:'Game over'},
 
 	/* MINIGAME - BOUZU MEKURI */
 	{pointerIndex:120, comment:'Minigame - Bouzu Mekuri - take a card (unused)'},
@@ -117,7 +117,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:123, comment:'Minigame - Bouzu Mekuri - Lord', translation:'Lord:Drop 1.[0f]'},
 	{pointerIndex:124, comment:'Minigame - Bouzu Mekuri - Monk', translation:'Monk:Drop [0c][0b][0f]'},
 	{pointerIndex:125, comment:'Minigame - Bouzu Mekuri - Monk', translation:'Monk:Drop [0b].[0f]'},
-	{pointerIndex:126, comment:'Minigame - Bouzu Mekuri - card counter','translation':'[ngp]'},
+	{pointerIndex:126, comment:'Minigame - Bouzu Mekuri - card counter', translation:'[ngp]'},
 
 
 
@@ -169,7 +169,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:164, comment:'Minigame - Yosaku - stage clear'},
 
 	/* MINIGAME - BOOM ESCAPE */
-	{pointerIndex:165, comment:'Minigame - Boom Escape','translation':'So funny!'},
+	{pointerIndex:165, comment:'Minigame - Boom Escape', translation:'So funny!'},
 
 	/* MINIGAME - PAIRPAIR GET */
 	{pointerIndex:166, comment:'Minigame - PairPair Get - wallet', translation:'Wallet.'},
@@ -207,19 +207,19 @@ const KNOWN_POINTERS=[
 
 	/* EVENT SQUARE: Athena */
 	{pointerIndex:1355, comment:'Event Square - Athena - Now On Sale'},
-	{pointerIndex:1356, comment:'Event Square - Athena - Now On Sale','translation':'Oh I forgot![06]\nI have a\nsigning at[0f]the record\nshop soon.\nSorry.[heart][0f]'},
+	{pointerIndex:1356, comment:'Event Square - Athena - Now On Sale', translation:'Oh I forgot![06]\nI have a\nsigning at[0f]the record\nshop soon.\nSorry.[heart][0f]'},
 
 
 	
 	/* EVENT SQUARE: Robert Garcia */
-	{pointerIndex:1450, comment:'Event Square - Robert Garcia','translation':'●Ease and\ncomfort.[0f]'},
-	{pointerIndex:1451, comment:'Event Square - Robert Garcia','translation':'Psst! Buy a\n★ for [coin]10?[0f]'},
-	{pointerIndex:1452, comment:'Event Square - Robert Garcia','translation':'★ for [coin]10...'},
-	{pointerIndex:1453, comment:'Event Square - Robert Garcia','translation':'Buy.'},
-	{pointerIndex:1454, comment:'Event Square - Robert Garcia','translation':'Don\'t buy.'},
-	{pointerIndex:1455, comment:'Event Square - Robert Garcia','translation':'Great deal![0f]'},
-	{pointerIndex:1456, comment:'Event Square - Robert Garcia','translation':'Don\'t have\n[coin]10?[06] I can\'t\ngo lower.[0f]'},
-	{pointerIndex:1457, comment:'Event Square - Robert Garcia','translation':'See you\nlater.[0f]'},
+	{pointerIndex:1450, comment:'Event Square - Robert Garcia', translation:'●Ease and\ncomfort.[0f]'},
+	{pointerIndex:1451, comment:'Event Square - Robert Garcia', translation:'Psst! Buy a\n★ for [coin]10?[0f]'},
+	{pointerIndex:1452, comment:'Event Square - Robert Garcia', translation:'★ for [coin]10...'},
+	{pointerIndex:1453, comment:'Event Square - Robert Garcia', translation:'Buy.'},
+	{pointerIndex:1454, comment:'Event Square - Robert Garcia', translation:'Don\'t buy.'},
+	{pointerIndex:1455, comment:'Event Square - Robert Garcia', translation:'Great deal![0f]'},
+	{pointerIndex:1456, comment:'Event Square - Robert Garcia', translation:'Don\'t have\n[coin]10?[06] I can\'t\ngo lower.[0f]'},
+	{pointerIndex:1457, comment:'Event Square - Robert Garcia', translation:'See you\nlater.[0f]'},
 
 
 
@@ -227,19 +227,19 @@ const KNOWN_POINTERS=[
 	/* Used in both big font (for events) and small font (for the result of your Rival's events. */
 	/* This means as is that I can't perfectly format this. */
 	/* When used in events there is a leading space at the beginning of line two before the word 'turn'. */
-	{pointerIndex:1600, comment:'Player - Lose Turn','translation':'[08] loses a turn.[0f]'},
-	{pointerIndex:1601, comment:'Rival - Lose Turn','translation':'[09] loses a turn.[0f]'},
+	{pointerIndex:1600, comment:'Player - Lose Turn', translation:'[08] loses a turn.[0f]'},
+	{pointerIndex:1601, comment:'Rival - Lose Turn', translation:'[09] loses a turn.[0f]'},
 
 	
-	{pointerIndex:1612, comment:'Player - Got coins (big font)','translation':'[08] got [coin][0b][0c][0f]'},
-	{pointerIndex:1613, comment:'Player - Got cards (big font)','translation':'[08] got [ngp][0b].[0f]'},
-	{pointerIndex:1614, comment:'Player - Got stars (big font)','translation':'[08] got ★[0b].[0f]'},
+	{pointerIndex:1612, comment:'Player - Got coins (big font)', translation:'[08] got [coin][0b][0c][0f]'},
+	{pointerIndex:1613, comment:'Player - Got cards (big font)', translation:'[08] got [ngp][0b].[0f]'},
+	{pointerIndex:1614, comment:'Player - Got stars (big font)', translation:'[08] got ★[0b].[0f]'},
 
 
 
-	{pointerIndex:1641, comment:'Rival - Got coins (big font)','translation':'[09] got [coin][0b][0c][0f]'},
-	{pointerIndex:1642, comment:'Rival - Got cards (big font)','translation':'[09] got [ngp][0b].[0f]'},
-	{pointerIndex:1643, comment:'Rival - Got stars (big font)','translation':'[09] got ★[0b].[0f]'},
+	{pointerIndex:1641, comment:'Rival - Got coins (big font)', translation:'[09] got [coin][0b][0c][0f]'},
+	{pointerIndex:1642, comment:'Rival - Got cards (big font)', translation:'[09] got [ngp][0b].[0f]'},
+	{pointerIndex:1643, comment:'Rival - Got stars (big font)', translation:'[09] got ★[0b].[0f]'},
 
 
 
@@ -283,12 +283,12 @@ const KNOWN_POINTERS=[
 
 
 	/* STAR SQUARE: Heidern sells you up to three stars for 20 coins each. */
-	{pointerIndex:1870, comment:'Star Square - Heidern','translation':'A ★ for [coin]20?'},
-	{pointerIndex:1871, comment:'Star Square - Heidern (unused)','translation':'Yes.'},	/* Unused. Uses #66 instead. */
-	{pointerIndex:1872, comment:'Star Square - Heidern (unused)','translation':'No.'},	/* Unused. Uses #67 instead. */
+	{pointerIndex:1870, comment:'Star Square - Heidern', translation:'A ★ for [coin]20?'},
+	{pointerIndex:1871, comment:'Star Square - Heidern (unused)', translation:'Yes.'},	/* Unused. Uses #66 instead. */
+	{pointerIndex:1872, comment:'Star Square - Heidern (unused)', translation:'No.'},	/* Unused. Uses #67 instead. */
 
-	{pointerIndex:1875, comment:'Star Square - Heidern','translation':'Another ★?'},
-	{pointerIndex:1876, comment:'Star Square - Heidern','translation':'That\'s all!'},
+	{pointerIndex:1875, comment:'Star Square - Heidern', translation:'Another ★?'},
+	{pointerIndex:1876, comment:'Star Square - Heidern', translation:'That\'s all!'},
 
 
 
