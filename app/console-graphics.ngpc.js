@@ -102,12 +102,14 @@ class Color {
 const RESCALE_24TO15BIT = 8.22580645161291;
 const BIT5_MASK = 0b00011111;
 class ColorRGB15 extends Color {
+	static DATA_SIZE=2;
+
 	/**
 	 * Export RGB15 binary data
 	 * @returns color data
 	 */
 	export() {
-		return [this.data & 0xff, (this.data >> 8) & 0xff];
+		return this.data;
 	}
 
 	/**
@@ -699,6 +701,9 @@ class Tileset {
 
 		const nRows = imageData.height / 8;
 		const nCols = imageData.width / 8;
+		if((nRows * nCols) > 4096)
+			throw new Error('Too many tiles in the image. Reduce your image to a maximum of 4096 tiles before opening it in CGC.');
+
 		const warnings = [];
 
 		const palettes = [];
@@ -718,12 +723,16 @@ class Tileset {
 				if (tileInfo) {
 					if (readingEmbeddedPalettes && !tileInfo.isEmbeddedPalette)
 						readingEmbeddedPalettes = false;
-					if (tileInfo.tooManyColors)
+					if (tileInfo.tooManyColors){
 						warnings.push({
 							x,
 							y,
 							imageData: tileImageData
 						});
+
+						if(warnings.length > 360)
+							throw new Error('Too many complex tiles that exceed the color limit. Please adapt the image to the console limitations before opening it in CGC.');
+					}
 
 					rowTileInfos.push(tileInfo);
 				}
@@ -787,6 +796,8 @@ class Tileset {
 				const tilePalette = new consoleGraphics.Palette(colors);
 				tilePalette.sortByLuma();
 				palettes.push(tilePalette);
+				if(palettes.length>64)
+					throw new Error('Too many palettes in the image. Reduce your image to a maximum of 64 palettes before opening it in CGC.');
 			}
 		});
 
@@ -1006,6 +1017,9 @@ class Map {
 		});
 	}
 
+	checkValidIndexes(){
+		return !this.mapTiles.find((mapTile) => this.tileset.tiles.indexOf(mapTile.tile)>0xff)
+	}
 	getMapTile(x, y) {
 		return this.mapTiles[y * this.width + x];
 	}
@@ -1079,6 +1093,8 @@ class Map {
 const RESCALE_24TO12BIT = 17;
 const BIT4_MASK = 0b00001111;
 class ColorRGB12 extends Color {
+	static DATA_SIZE=2;
+
 	/**
 	 * Converts RGB15 to RGB24
 	 * @returns Array with r, g and b properties (in 8bit format)
@@ -1183,7 +1199,7 @@ class TileNGPC extends Tile {
 				const bit0 = (rawData[readOffset] >> (7 - x*2)) & 0x01;
 				const bit1 = (rawData[readOffset] >> (7 - x*2 - 1)) & 0x01;
 
-				pixels[y][x+4] = (bit1 << 1) | bit0;
+				pixels[y][x+4] = (bit0 << 1) | bit1;
 			}
 			readOffset++;
 
@@ -1191,7 +1207,7 @@ class TileNGPC extends Tile {
 				const bit0 = (rawData[readOffset] >> (7 - x2*2)) & 0x01;
 				const bit1 = (rawData[readOffset] >> (7 - x2*2 - 1)) & 0x01;
 
-				pixels[y][x2+0] = (bit1 << 1) | bit0;
+				pixels[y][x2+0] = (bit0 << 1) | bit1;
 			}
 			readOffset++;
 		}
@@ -1225,11 +1241,59 @@ class TileNGPC extends Tile {
 	}
 }
 
+
+class MapNGPC extends Map{	
+	static ALLOW_ATTRIBUTES=true;
+
+	static import(rawData, width, height, tileset) {
+		if (!Array.isArray(rawData) || rawData.length !== (width * height * 2))
+			throw new Error('invalid NGPC map data');
+
+		const map=new this(width, height, tileset);
+
+		for (let y = 0; y < height; y++) {
+			for (let x = 0; x < width; x++) {
+				const tileIndex=rawData[(y * width + x) * 2 + 0];
+				const tileAttributes=rawData[(y * width + x) * 2 + 1];
+
+				const flipX=!!(tileAttributes & 0b10000000);
+				const flipY=!!(tileAttributes & 0b01000000);
+				map.setMapTile(x, y, tileIndex, flipX, flipY);
+			}
+		}
+
+		return map;
+	}
+
+	export(){
+		const bytes=new Array(this.height);
+		var index=0;
+		for(var y=0; y<this.height; y++){
+			bytes[y]=new Array(this.width * 2);
+			for(var x=0; x<this.width; x++){
+				const mapTile=this.mapTiles[index];
+				bytes[y][x * 2 + 0]=this.tileset.getTileIndex(mapTile.tile);
+
+				let attributeByte=(this.tileset.getPaletteIndex(mapTile.tile.defaultPalette) & 0b00000111) << 1;
+				if(mapTile.flipX)
+					attributeByte|=0b10000000;
+				if(mapTile.flipY)
+					attributeByte|=0b01000000;
+				bytes[y][x * 2 + 1]=attributeByte;
+				index++;
+			}
+		}
+
+		return bytes;
+	}
+}
+
 const ConsoleGraphicsNGPC = {
+	id:'ngpc',
 	Color: ColorRGB12,
 	Palette: PaletteNGPC,
 	Tile: TileNGPC,
-	Map: null
+	Map: MapNGPC
 }
 
 

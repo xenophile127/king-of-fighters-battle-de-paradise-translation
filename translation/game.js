@@ -63,26 +63,6 @@ const GAME_INFO={
 			freeOffset+=pointerInfo.data.length;
 		});
 
-		GRAPHIC_REPLACEMENTS.filter((graphicReplacement) => graphicReplacement.file).forEach(function(graphicReplacement, i){
-			const image=document.getElementById('graphic-replacement-' + graphicReplacement.offset);
-			if(!image){
-				console.error('Image for graphic replacement not found: ', graphicReplacement);
-				return false;
-			}
-			const canvas = document.createElement('canvas');
-			canvas.width = image.width;
-			canvas.height = image.height;
-			const ctx = canvas.getContext('2d');
-			ctx.drawImage(image, 0, 0);
-			const imageData = ctx.getImageData(0, 0, image.width, image.height);
-
-			const result = Tileset.fromImageData(imageData, ConsoleGraphicsNGPC);
-			const resultData=result.tileset.tiles.map((tile) => tile.export()).flat();
-
-			clonedRomFile.seek(graphicReplacement.offset);
-   			clonedRomFile.writeBytes(resultData);
-		});
-
 		PATCHES.filter((patchInfo) => patchInfo.data && Array.isArray(patchInfo.data)).forEach(function(patchInfo, i){
 			const newData=patchInfo.data.map((b) => {
 				if(typeof b==='string'){

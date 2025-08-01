@@ -87,48 +87,35 @@ const _loadRom=function(arrayBuffer, fileName){
 		})
 	});
 
-	GRAPHIC_REPLACEMENTS.forEach(function(graphicReplacement, i){
+	const GRAYSCALE_PALETTE=new PaletteNGPC();
+	GRAPHIC_REPLACEMENTS.filter(graphicReplacement => graphicReplacement.type==='tileset' ).forEach(function(graphicReplacement, i){
+		const rowDiv=document.createElement('div');
+		rowDiv.className='container-text';
+		rowDiv.appendChild(document.createElement('div'));
+		rowDiv.appendChild(document.createElement('div'));
+		rowDiv.appendChild(document.createElement('div'));
+		rowDiv.children[0].innerHTML='<strong>Graphic replacement #'+i+'</strong> <small>0x'+graphicReplacement.offset.toString(16).padStart(6, '0')+'</small><br/>';
+		rowDiv.children[0].innerHTML+='<div>'+(graphicReplacement.comment || '-')+'</div>';
+
 		currentRom.seek(graphicReplacement.offset);
-		const canvasOriginal=document.createElement('canvas');
-		const width=graphicReplacement.width;
-		const height=graphicReplacement.height;
-		canvasOriginal.width=width*8;
-		canvasOriginal.height=height*8;
-		for(var y=0; y<height; y++){
-			for(var x=0; x<width; x++){
-				const tileData=currentRom.readBytes(16);
-				canvasOriginal.getContext('2d').putImageData(TileNGPC.import(tileData).toImageData(), x*8, y*8);
-			}
+
+		const tilesetOriginal=new Tileset(ConsoleGraphicsNGPC);
+		tilesetOriginal.addPalette(GRAYSCALE_PALETTE);
+		for(var j=0; j<graphicReplacement.nTiles; j++){
+			tilesetOriginal.addTile(TileNGPC.import(currentRom.readBytes(16), GRAYSCALE_PALETTE));
 		}
-		const header=document.createElement('div');
-		header.innerHTML='<strong>Graphic replacement #'+i+'</strong> <small>0x'+graphicReplacement.offset.toString(16).padStart(6, '0')+'</small><br/>';
-		header.innerHTML+='<div>'+(graphicReplacement.comment || '-')+'</div>';
-
-
-
-
-		const div=document.createElement('div');
-		div.className='container-text';
-		div.appendChild(header);
-		div.appendChild(canvasOriginal);
 
 		if(graphicReplacement.file){
 			const imgTranslated=new Image();
 			imgTranslated.onload=function(evt){
 				const image=this;
-				if(image.width%8!==0){
+				if(image.width%8!==0 || image.height%8!==0){
 					const divMessage=document.createElement('div');
 					divMessage.className='text-danger';
-					divMessage.innerHTML=graphicReplacement.file+'.png width is not a multiple of 8 ('+image.width+'px)';
-					div.appendChild(divMessage);
-				}else if(image.height%8!==0){
-					const divMessage=document.createElement('div');
-					divMessage.className='text-danger';
-					divMessage.innerHTML=graphicReplacement.file+'.png height is not a multiple of 8 ('+image.height+'px)';
-					div.appendChild(divMessage);
+					divMessage.innerHTML=graphicReplacement.file+'.png width and height must be multiple of 8 ('+image.width+'x'+image.height+'px)';
+					rowDiv.children[2].appendChild(divMessage);
 				}
 				const canvas = document.createElement('canvas');
-				canvas.id='graphic-replacement-'+graphicReplacement.offset;
 				canvas.width = image.width;
 				canvas.height = image.height;
 				const ctx = canvas.getContext('2d', {willReadFrequently: true});
@@ -136,16 +123,94 @@ const _loadRom=function(arrayBuffer, fileName){
 				const imageData = ctx.getImageData(0, 0, image.width, image.height);
 
 				const result = Tileset.fromImageData(imageData, ConsoleGraphicsNGPC);
-				const resultImageData=result.tileset.toImageData();
-				canvas.width = resultImageData.width;
-				canvas.height = resultImageData.height;
-				ctx.putImageData(resultImageData, 0, 0);
-				div.appendChild(canvas);
+				if(result.tileset.tiles.length > graphicReplacement.nTiles){
+					const divMessage=document.createElement('div');
+					divMessage.className='text-danger';
+					divMessage.innerHTML=graphicReplacement.file+'.png exceeds tile limit (&gt;'+graphicReplacement.nTiles+' tiles)';
+					rowDiv.children[2].appendChild(divMessage);
+				}
+
+
+				const patchData=result.tileset.tiles.map((tile) => tile.export()).flat();
+				PATCHES.push({
+					offset: graphicReplacement.offset,
+					name: 'automatic generated graphics patch: '+graphicReplacement.file,
+					data: patchData
+				});
+				tilesetOriginal.addPalette(result.tileset.palettes[0]);
+				tilesetOriginal.removePalette(0);
+				rowDiv.children[1].appendChild(_imageDataToCanvas(tilesetOriginal.toImageData()));
+				rowDiv.children[2].appendChild(_imageDataToCanvas(result.tileset.toImageData()));
 			};
 			imgTranslated.src='translation/graphics/'+graphicReplacement.file+'.png';
+		}else{
+			rowDiv.children[1].appendChild(_imageDataToCanvas(tilesetOriginal.toImageData()));
+		}
+		document.getElementById('container-texts').appendChild(rowDiv);
+	});
+	GRAPHIC_REPLACEMENTS.filter(graphicReplacement => graphicReplacement.type==='map' ).forEach(function(graphicReplacement, i){
+		const rowDiv=document.createElement('div');
+		rowDiv.className='container-text';
+		rowDiv.appendChild(document.createElement('div'));
+		rowDiv.appendChild(document.createElement('div'));
+		rowDiv.appendChild(document.createElement('div'));
+		rowDiv.children[0].innerHTML='<strong>Map replacement #'+i+'</strong> <small>Tileset: 0x'+graphicReplacement.offsetTileset.toString(16).padStart(6, '0')+'</small> <small>Map: 0x'+graphicReplacement.offsetMap.toString(16).padStart(6, '0')+'</small><br/>';
+		rowDiv.children[0].innerHTML+='<div>'+(graphicReplacement.comment || '-')+'</div>';
+
+		currentRom.seek(graphicReplacement.offsetTileset);
+		const tilesetOriginal=new Tileset(ConsoleGraphicsNGPC);
+		tilesetOriginal.addPalette(GRAYSCALE_PALETTE);
+		for(var j=0; j<graphicReplacement.nTiles; j++){
+			tilesetOriginal.addTile(TileNGPC.import(currentRom.readBytes(16), GRAYSCALE_PALETTE));
 		}
 
-		document.getElementById('container-texts').appendChild(div);
+		currentRom.seek(graphicReplacement.offsetMap);
+		const mapRawData=currentRom.readBytes(graphicReplacement.width * graphicReplacement.height * 2);
+		const mapOriginal=MapNGPC.import(mapRawData, graphicReplacement.width, graphicReplacement.height, tilesetOriginal);
+
+		if(graphicReplacement.file){
+			const imgTranslated=new Image();
+			imgTranslated.onload=function(evt){
+				const image=this;
+				if(image.width!==graphicReplacement.width*8 || image.height!==graphicReplacement.height*8){
+					const divMessage=document.createElement('div');
+					divMessage.className='text-danger';
+					divMessage.innerHTML=graphicReplacement.file+'.png width and height must '+graphicReplacement.width+'x'+graphicReplacement.height+'px';
+					rowDiv.children[2].appendChild(divMessage);
+				}
+				const canvas = document.createElement('canvas');
+				canvas.width = image.width;
+				canvas.height = image.height;
+				const ctx = canvas.getContext('2d', {willReadFrequently: true});
+				ctx.drawImage(image, 0, 0);
+				const imageData = ctx.getImageData(0, 0, image.width, image.height);
+
+				const result = Tileset.fromImageData(imageData, ConsoleGraphicsNGPC);
+				if(result.tileset.tiles.length > graphicReplacement.nTiles){
+					const divMessage=document.createElement('div');
+					divMessage.className='text-danger';
+					divMessage.innerHTML=graphicReplacement.file+'.png exceeds tile limit (&gt;'+graphicReplacement.nTiles+' tiles)';
+					rowDiv.children[2].appendChild(divMessage);
+				}
+
+
+				const patchData=result.tileset.tiles.map((tile) => tile.export()).flat();
+				PATCHES.push({
+					offset: graphicReplacement.offset,
+					name: 'automatic generated graphics patch: '+graphicReplacement.file,
+					data: patchData
+				});
+				tilesetOriginal.addPalette(result.tileset.palettes[0]);
+				tilesetOriginal.removePalette(0);
+				rowDiv.children[1].appendChild(_imageDataToCanvas(tilesetOriginal.toImageData()));
+				rowDiv.children[2].appendChild(_imageDataToCanvas(result.tileset.toImageData()));
+			};
+			imgTranslated.src='translation/graphics/'+graphicReplacement.file+'.png';
+		}else{
+			rowDiv.children[1].appendChild(_imageDataToCanvas(mapOriginal.toImageData()));
+			rowDiv.children[1].appendChild(_imageDataToCanvas(tilesetOriginal.toImageData()));
+		}
+		document.getElementById('container-texts').appendChild(rowDiv);
 	});
 
 	document.getElementById('btn-export-rom').disabled=false;
@@ -158,6 +223,14 @@ const _findKnownPointer=function(pointerIndex){
 	return null;
 }
 
+const _imageDataToCanvas=function(imageData){
+	const canvas=document.createElement('canvas');
+	canvas.width=imageData.width;
+	canvas.height=imageData.height;
+	const ctx=canvas.getContext('2d', {willReadFrequently: true});
+	ctx.putImageData(imageData, 0, 0);
+	return canvas;
+}
 
 window.addEventListener('load', function(evt){
 	if(typeof GAME_INFO !== 'object')
