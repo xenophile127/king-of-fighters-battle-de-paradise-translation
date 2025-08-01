@@ -57,8 +57,8 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'tileset', offset:0x0e2a0c, nTiles:15*2, comment:'User - Minigame title #22 (selected)', file:'user_minigame_title_selected_22'},
 	//{type:'tileset', offset:0x12e685, nTiles:15*2, comment:'User - Minigame title #23 (selected)'}, //YO·SA·KU
 
-	{type:'tileset', offset:0x1c94a6, nTiles:158, comment:'Game rules Home', file:'game_rules_home'}, //to-do: implement a map quantizer into the tool
-
+	{type:'map', offsetTileset:0x1c94a6, nTiles:158, offsetMap:0x193c64, width:20, height:19, comment:'Static screen - Game Rules', file:'map_game_rules_home'},
+	/* to-do: turn these into maps */
 	{type:'tileset', offset:0x1d4342, nTiles:15*2, comment:'Game rules 1.1 - Legend', file:'game_rules_legend_page_first15'},
 	{type:'tileset', offset:0x1df35d, nTiles:15*2, comment:'Game rules 1.2 - Legend', file:'game_rules_legend_page_middle'},
 	{type:'tileset', offset:0x1e1f66, nTiles:15*2, comment:'Game rules 1.3 - Legend', file:'game_rules_legend_page_last15'},

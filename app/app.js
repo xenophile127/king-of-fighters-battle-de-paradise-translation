@@ -172,10 +172,10 @@ const _loadRom=function(arrayBuffer, fileName){
 			const imgTranslated=new Image();
 			imgTranslated.onload=function(evt){
 				const image=this;
-				if(image.width!==graphicReplacement.width*8 || image.height!==graphicReplacement.height*8){
+				if(image.width!==graphicReplacement.width*8 || image.height!==(graphicReplacement.height+1)*8){
 					const divMessage=document.createElement('div');
 					divMessage.className='text-danger';
-					divMessage.innerHTML=graphicReplacement.file+'.png width and height must '+graphicReplacement.width+'x'+graphicReplacement.height+'px';
+					divMessage.innerHTML=graphicReplacement.file+'.png width and height must be '+(graphicReplacement.width*8)+'x'+((graphicReplacement.height+1)*8)+'px';
 					rowDiv.children[2].appendChild(divMessage);
 				}
 				const canvas = document.createElement('canvas');
@@ -186,6 +186,8 @@ const _loadRom=function(arrayBuffer, fileName){
 				const imageData = ctx.getImageData(0, 0, image.width, image.height);
 
 				const result = Tileset.fromImageData(imageData, ConsoleGraphicsNGPC);
+				result.tileset.quantize(result.map);
+				result.tileset.quantize(result.map);
 				if(result.tileset.tiles.length > graphicReplacement.nTiles){
 					const divMessage=document.createElement('div');
 					divMessage.className='text-danger';
@@ -194,15 +196,22 @@ const _loadRom=function(arrayBuffer, fileName){
 				}
 
 
-				const patchData=result.tileset.tiles.map((tile) => tile.export()).flat();
+				const patchDataTileset=result.tileset.tiles.map((tile) => tile.export()).flat();
 				PATCHES.push({
-					offset: graphicReplacement.offset,
-					name: 'automatic generated graphics patch: '+graphicReplacement.file,
-					data: patchData
+					offset: graphicReplacement.offsetTileset,
+					name: 'automatic generated graphics (tileset) patch: '+graphicReplacement.file,
+					data: patchDataTileset
 				});
-				tilesetOriginal.addPalette(result.tileset.palettes[0]);
-				tilesetOriginal.removePalette(0);
+				const patchDataMap=result.map.export().flat();
+				PATCHES.push({
+					offset: graphicReplacement.offsetMap,
+					name: 'automatic generated graphics (map) patch: '+graphicReplacement.file,
+					data: patchDataMap
+				});
+
+				rowDiv.children[1].appendChild(_imageDataToCanvas(mapOriginal.toImageData()));
 				rowDiv.children[1].appendChild(_imageDataToCanvas(tilesetOriginal.toImageData()));
+				rowDiv.children[2].appendChild(_imageDataToCanvas(result.map.toImageData()));
 				rowDiv.children[2].appendChild(_imageDataToCanvas(result.tileset.toImageData()));
 			};
 			imgTranslated.src='translation/graphics/'+graphicReplacement.file+'.png';

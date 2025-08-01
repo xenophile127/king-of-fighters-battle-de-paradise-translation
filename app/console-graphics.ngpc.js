@@ -475,35 +475,13 @@ class Tile {
 		for (var i = 0; i < this._flippedTiles.length; i++) {
 			const equals = this._flippedTiles[i].equals(tile);
 			if (equals) {
-				if (i)
-					return { flipX: i & 0x01, flipY: i & 0x02 };
-				return true;
+				return { flipX: i & 0x01, flipY: i & 0x02 };
 			}
 		}
 		return false;
 	}
 }
 
-
-
-
-
-
-
-
-const _getQuantizableTiles = function (tiles, checkCallback) {
-	const quantizableTiles = tiles.reduce(
-		(acc, tile, i, allTiles) => {
-			const duplicateTiles = allTiles.slice(i + 1).filter((tile2) => checkCallback(acc, tile, tile2));
-			duplicateTiles.forEach((duplicateTile) => {
-				duplicateTile.duplicateFrom = tile;
-			});
-			return acc.concat(duplicateTiles);
-		},
-		[]
-	);
-	return quantizableTiles;
-}
 
 
 class Tileset {
@@ -566,35 +544,91 @@ class Tileset {
 	}
 
 	getQuantizableTiles() {
-		/* find duplicate tiles (same data+palette) */
-		const quantizableTiles0 = _getQuantizableTiles(this.tiles, function (acc, tile, tile2) {
-			return !acc.includes(tile) && !acc.includes(tile2) && tile.equals(tile2) && tile.defaultPalette === tile2.defaultPalette
-		});
-		if (quantizableTiles0.length)
-			return quantizableTiles0;
+		const quantizableTiles = [];
 
-		/* find duplicate tiles (same data, different palette) */
-		const quantizableTiles1 = _getQuantizableTiles(this.tiles, function (acc, tile, tile2) {
-			return !acc.includes(tile) && !acc.includes(tile2) && tile.equals(tile2)
-		});
-		if (quantizableTiles1.length)
-			return quantizableTiles1;
+		/* iteration 1: find duplicate tiles (same data+palette) */
+		this.tiles.forEach(function(tile, i){
+			/* ignore tiles that have been identified as duplicates already */
+			if(quantizableTiles.find(quantizableTileInfo => quantizableTileInfo.tile===tile))
+				return;
 
-		/* find duplicate tiles (flipped) */
-		if (this.consoleGraphics.Map && this.consoleGraphics.Map.ALLOW_ATTRIBUTES) {
-			const quantizableTiles2 = _getQuantizableTiles(this.tiles, function (acc, tile, tile2) {
-				return !acc.includes(tile) && !acc.includes(tile2) && tile.equalsFlipped(tile2)
+			this.tiles.slice(i + 1).forEach((tile2, j) => {
+				const tileEquals=tile.equals(tile2);
+				if(tileEquals && tile.defaultPalette === tile2.defaultPalette){
+					quantizableTiles.push({
+						tile: tile2,
+						duplicateFrom: tile,
+						flipX: false,
+						flipY: false
+					})
+				}
 			});
-			if (quantizableTiles2.length)
-				return quantizableTiles2;
+		}, this);
+
+		/* iteration 2: find duplicate tiles (same data, different palette) */
+		if(!quantizableTiles.length){
+			this.tiles.forEach(function(tile, i){
+				/* ignore tiles that have been identified as duplicates already */
+				if(quantizableTiles.find(quantizableTileInfo => quantizableTileInfo.tile===tile))
+					return;
+
+				this.tiles.slice(i + 1).forEach((tile2, j) => {
+					const tileEquals=tile.equals(tile2);
+					if(tileEquals){
+						quantizableTiles.push({
+							tile: tile2,
+							duplicateFrom: tile,
+							flipX: false,
+							flipY: false
+						})
+					}
+				});
+			}, this);
 		}
 
-		return null;
+		/* iteration 3: find duplicate tiles (flipped) */
+		if(!quantizableTiles.length && this.consoleGraphics.Map && this.consoleGraphics.Map.ALLOW_ATTRIBUTES){
+			this.tiles.forEach(function(tile, i){
+				/* ignore tiles that have been identified as duplicates already */
+				if(quantizableTiles.find(quantizableTileInfo => quantizableTileInfo.tile===tile))
+					return;
+
+				this.tiles.slice(i + 1).forEach((tile2, j) => {
+					const tileEquals=tile.equalsFlipped(tile2);
+					if(tileEquals){
+						quantizableTiles.push({
+							tile: tile2,
+							duplicateFrom: tile,
+							flipX: tileEquals.flipX,
+							flipY: tileEquals.flipY
+						})
+					}
+				});
+			}, this);
+		}
+
+		return quantizableTiles;
 	}
-	removeTiles(tiles) {
-		tiles.forEach((tile) => {
-			this.removeTile(tile);
-		});
+	quantize(quantizeMap){
+		const quantizableTiles = this.getQuantizableTiles();
+		if(quantizableTiles){
+			/* remove tiles */
+			quantizableTiles.forEach((tile) => {
+				this.removeTile(tile.tile);
+			});
+
+			/* quantize map (if any) */
+			if(quantizeMap){
+				quantizableTiles.forEach((quantizableTile, i) => {
+					const tileToRemove=quantizableTile.tile;
+					const duplicateFrom=quantizableTile.duplicateFrom;
+					const flipX = quantizableTile.flipX;
+					const flipY = quantizableTile.flipY;
+					quantizeMap.replaceMapTiles(tileToRemove, duplicateFrom, flipX, flipY, true);
+				});
+			}
+		}
+		return quantizableTiles;
 	}
 
 	swapPalettes(paletteIndex1, paletteIndex2) {
@@ -689,9 +723,9 @@ class Tileset {
 	static fromImageData(imageData, consoleGraphics) {
 		/* check parameters validity */
 		if (!(imageData instanceof ImageData))
-			throw new Error('Tileset.fromImageData: imageData is not an instance of ImageData');
+			throw new Error('imageData is not an instance of ImageData');
 		else if (imageData.width % 8 !== 0 || imageData.height % 8 !== 0)
-			throw new Error('Tileset.fromImageData: invalid image dimensions (width and height must be divisible by 8)');
+			throw new Error('Invalid image dimensions (width and height must be divisible by 8)');
 
 
 		const tempCanvas = document.createElement('canvas');
@@ -843,6 +877,7 @@ class Tileset {
 					mapTileInfo.x,
 					mapTileInfo.y,
 					mapTileInfo.tileIndex,
+					tileset.palettes.indexOf(tileset.tiles[mapTileInfo.tileIndex].defaultPalette),
 					false,
 					false
 				);
@@ -1012,6 +1047,7 @@ class Map {
 		this.tileset = tileset;
 		this.mapTiles = new Array(w * h).fill({
 			tile:this.tileset.tiles[0],
+			palette:this.tileset.tiles[0].defaultPalette,
 			flipX:false,
 			flipY:false,
 		});
@@ -1023,35 +1059,33 @@ class Map {
 	getMapTile(x, y) {
 		return this.mapTiles[y * this.width + x];
 	}
-	setMapTile(x, y, tileIndex, flipX, flipY) {
+	setMapTile(x, y, tileIndex, paletteIndex, flipX, flipY) {
 		if (typeof tileIndex !== 'number')
 			throw new TypeError('Tile index is not a number');
 		else if (!this.tileset.tiles[tileIndex])
 			throw new TypeError('Invalid tile index');
 
 		const mapTile = {
-			tile:this.tileset.tiles[tileIndex],
-			flipX: false,
-			flipY: false
+			tile:this.tileset.tiles[tileIndex] || this.tileset.tiles[0],
+			palette:this.tileset.palettes[paletteIndex] || this.tileset.palettes[0],
+			flipX: !!flipX,
+			flipY: !!flipY
 		};
-
-		if (typeof flipX !== 'undefined')
-			mapTile.flipX = !!flipX;
-		if (typeof flipY !== 'undefined')
-			mapTile.flipY = !!flipY;
 
 		this.mapTiles[y * this.width + x] = mapTile;
 		return mapTile;
 	}
-	replaceMapTiles(tileSearch, tileReplace, flipX, flipY) {
+	replaceMapTiles(tileSearch, tileReplace, flipX, flipY, keepPalette) {
 		const tileReplaceIndex=this.tileset.getTileIndex(tileReplace);
 		if (tileReplaceIndex === -1)
 			throw new TypeError('Invalid tile index to replace');
 
 		for(var y=0; y<this.height; y++){
 			for(var x=0; x<this.width; x++){
-				if(this.mapTiles[y * this.width + x].tile===tileSearch){
-					this.setMapTile(x, y, tileReplaceIndex, flipX, flipY);
+				const mapTile=this.mapTiles[y * this.width + x];
+				if(mapTile.tile===tileSearch){
+					const paletteIndex=this.tileset.palettes.indexOf(keepPalette? mapTile.palette : tileReplace.defaultPalette);
+					this.setMapTile(x, y, tileReplaceIndex, paletteIndex, flipX, flipY);
 				}
 			}
 		}
@@ -1070,7 +1104,7 @@ class Map {
 			for (var x = 0; x < this.width; x++) {
 				const mapTile = this.mapTiles[index];
 
-				const imageDataTile = mapTile.tile.toImageData(mapTile.tile.defaultPalette, mapTile.flipX, mapTile.flipY);
+				const imageDataTile = mapTile.tile.toImageData(mapTile.palette, mapTile.flipX, mapTile.flipY);
 				ctx.putImageData(imageDataTile, x * 8, y * 8);
 
 				index++;
@@ -1255,10 +1289,11 @@ class MapNGPC extends Map{
 			for (let x = 0; x < width; x++) {
 				const tileIndex=rawData[(y * width + x) * 2 + 0];
 				const tileAttributes=rawData[(y * width + x) * 2 + 1];
+				const paletteIndex=(tileAttributes >> 1) & 0b00000111;
 
 				const flipX=!!(tileAttributes & 0b10000000);
 				const flipY=!!(tileAttributes & 0b01000000);
-				map.setMapTile(x, y, tileIndex, flipX, flipY);
+				map.setMapTile(x, y, tileIndex, paletteIndex, flipX, flipY);
 			}
 		}
 
@@ -1274,7 +1309,7 @@ class MapNGPC extends Map{
 				const mapTile=this.mapTiles[index];
 				bytes[y][x * 2 + 0]=this.tileset.getTileIndex(mapTile.tile);
 
-				let attributeByte=(this.tileset.getPaletteIndex(mapTile.tile.defaultPalette) & 0b00000111) << 1;
+				let attributeByte=(this.tileset.getPaletteIndex(mapTile.palette) & 0b00000111) << 1;
 				if(mapTile.flipX)
 					attributeByte|=0b10000000;
 				if(mapTile.flipY)
