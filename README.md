@@ -6,12 +6,13 @@ If you are looking for the latest patch, [go here](https://www.marcrobledo.com/k
 
 ## Contribute
 This translation project is quite different from the others. It is a custom built webapp that allows direct ROM editing, so anyone can help translating texts easily without using any external tools.<br/>
-If you are willing to help by identifying and translating texts, [read the instructions here](https://www.marcrobledo.com/king-of-fighters-battle-de-paradise-translation/) and help make this translation a reality!
+If you are willing to help by translating any untranslated text, [read the instructions here](https://www.marcrobledo.com/king-of-fighters-battle-de-paradise-translation/) and help make this translation a reality!
 
 
 ## To-do list
 - identify the missing double-byte japanese characters
-- learn how NGP maps work and edit them (mostly for menu graphics and instruction screens)
+- ~~learn how NGP maps work and edit them (mostly for menu graphics and instruction screens)~~ DONE!
+- learn how big 12px width font works and reduce it to 8px
 - improve the tool
 - ...translate... a lot!
 
