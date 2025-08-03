@@ -69,7 +69,21 @@ header img{
 	vertical-align: middle;;
 }
 
+#loading-text{
+	text-align:center;
+	color:white;
+	margin-top:16px;
+	display:none;
+}
+#loading-text.show{
+	display:block;
+	animation:loading-blink .5s infinite alternate;
+}
 
+@keyframes loading-blink{
+	0%{opacity:1}
+	100%{opacity:0}
+}
 
 
 

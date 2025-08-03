@@ -2,6 +2,7 @@ const TRANSLATION_URL_GOOGLE='https://translate.google.com/?sl=ja&tl=en&text=%s&
 const TRANSLATION_URL_DEEPL='https://www.deepl.com/es/translator#ja/en-us/%s'
 
 var currentRom, currentPointers;
+var loadingQueue=0;
 
 
 
@@ -17,11 +18,21 @@ translateLinks.children[1].target='_blank';
 translateLinks.children[1].innerHTML='DeepL';
 
 
+const _showLoadingMessage=function(message){
+	if(message){
+		document.getElementById('loading-text').className='show';
+		document.getElementById('loading-text').innerHTML=message;
+	}else{
+		document.getElementById('loading-text').className='';
+		document.getElementById('loading-text').innerHTML='';
+	}
+}
 const _loadRom=function(arrayBuffer, fileName){
 	currentRom=new BinFile(arrayBuffer);
 	currentRom.fileName=fileName;
 
 	if(!GAME_INFO.checkFile(currentRom)){
+		_showLoadingMessage();
 		alert('Invalid ROM file');
 		throw new Error('Invalid ROM');
 	}
@@ -87,6 +98,8 @@ const _loadRom=function(arrayBuffer, fileName){
 		})
 	});
 
+	_showLoadingMessage('Rebuilding graphics...');
+	loadingQueue=GRAPHIC_REPLACEMENTS.filter(graphicReplacement => graphicReplacement.file).length;
 	const GRAYSCALE_PALETTE=new PaletteNGPC();
 	GRAPHIC_REPLACEMENTS.filter(graphicReplacement => graphicReplacement.type==='tileset' ).forEach(function(graphicReplacement, i){
 		const rowDiv=document.createElement('div');
@@ -141,6 +154,12 @@ const _loadRom=function(arrayBuffer, fileName){
 				tilesetOriginal.removePalette(0);
 				rowDiv.children[1].appendChild(_imageDataToCanvas(tilesetOriginal.toImageData()));
 				rowDiv.children[2].appendChild(_imageDataToCanvas(result.tileset.toImageData()));
+
+				loadingQueue--;
+				if(loadingQueue===0){
+					document.getElementById('btn-export-rom').disabled=false;
+					_showLoadingMessage();
+				}
 			};
 			imgTranslated.src='translation/graphics/'+graphicReplacement.file+'.png';
 		}else{
@@ -186,8 +205,9 @@ const _loadRom=function(arrayBuffer, fileName){
 				const imageData = ctx.getImageData(0, 0, image.width, image.height);
 
 				const result = Tileset.fromImageData(imageData, ConsoleGraphicsNGPC);
-				result.tileset.quantize(result.map);
-				result.tileset.quantize(result.map);
+				result.tileset.quantize(result.map); //remove exact tiles
+				result.tileset.quantize(result.map); //remove exact tiles with different palette
+				result.tileset.quantize(result.map); //removed flipped tiles
 				if(result.tileset.tiles.length > graphicReplacement.nTiles){
 					const divMessage=document.createElement('div');
 					divMessage.className='text-danger';
@@ -213,6 +233,12 @@ const _loadRom=function(arrayBuffer, fileName){
 				rowDiv.children[1].appendChild(_imageDataToCanvas(tilesetOriginal.toImageData()));
 				rowDiv.children[2].appendChild(_imageDataToCanvas(result.map.toImageData()));
 				rowDiv.children[2].appendChild(_imageDataToCanvas(result.tileset.toImageData()));
+
+				loadingQueue--;
+				if(loadingQueue===0){
+					_showLoadingMessage();
+					document.getElementById('btn-export-rom').disabled=false;
+				}
 			};
 			imgTranslated.src='translation/graphics/'+graphicReplacement.file+'.png';
 		}else{
@@ -221,8 +247,6 @@ const _loadRom=function(arrayBuffer, fileName){
 		}
 		document.getElementById('container-texts').appendChild(rowDiv);
 	});
-
-	document.getElementById('btn-export-rom').disabled=false;
 };
 
 const _findKnownPointer=function(pointerIndex){
@@ -296,6 +320,7 @@ window.addEventListener('load', function(evt){
 			reader.onerror = function(event) {
 				console.error('Error reading file:', event);
 			};
+			_showLoadingMessage('Loading ROM...');
 			reader.readAsArrayBuffer(file);
 		}
 	});
@@ -313,6 +338,7 @@ window.addEventListener('load', function(evt){
 	this.document.getElementById('span-status-total').innerHTML=translationStatus.total;
 
 	if(location.protocol==='file:' && typeof GAME_INFO.autoloadFile==='string'){
+		_showLoadingMessage('Loading ROM...');
 		this.fetch('./translation/'+GAME_INFO.autoloadFile)
 			.then(response => response.arrayBuffer())
 			.then(arrayBuffer => {
