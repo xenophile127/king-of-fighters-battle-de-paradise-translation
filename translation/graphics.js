@@ -15,11 +15,13 @@ const GRAPHIC_REPLACEMENTS=[
 
 	{type:'tileset', offset:0x106e60, nTiles:9*9, comment:'Start menu - Turns', file:'start_menu_turns'},
 	{type:'tileset', offset:0x10fa32, nTiles:10, comment:'Start menu - Players', file:'start_menu_players'},
-	{type:'tileset', offset:0x0fbf15, nTiles:79, comment:'Start menu - Map banner 1'},
+	{type:'tileset', offset:0x0fbf15, nTiles:63, comment:'Start menu - Map banner 1'},
 	{type:'tileset', offset:0x154f20, nTiles:104, comment:'Start menu - Map banner 2/3'},
 	{type:'tileset', offset:0x15623c, nTiles:114, comment:'Start menu - Map banner 4/5'},
+	{type:'tileset', offset:0x13a270, nTiles:106, comment:'Start menu - Map banner 6/??'},
 
-	{type:'tileset', offset:0x11dec8, nTiles:22, comment:'Start game - First player'},
+	{type:'tileset', offset:0x11deb8, nTiles:24, comment:'Start game - First player'},
+	{type:'tileset', offset:0x1378cf, nTiles:24, comment:'Start game - Second player'},
 	//{type:'tileset', offset:0x12134f, nTiles:16, comment:'Multiplayer - Waiting for connection'},
 
 	{type:'tileset', offset:0x0dfe80, nTiles:10*2, comment:'Options - Header', file:'options_header'},
