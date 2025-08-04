@@ -6,7 +6,7 @@ const GRAPHIC_REPLACEMENTS=[
 
 	{type:'tileset', offset:0x15284c, nTiles:31, comment:'Logo (sprite)', file:'logo_sprites'},
 	{type:'tileset', offset:0x113eb9, nTiles:89, comment:'Logo (layer 1)', file:'logo_layer1'},
-	//{type:'tileset', offset:0x0fd266, nTiles:20*5, comment:'Logo (layer 2)', file:'logo'},
+	//{type:'tileset', offset:0x0fd266, nTiles:20*5, comment:'Logo (layer 2)', file:'logo_layer2'},
 
 	{type:'map', offsetTileset:0x1bed84, nTiles:127, offsetMap:0x18a2ec, width:20, height:19, comment:'Main Menu', file:'map_main_menu'},
 	{type:'tileset', offset:0x0ec532, nTiles:12*3, comment:'Main menu - Options (selected)', file:'main_menu_main_game_selected'},
@@ -14,10 +14,13 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'tileset', offset:0x13c068, nTiles:12*3, comment:'Main menu - Options (selected)', file:'main_menu_options_selected'},
 
 	{type:'tileset', offset:0x106e60, nTiles:9*9, comment:'Start menu - Turns', file:'start_menu_turns'},
-	{type:'tileset', offset:0x10fa32, nTiles:9, comment:'Start menu - Players'},
-	{type:'tileset', offset:0x0fc295, nTiles:7, comment:'Start menu - Map difficulty (1)'},
-	{type:'tileset', offset:0x155210, nTiles:5, comment:'Start menu - Map difficulty (2,3)'},
-	{type:'tileset', offset:0x15661c, nTiles:5, comment:'Start menu - Map difficulty (4)'},
+	{type:'tileset', offset:0x10fa32, nTiles:10, comment:'Start menu - Players', file:'start_menu_players'},
+	{type:'tileset', offset:0x0fbf15, nTiles:79, comment:'Start menu - Map banner 1'},
+	{type:'tileset', offset:0x154f20, nTiles:104, comment:'Start menu - Map banner 2/3'},
+	{type:'tileset', offset:0x15623c, nTiles:114, comment:'Start menu - Map banner 4/5'},
+
+	{type:'tileset', offset:0x11dec8, nTiles:22, comment:'Start game - First player'},
+	//{type:'tileset', offset:0x12134f, nTiles:16, comment:'Multiplayer - Waiting for connection'},
 
 	{type:'tileset', offset:0x0dfe80, nTiles:10*2, comment:'Options - Header', file:'options_header'},
 	{type:'tileset', offset:0x129b4b, nTiles:14*2, comment:'Options - Message speed', file:'options_message_speed'},
