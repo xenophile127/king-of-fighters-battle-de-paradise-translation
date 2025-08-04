@@ -19,13 +19,16 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'tileset', offset:0x155210, nTiles:5, comment:'Start menu - Map difficulty (2,3)'},
 	{type:'tileset', offset:0x15661c, nTiles:5, comment:'Start menu - Map difficulty (4)'},
 
-	{type:'tileset', offset:0x0dfe80, nTiles:10*2, comment:'Options - Header'},
+	{type:'tileset', offset:0x0dfe80, nTiles:10*2, comment:'Options - Header', file:'options_header'},
 	{type:'tileset', offset:0x129b4b, nTiles:14*2, comment:'Options - Message speed', file:'options_message_speed'},
 	{type:'tileset', offset:0x0db504, nTiles:14*2, comment:'Options - Difficulty', file:'options_difficulty'},
 	{type:'tileset', offset:0x110c83, nTiles:14*2, comment:'Options - DC Link', file:'options_dc_link'},
 	{type:'tileset', offset:0x10c29a, nTiles:15*2, comment:'Options - Save data', file:'options_save_data'},
 	{type:'tileset', offset:0x0f2b3c, nTiles:12*1, comment:'Options - Message speed (choose)', file:'options_message_speed_choose'},
 	{type:'tileset', offset:0x11e0f5, nTiles:14*1, comment:'Options - Difficulty (choose)', file:'options_difficulty_choose'},
+
+	{type:'tileset', offset:0x10beed, nTiles:24, comment:'User screen - Battle games - Header', file:'user_mode_battle_games_header'},
+	{type:'tileset', offset:0x0fc322, nTiles:24, comment:'User screen - Level up - Header', file:'user_mode_level_up_header'},
 
 	{type:'tileset', offset:0x108bad, nTiles:4*1, comment:'Gameplay - HUD', file:'gameplay_hud'},
 	{type:'tileset', offset:0x148a07, nTiles:4*1, comment:'Gameplay - Icon text - Dice', file:'gameplay_icon_text_dice'},
