@@ -456,6 +456,16 @@ const KNOWN_POINTERS=[
 
 
 
+	/* DC LINK */
+	{pointerIndex:2119, comment:'Options - DC Link - NGPC -> DC', translation:'Choose a striker'},
+	{pointerIndex:2120, comment:'Options - DC Link - NGPC -> DC', translation:'Send to DC?'},
+	{pointerIndex:2121, comment:'Options - DC Link - DC -> NGPC', translation:'Receive AP from'},
+	{pointerIndex:2122, comment:'Options - DC Link - DC -> NGPC', translation:'DC?'},
+	{pointerIndex:2123, comment:'Options - DC Link', translation:'CommunicationError'},
+	{pointerIndex:2124, comment:'Options - DC Link'},
+
+
+
 	/* GAMEPLAY */
 	{pointerIndex:2129, comment:'Game intro - Turns', translation:'[0b][0c] TURNS'},
 	{pointerIndex:2130, comment:'Game intro - Stage names', translation:'BATTLEFIELD'}
