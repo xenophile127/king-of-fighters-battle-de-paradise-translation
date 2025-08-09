@@ -64,7 +64,15 @@ const KNOWN_POINTERS=[
 	{pointerIndex:53, comment:'Default player name - Ai', translation:'AI'},
 
 
-	
+
+	/* END GAME */
+	{pointerIndex:54, comment:'End game - Unlockables', translation:'[0c][0b] S.DATA unlocked'},
+	{pointerIndex:55, comment:'End game - Unlockables', translation:'[0b] STRIKER unlocked'},
+	{pointerIndex:56, comment:'End game - Unlockables', translation:'[0b] MAP unlocked'},
+	{pointerIndex:57, comment:'End game - Unlockables', translation:'[0c][0b] B.GAMES unlocked'},
+
+
+
 	/* COMMON TEXTS */
 	{pointerIndex:66, comment:'Common text - Accept', translation:'YES'},
 	{pointerIndex:67, comment:'Common text - Cancel', translation:'NO'},
