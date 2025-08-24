@@ -24,6 +24,9 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'tileset', offset:0x1378cf, nTiles:24, comment:'Start game - Second player', file:'start_game_player_second'},
 	//{type:'tileset', offset:0x12134f, nTiles:16, comment:'Multiplayer - Waiting for connection'},
 
+	{type:'map', offsetTileset:0x1a4b6d, nTiles:55, offsetMap:0x187b6c, width:20, height:19, comment:'Game end - Ability points exchange', file:'map_game_end_ability_points'},
+	{type:'tileset', offset:0x1bc808, nTiles:125, comment:'Game end - Save game'},
+
 	{type:'tileset', offset:0x0dfe80, nTiles:10*2, comment:'Options - Header', file:'options_header'},
 	{type:'tileset', offset:0x129b4b, nTiles:14*2, comment:'Options - Message speed', file:'options_message_speed'},
 	{type:'tileset', offset:0x0db504, nTiles:14*2, comment:'Options - Difficulty', file:'options_difficulty'},
@@ -87,4 +90,9 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'map', offsetTileset:0x1ecdd1, nTiles:189, offsetMap:0x193c64 + ((20*19*2) * 19), width:20, height:19, comment:'Static screen - Game rules 5.4', file:'game_rules/map_game_rules_5_4'},
 	{type:'map', offsetTileset:0x1ed9a1, nTiles:189, offsetMap:0x193c64 + ((20*19*2) * 20), width:20, height:19, comment:'Static screen - Game rules 5.5', file:'game_rules/map_game_rules_5_5'},
 	{type:'map', offsetTileset:0x1ee571, nTiles:215, offsetMap:0x193c64 + ((20*19*2) * 21), width:20, height:19, comment:'Static screen - Game rules 5.6', file:'game_rules/map_game_rules_5_6'},
+
+	//{type:'tileset', offset:0x1c5aef, nTiles:44, comment:'Secret data - First page (overlay)'},
+	//{type:'tileset', offset:0x15562d, nTiles:24, comment:'DC Link - Header?'},
+	//{type:'tileset', offset:0x19b86a, nTiles:59, comment:'DC Link - Header?'},
+	//{type:'tileset', offset:0x19e1b5, nTiles:79, comment:'DC Link - Header?'},
 ];
