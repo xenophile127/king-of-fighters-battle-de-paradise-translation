@@ -91,6 +91,8 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'map', offsetTileset:0x1ed9a1, nTiles:189, offsetMap:0x193c64 + ((20*19*2) * 20), width:20, height:19, comment:'Static screen - Game rules 5.5', file:'game_rules/map_game_rules_5_5'},
 	{type:'map', offsetTileset:0x1ee571, nTiles:215, offsetMap:0x193c64 + ((20*19*2) * 21), width:20, height:19, comment:'Static screen - Game rules 5.6', file:'game_rules/map_game_rules_5_6'},
 
+	{type:'map', offsetTileset:0x1bc808, nTiles:125, offsetMap:0x18b9c4, width:20, height:19, comment:'Static screen - Game end - Save game'/*, file:'map_game_end_save_game' */},
+
 	//{type:'tileset', offset:0x1c5aef, nTiles:44, comment:'Secret data - First page (overlay)'},
 	//{type:'tileset', offset:0x15562d, nTiles:24, comment:'DC Link - Header?'},
 	//{type:'tileset', offset:0x19b86a, nTiles:59, comment:'DC Link - Header?'},
