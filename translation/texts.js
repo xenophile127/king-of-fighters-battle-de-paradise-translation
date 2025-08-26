@@ -478,5 +478,10 @@ const KNOWN_POINTERS=[
 
 	/* GAMEPLAY */
 	{pointerIndex:2129, comment:'Game intro - Turns', translation:'[0b][0c] TURNS'},
-	{pointerIndex:2130, comment:'Game intro - Stage names', translation:'BATTLEFIELD'}
+	{pointerIndex:2130, comment:'Game intro - Stage names', translation:' BATTLEFIELD'},
+	{pointerIndex:2131, comment:'Game intro - Stage names', translation:'     NEST'},
+	{pointerIndex:2132, comment:'Game intro - Stage names', translation:'AMUSEMENT PARK'},
+	{pointerIndex:2133, comment:'Game intro - Stage names', translation:'    MUSEUM'},
+	{pointerIndex:2134, comment:'Game intro - Stage names', translation:' GAROU CANYON'},
+	{pointerIndex:2135, comment:'Game intro - Stage names', translation:' ATHENA WORLD'},
 ];
