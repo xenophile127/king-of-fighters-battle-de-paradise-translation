@@ -6,7 +6,7 @@ const GRAPHIC_REPLACEMENTS=[
 
 	{type:'tileset', offset:0x15284c, nTiles:31, comment:'Logo (sprite)', file:'logo_sprites'},
 	{type:'tileset', offset:0x113eb9, nTiles:89, comment:'Logo (layer 1)', file:'logo_layer1'},
-	//{type:'tileset', offset:0x0fd266, nTiles:20*5, comment:'Logo (layer 2)', file:'logo_layer2'},
+	{type:'tileset', offset:0x0fd266, nTiles:100, comment:'Logo (layer 2)', file:'logo_layer2'},
 
 	{type:'map', offsetTileset:0x1bed84, nTiles:127, offsetMap:0x18a2ec, width:20, height:19, comment:'Main Menu', file:'map_main_menu'},
 	{type:'tileset', offset:0x0ec532, nTiles:12*3, comment:'Main menu - Options (selected)', file:'main_menu_main_game_selected'},
@@ -25,7 +25,9 @@ const GRAPHIC_REPLACEMENTS=[
 	//{type:'tileset', offset:0x12134f, nTiles:16, comment:'Multiplayer - Waiting for connection'},
 
 	{type:'map', offsetTileset:0x1a4b6d, nTiles:55, offsetMap:0x187b6c, width:20, height:19, comment:'Game end - Ability points exchange', file:'map_game_end_ability_points'},
-	{type:'tileset', offset:0x1bc808, nTiles:125, comment:'Game end - Save game'},
+	{type:'map', offsetTileset:0x1bc808, nTiles:125, offsetMap:0x18b9c4, width:20, height:19, comment:'Game end - Save game', file:'map_game_end_save_game'},
+
+	{type:'map', offsetTileset:0x1aa392, nTiles:188, offsetMap:0x189ff4, width:20, height:19, comment:'Choose avatar', file:'map_choose_avatar'},
 
 	{type:'tileset', offset:0x0dfe80, nTiles:10*2, comment:'Options - Header', file:'options_header'},
 	{type:'tileset', offset:0x129b4b, nTiles:14*2, comment:'Options - Message speed', file:'options_message_speed'},
@@ -90,8 +92,6 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'map', offsetTileset:0x1ecdd1, nTiles:189, offsetMap:0x193c64 + ((20*19*2) * 19), width:20, height:19, comment:'Static screen - Game rules 5.4', file:'game_rules/map_game_rules_5_4'},
 	{type:'map', offsetTileset:0x1ed9a1, nTiles:189, offsetMap:0x193c64 + ((20*19*2) * 20), width:20, height:19, comment:'Static screen - Game rules 5.5', file:'game_rules/map_game_rules_5_5'},
 	{type:'map', offsetTileset:0x1ee571, nTiles:215, offsetMap:0x193c64 + ((20*19*2) * 21), width:20, height:19, comment:'Static screen - Game rules 5.6', file:'game_rules/map_game_rules_5_6'},
-
-	{type:'map', offsetTileset:0x1bc808, nTiles:125, offsetMap:0x18b9c4, width:20, height:19, comment:'Static screen - Game end - Save game'/*, file:'map_game_end_save_game' */},
 
 	//{type:'tileset', offset:0x1c5aef, nTiles:44, comment:'Secret data - First page (overlay)'},
 	//{type:'tileset', offset:0x15562d, nTiles:24, comment:'DC Link - Header?'},

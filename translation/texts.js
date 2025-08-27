@@ -72,6 +72,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:57, comment:'End game - Unlockables', translation:'[0c][0b] GAMES unlocked'},
 	{pointerIndex:59, comment:'End game - Point exchange', translation:'Convert coins to  Ability Points.'},
 	{pointerIndex:60, comment:'End game - Point exchange', translation:'Converting to     Ability Points...'},
+	{pointerIndex:61, comment:'End game - Point exchange', translation:'Conversion        completed.'},
 
 
 
