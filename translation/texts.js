@@ -216,16 +216,58 @@ const KNOWN_POINTERS=[
 
 
 
-	/* EVENT SQUARE: Athena */
-	{pointerIndex:1355, comment:'Event Square - Athena - Now On Sale'},
-	{pointerIndex:1356, comment:'Event Square - Athena - Now On Sale', translation:'Oh I forgot![06]\nI have a\nsigning at[0f]the record\nshop soon.\nSorry.[heart][0f]'},
+	/* EVENT SQUARE: player strikers */
+	{pointerIndex:1200, comment:'Event Square - Goro GOOD'},
+	{pointerIndex:1205, comment:'Event Square - Goro EVIL'},
+	{pointerIndex:1210, comment:'Event Square - Billy GOOD'},
+	{pointerIndex:1215, comment:'Event Square - Billy EVIL'},
+	{pointerIndex:1220, comment:'Event Square - Ryuji GOOD'},
+	{pointerIndex:1225, comment:'Event Square - Ryuji EVIL'},
+	{pointerIndex:1230, comment:'Event Square - Kyo GOOD'},
+	{pointerIndex:1235, comment:'Event Square - Kyo EVIL'},
+	{pointerIndex:1240, comment:'Event Square - Chizuru GOOD'},
+	{pointerIndex:1245, comment:'Event Square - Chizuru EVIL'},
+	{pointerIndex:1250, comment:'Event Square - Athena GOOD'},
+	{pointerIndex:1255, comment:'Event Square - Athena EVIL'},
+	{pointerIndex:1260, comment:'Event Square - Alfred GOOD'},
+	{pointerIndex:1265, comment:'Event Square - Alfred EVIL'},
+	{pointerIndex:1270, comment:'Event Square - Fio GOOD'},
+	{pointerIndex:1275, comment:'Event Square - Fio EVIL'},
+	{pointerIndex:1280, comment:'Event Square - Gai GOOD'},
+	{pointerIndex:1285, comment:'Event Square - Gai EVIL'},
+	{pointerIndex:1290, comment:'Event Square - Syo GOOD'},
+	{pointerIndex:1295, comment:'Event Square - Syo EVIL'},
+	{pointerIndex:1300, comment:'Event Square - Goro GOOD'},
+	{pointerIndex:1305, comment:'Event Square - Goro EVIL'},
+	{pointerIndex:1310, comment:'Event Square - Billy GOOD'},
+	{pointerIndex:1315, comment:'Event Square - Billy EVIL'},
+	{pointerIndex:1320, comment:'Event Square - Ryuji GOOD'},
+	{pointerIndex:1325, comment:'Event Square - Ryuji EVIL'},
+	{pointerIndex:1330, comment:'Event Square - Kyo GOOD'},
+	{pointerIndex:1335, comment:'Event Square - Kyo EVIL'},
+	{pointerIndex:1340, comment:'Event Square - Chizuru GOOD'},
+	{pointerIndex:1345, comment:'Event Square - Chizuru EVIL'},
+	{pointerIndex:1350, comment:'Event Square - Athena GOOD'},
+	{pointerIndex:1355, comment:'Event Square - Athena EVIL - Now On Sale'},
+	{pointerIndex:1356, comment:'Event Square - Athena EVIL - Now On Sale', translation:'Oh I forgot![06]\nI have a\nsigning at[0f]the record\nshop soon.\nSorry.[heart][0f]'},
+	{pointerIndex:1360, comment:'Event Square - Alfred GOOD'},
+	{pointerIndex:1365, comment:'Event Square - Alfred EVIL'},
+	{pointerIndex:1370, comment:'Event Square - Fio GOOD'},
+	{pointerIndex:1375, comment:'Event Square - Fio EVIL'},
+	{pointerIndex:1380, comment:'Event Square - Gai GOOD'},
+	{pointerIndex:1385, comment:'Event Square - Gai EVIL'},
+	{pointerIndex:1390, comment:'Event Square - Syo GOOD'},
+	{pointerIndex:1395, comment:'Event Square - Syo EVIL'},
 
-	/* EVENT SQUARE: Kensou */
+	/* EVENT SQUARE: non-strikers (can appear with any striker) */
+	{pointerIndex:1400, comment:'Event Square - Shingo'},
+	{pointerIndex:1405, comment:'Event Square - Iori'},
 	{pointerIndex:1410, comment:'Event Square - Kensou'},
-	{pointerIndex:1411, comment:'Event Square - Kensou'},
-	{pointerIndex:1412, comment:'Event Square - Kensou'},
-
-	/* EVENT SQUARE: Robert Garcia */
+	{pointerIndex:1415, comment:'Event Square - Ryo'},
+	{pointerIndex:1420, comment:'Event Square - Ralf'},
+	{pointerIndex:1425, comment:'Event Square - Leona'},
+	{pointerIndex:1430, comment:'Event Square - Seth'},
+	{pointerIndex:1435, comment:'Event Square - Vanessa'},
 	{pointerIndex:1450, comment:'Event Square - Robert Garcia', translation:'●Ease and\ncomfort.[0f]'},
 	{pointerIndex:1451, comment:'Event Square - Robert Garcia', translation:'Psst! Buy a\n★ for [coin]10?[0f]'},
 	{pointerIndex:1452, comment:'Event Square - Robert Garcia', translation:'★ for [coin]10...'},
@@ -234,11 +276,11 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1455, comment:'Event Square - Robert Garcia', translation:'Great deal![0f]'},
 	{pointerIndex:1456, comment:'Event Square - Robert Garcia', translation:'Don\'t have\n[coin]10?[06] I can\'t\ngo lower.[0f]'},
 	{pointerIndex:1457, comment:'Event Square - Robert Garcia', translation:'See you\nlater.[0f]'},
+	{pointerIndex:1460, comment:'Event Square - Kim'},
+	{pointerIndex:1470, comment:'Event Square - Choi & Chang'},
+	{pointerIndex:1480, comment:'Event Square - Chris'},
+	{pointerIndex:1490, comment:'Event Square - Shermie'},
 
-	/* EVENT SQUARE: Choi & Chang */
-	{pointerIndex:1460, comment:'Event Square - Choi & Chang'},
-	{pointerIndex:1461, comment:'Event Square - Choi & Chang'},
-	{pointerIndex:1462, comment:'Event Square - Choi & Chang'},
 
 
 
@@ -256,9 +298,9 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1613, comment:'Event square result - Player - Got cards', translation:'[08] got\n[card][0b].[0f]'},
 	{pointerIndex:1614, comment:'Event square result - Player - Got stars', translation:'[08] got\n★[0b].[0f]'},
 
-	{pointerIndex:1621, comment:'Event square result - Player - Coins lost', translation:'[08] dropped\n[coin][0b][0c].[0f]'},
+	{pointerIndex:1621, comment:'Event square result - Player - Coins lost', translation:'[08] lost\n[coin][0b][0c].[0f]'},
 	{pointerIndex:1622, comment:'Event square result - Player - Cards lost', translation:'[08] lost\n[card][0b].[0f]'},
-	{pointerIndex:1624, comment:'Event square result - Rival - Coins lost', translation:'[09] dropped\n[coin][0b][0c].[0f]'},
+	{pointerIndex:1624, comment:'Event square result - Rival - Coins lost', translation:'[09] lost\n[coin][0b][0c].[0f]'},
 	{pointerIndex:1625, comment:'Event square result - Rival - Cards lost', translation:'[09] lost\n[card][0b].[0f]'},
 
 	{pointerIndex:1633, comment:'Event square result - Striker side switch (good)', translation:'switched to\nGOOD side[0f].'},
@@ -296,9 +338,12 @@ const KNOWN_POINTERS=[
 
 	{pointerIndex:1683, comment:'Board game - Rival turn - Striker side switch (good)', translation:'Striker goes GOOD'},
 	{pointerIndex:1684, comment:'Board game - Rival turn - Striker side switch (evil)', translation:'Striker goes EVIL'},
-
+	{pointerIndex:1685, comment:'Board game - Everyone\'s coins decreased by', translation:'All lose [coin][0b][0c]'},
 	{pointerIndex:1686, comment:'Board game - Everyone\'s coins decreased by 25%', translation:'All coins -25%'},
-
+	{pointerIndex:1687, comment:'Board game - Rival\'s coins increased by 25%', translation:'[09] coins +25%'},
+	{pointerIndex:1688, comment:'Board game - Rival\'s coins decreased by 25%', translation:'[09] coins -25%'},
+	{pointerIndex:1689, comment:'Board game - Player\'s coins increased by 25%', translation:'[08] coins +25%'},
+	{pointerIndex:1690, comment:'Board game - Player\'s coins decreased by 25%', translation:'[08] coins -25%'},
 	{pointerIndex:1691, comment:'Board game - Player - Coins lost', translation:'[08] loses [coin][0b][0c]'},
 
 
