@@ -348,7 +348,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1872, comment:'Star Square - Heidern (unused)', translation:'No.'},	/* Unused. Uses #67 instead. */
 
 	{pointerIndex:1875, comment:'Star Square - Heidern', translation:'Another ★?'},
-	{pointerIndex:1876, comment:'Star Square - Heidern', translation:'That\'s all!'},
+	{pointerIndex:1876, comment:'Star Square - Heidern', translation:'That\'s all![0f]'},
 
 
 
