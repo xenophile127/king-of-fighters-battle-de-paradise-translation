@@ -34,5 +34,4 @@ SET BREAKPOINT:
 	bp 0x252c6c
 SET WATCHPOINT:
 	wpset 0x2dab70,1,r ;read select map 0
-	wpset 0x9440,1,w,wpdata == 0x09
-	wpset 0x1440:k1ge,1,w,wpdata == 0x09
+	wpset 0x8000 + 0x1440,1,w,wpdata == 0x09

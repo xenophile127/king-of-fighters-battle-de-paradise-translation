@@ -51,10 +51,22 @@ const PATCHES=[
 
 
 	/* Create user - Type name */
-	/*
-		note: if first byte is changed, menu won't work correctly
-		to-do: debug and find where it checks which character the cursor is on
-	*/
-	{offset:0x147bb, name:'Create user - Type name (ASCII)', data:[0x63,'A','B','C']},
-	{offset:0x147bf, name:'Create user - Type name (END)', data:[0x68,'E','N','D']}
+	{offset:0x14294, name:'Create user - NAME', data:[
+		0x1d, 0xe0, 0x11, 0x1f + 0x20, //call 0xXXXXXX ;call custom subroutine
+		0x00, //nop ;needed padding to replace the old five byte operation
+		0xf5, 0xf1, 0x02, 'M', 0x00, //ld (XIX+), 0xXXXX ;write M
+		0xf5, 0xf1, 0x02, 'E', 0x00, //ld (XIX+), 0xXXXX ;write E
+		0xf5, 0xf1, 0x02, ':', 0x00 //ld (XIX+), 0xXXXX ;write :
+		//original code will continue from here on
+	]},
+	{offset:0x1f11e0, name:'Create user - Name subroutine hook', data:[
+		0x44, 0xc4, 0x93, 0x00, 0x00, //ld XIX, 0xXXXXXXXX ;set cursor position
+		0xf5, 0xf1, 0x02, 'N', 0x00, //ld (XIX+), 0xXXXX ;write N
+		0xf5, 0xf1, 0x02, 'A', 0x00, //ld (XIX+), 0xXXXX ;write A
+		0x0e //ret
+	]},
+	{offset:0x147bb, name:'Create user - Type name (ABC)', data:['A','B','C',' ']},
+	{offset:0x147bf, name:'Create user - Type name (END)', data:['E','N','D',' ']},
+	{offset:0x144f3, name:'Create user - Type name character check (ABC)', data:['A']},
+	{offset:0x14505, name:'Create user - Type name character check (END)', data:['E']}
 ];
