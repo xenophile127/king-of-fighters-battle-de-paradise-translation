@@ -9,7 +9,7 @@ const KNOWN_POINTERS=[
 
 	/* START GAME */
 	{pointerIndex:5, comment:'Start game - Intro (helper)', translation:'Choose\nhelper'},
-	{pointerIndex:6, comment:'Start game - Intro (skill)', translation:'···and\nskill?'},
+	{pointerIndex:6, comment:'Start game - Intro (skill)', translation:'···and\nside?'},
 	{pointerIndex:7, comment:'Start game - Intro (bottom text)', translation:'USE ←/→'},
 	{pointerIndex:8, comment:'Start game - Intro (bottom text filler)'},
 	{pointerIndex:10, comment:'Start game - Intro (players)', translation:'Player\nnumber'},
@@ -92,8 +92,8 @@ const KNOWN_POINTERS=[
 	{pointerIndex:76, comment:'Start game - Striker names', translation:'FIO'},
 	{pointerIndex:77, comment:'Start game - Striker names', translation:'GAI'},
 	{pointerIndex:78, comment:'Start game - Striker names', translation:'SYO'},
-	{pointerIndex:79, comment:'Start game - Good side', translation:'ゔ[0b]GS'},
-	{pointerIndex:80, comment:'Start game - Evil side', translation:'ゔ[0b]ES'},
+	{pointerIndex:79, comment:'Start game - Good side', translation:'ゔ[0b]×±'}, //×±=Good
+	{pointerIndex:80, comment:'Start game - Evil side', translation:'ゔ[0b]…○'}, //…○=Evil
 
 
 	/* MINIGAME - COMMON */
@@ -166,8 +166,8 @@ const KNOWN_POINTERS=[
 	{pointerIndex:151, comment:'User screen - Level up - Cost for Lv2', translation:'ゔ2 UPGRADE COST=2'},
 	{pointerIndex:152, comment:'User screen - Level up - Cost for Lv3', translation:'ゔ3 UPGRADE COST=5'},
 	{pointerIndex:153, comment:'User screen - Level up - Ask?', translation:'Upgrade to next ゔ?'},
-	{pointerIndex:154, comment:'User screen - Level up - LvX Good side', translation:'ゔ[0b] GS'},
-	{pointerIndex:155, comment:'User screen - Level up - LvX Evil side', translation:'ゔ[0b] ES'},
+	{pointerIndex:154, comment:'User screen - Level up - LvX Good side', translation:'ゔ[0b] ×±'}, //×±=Good
+	{pointerIndex:155, comment:'User screen - Level up - LvX Evil side', translation:'ゔ[0b] …○'}, //…○=Evil
 
 
 
@@ -339,14 +339,17 @@ const KNOWN_POINTERS=[
 
 	/* USER SCREEN - LEVEL UP - NAMES */
 	{pointerIndex:1806, comment:'User screen - Level up - Striker names', translation:'ALFRED'},
-	/* EVENT SQUARE: Striker names */
-	/*
-		these appear when a striker changes side
-	*/
-	{pointerIndex:1820, comment:'Event Square Results - Striker names', translation:'Striker GORO'},
-	{pointerIndex:1821, comment:'Event Square Results - Striker names', translation:'Striker BILLY'},
-	{pointerIndex:1822, comment:'Event Square Results - Striker names', translation:'Striker RYUJI'},
-	{pointerIndex:1823, comment:'Event Square Results - Striker names', translation:'Striker KYO'},
+	/* EVENT SQUARE: Striker names (these appear when a striker changes side) */
+	{pointerIndex:1820, comment:'Event Square Results - Striker names', translation:'GORO'},
+	{pointerIndex:1821, comment:'Event Square Results - Striker names', translation:'BILLY'},
+	{pointerIndex:1822, comment:'Event Square Results - Striker names', translation:'RYUJI'},
+	{pointerIndex:1823, comment:'Event Square Results - Striker names', translation:'KYO'},
+	{pointerIndex:1824, comment:'Event Square Results - Striker names', translation:'CHIZURU'},
+	{pointerIndex:1825, comment:'Event Square Results - Striker names', translation:'ATHENA'},
+	{pointerIndex:1826, comment:'Event Square Results - Striker names', translation:'ALFRED'},
+	{pointerIndex:1827, comment:'Event Square Results - Striker names', translation:'FIO'},
+	{pointerIndex:1828, comment:'Event Square Results - Striker names', translation:'GAI'},
+	{pointerIndex:1829, comment:'Event Square Results - Striker names', translation:'SYO'},
 
 	/* EVENT SQUARE: Shopping dialogues */
 	{pointerIndex:1831, comment:'Event square shopping - Player not enough coins', translation:'[08] has no\nenough\n[coin]coins![0f]'},
