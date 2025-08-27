@@ -251,7 +251,7 @@ const KNOWN_POINTERS=[
 
 	
 
-	/* EVENT SQUARE RESULT */
+	/* EVENT SQUARE: Result */
 	{pointerIndex:1612, comment:'Event square result - Player - Got coins', translation:'[08] got\n[coin][0b][0c].[0f]'},
 	{pointerIndex:1613, comment:'Event square result - Player - Got cards', translation:'[08] got\n[card][0b].[0f]'},
 	{pointerIndex:1614, comment:'Event square result - Player - Got stars', translation:'[08] got\n★[0b].[0f]'},
@@ -261,8 +261,8 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1624, comment:'Event square result - Rival - Coins lost', translation:'[09] dropped\n[coin][0b][0c].[0f]'},
 	{pointerIndex:1625, comment:'Event square result - Rival - Cards lost', translation:'[09] lost\n[card][0b].[0f]'},
 
-	{pointerIndex:1633, comment:'Event square result - Striker side switch (good)', translation:'Striker went\nGOOD[0f].'},
-	{pointerIndex:1634, comment:'Event square result - Striker side switch (evil)', translation:'Striker went\nEVIL[0f].'},
+	{pointerIndex:1633, comment:'Event square result - Striker side switch (good)', translation:'switched to\nGOOD side[0f].'},
+	{pointerIndex:1634, comment:'Event square result - Striker side switch (evil)', translation:'switched to\nEVIL side[0f].'},
 
 	{pointerIndex:1637, comment:'Event square result - Player - Coins increased by 25%', translation:'[08]\'s [coin]\nincreased by\n25%.[0f]'},
 
@@ -339,14 +339,25 @@ const KNOWN_POINTERS=[
 
 	/* USER SCREEN - LEVEL UP - NAMES */
 	{pointerIndex:1806, comment:'User screen - Level up - Striker names', translation:'ALFRED'},
+	/* EVENT SQUARE: Striker names */
+	/*
+		these appear when a striker changes side
+	*/
+	{pointerIndex:1820, comment:'Event Square Results - Striker names', translation:'Striker GORO'},
+	{pointerIndex:1821, comment:'Event Square Results - Striker names', translation:'Striker BILLY'},
+	{pointerIndex:1822, comment:'Event Square Results - Striker names', translation:'Striker RYUJI'},
+	{pointerIndex:1823, comment:'Event Square Results - Striker names', translation:'Striker KYO'},
 
-
+	/* EVENT SQUARE: Shopping dialogues */
+	{pointerIndex:1831, comment:'Event square shopping - Player not enough coins', translation:'[08] has no\nenough\n[coin]coins![0f]'},
+	{pointerIndex:1832, comment:'Event square shopping - Rival not enough coins', translation:'[09] has no\nenough\n[coin]coins![0f]'},
 
 	/* STAR SQUARE: Heidern sells you up to three stars for 20 coins each. */
 	{pointerIndex:1870, comment:'Star Square - Heidern', translation:'A ★ for [coin]20?'},
 	{pointerIndex:1871, comment:'Star Square - Heidern (unused)', translation:'Yes.'},	/* Unused. Uses #66 instead. */
 	{pointerIndex:1872, comment:'Star Square - Heidern (unused)', translation:'No.'},	/* Unused. Uses #67 instead. */
-
+	{pointerIndex:1873, comment:'Board game - Rival bought cards', translation:'Bought [0b] cards'},
+	{pointerIndex:1874, comment:'Board game - Rival bought no cards', translation:'No cards bought'},
 	{pointerIndex:1875, comment:'Star Square - Heidern', translation:'Another ★?'},
 	{pointerIndex:1876, comment:'Star Square - Heidern', translation:'That\'s all![0f]'},
 
