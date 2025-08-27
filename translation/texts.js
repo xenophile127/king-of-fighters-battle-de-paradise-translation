@@ -128,7 +128,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:123, comment:'Minigame - Bouzu Mekuri - Lord', translation:'Lord:Drop 1.[0f]'},
 	{pointerIndex:124, comment:'Minigame - Bouzu Mekuri - Monk', translation:'Monk:Drop [0c][0b][0f]'},
 	{pointerIndex:125, comment:'Minigame - Bouzu Mekuri - Monk', translation:'Monk:Drop [0b].[0f]'},
-	{pointerIndex:126, comment:'Minigame - Bouzu Mekuri - card counter', translation:'[ngp]'},
+	{pointerIndex:126, comment:'Minigame - Bouzu Mekuri - card counter', translation:'[card]'},
 
 
 
@@ -220,8 +220,11 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1355, comment:'Event Square - Athena - Now On Sale'},
 	{pointerIndex:1356, comment:'Event Square - Athena - Now On Sale', translation:'Oh I forgot![06]\nI have a\nsigning at[0f]the record\nshop soon.\nSorry.[heart][0f]'},
 
+	/* EVENT SQUARE: Kensou */
+	{pointerIndex:1410, comment:'Event Square - Kensou'},
+	{pointerIndex:1411, comment:'Event Square - Kensou'},
+	{pointerIndex:1412, comment:'Event Square - Kensou'},
 
-	
 	/* EVENT SQUARE: Robert Garcia */
 	{pointerIndex:1450, comment:'Event Square - Robert Garcia', translation:'●Ease and\ncomfort.[0f]'},
 	{pointerIndex:1451, comment:'Event Square - Robert Garcia', translation:'Psst! Buy a\n★ for [coin]10?[0f]'},
@@ -231,6 +234,11 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1455, comment:'Event Square - Robert Garcia', translation:'Great deal![0f]'},
 	{pointerIndex:1456, comment:'Event Square - Robert Garcia', translation:'Don\'t have\n[coin]10?[06] I can\'t\ngo lower.[0f]'},
 	{pointerIndex:1457, comment:'Event Square - Robert Garcia', translation:'See you\nlater.[0f]'},
+
+	/* EVENT SQUARE: Choi & Chang */
+	{pointerIndex:1460, comment:'Event Square - Choi & Chang'},
+	{pointerIndex:1461, comment:'Event Square - Choi & Chang'},
+	{pointerIndex:1462, comment:'Event Square - Choi & Chang'},
 
 
 
@@ -242,15 +250,56 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1601, comment:'Rival - Lose Turn', translation:'[09] loses a turn.[0f]'},
 
 	
-	{pointerIndex:1612, comment:'Player - Got coins (big font)', translation:'[08] got [coin][0b][0c][0f]'},
-	{pointerIndex:1613, comment:'Player - Got cards (big font)', translation:'[08] got [ngp][0b].[0f]'},
-	{pointerIndex:1614, comment:'Player - Got stars (big font)', translation:'[08] got ★[0b].[0f]'},
+
+	/* EVENT SQUARE RESULT */
+	{pointerIndex:1612, comment:'Event square result - Player - Got coins', translation:'[08] got\n[coin][0b][0c].[0f]'},
+	{pointerIndex:1613, comment:'Event square result - Player - Got cards', translation:'[08] got\n[card][0b].[0f]'},
+	{pointerIndex:1614, comment:'Event square result - Player - Got stars', translation:'[08] got\n★[0b].[0f]'},
+
+	{pointerIndex:1621, comment:'Event square result - Player - Coins lost', translation:'[08] dropped\n[coin][0b][0c].[0f]'},
+	{pointerIndex:1622, comment:'Event square result - Player - Cards lost', translation:'[08] lost\n[card][0b].[0f]'},
+	{pointerIndex:1624, comment:'Event square result - Rival - Coins lost', translation:'[09] dropped\n[coin][0b][0c].[0f]'},
+	{pointerIndex:1625, comment:'Event square result - Rival - Cards lost', translation:'[09] lost\n[card][0b].[0f]'},
+
+	{pointerIndex:1633, comment:'Event square result - Striker side switch (good)', translation:'Striker went\nGOOD[0f].'},
+	{pointerIndex:1634, comment:'Event square result - Striker side switch (evil)', translation:'Striker went\nEVIL[0f].'},
+
+	{pointerIndex:1637, comment:'Event square result - Player - Coins increased by 25%', translation:'[08]\'s [coin]\nincreased by\n25%.[0f]'},
+
+	{pointerIndex:1641, comment:'Event square result - Rival - Got coins', translation:'[09] got\n[coin][0b][0c].[0f]'},
+	{pointerIndex:1642, comment:'Event square result - Rival - Got cards', translation:'[09] got\n[card][0b].[0f]'},
+	{pointerIndex:1643, comment:'Event square result - Rival - Got stars', translation:'[09] got\n★[0b].[0f]'},
 
 
+	/* BOARD GAME */
+	{pointerIndex:1652, comment:'Board game - Rival - Card used', translation:'[09] moves 1'},
+	{pointerIndex:1653, comment:'Board game - Rival - Card used', translation:'[09] moves 2'},
+	{pointerIndex:1654, comment:'Board game - Rival - Card used', translation:'[09] moves 3'},
+	{pointerIndex:1655, comment:'Board game - Rival - Card used', translation:'[09] moves 4'},
+	{pointerIndex:1656, comment:'Board game - Rival - Card used', translation:'[09] moves 5'},
+	{pointerIndex:1657, comment:'Board game - Rival - Card used', translation:'[09] moves 6'},
+	{pointerIndex:1658, comment:'Board game - Rival - Card used', translation:'[09] moves 7'},
+	{pointerIndex:1659, comment:'Board game - Rival - Card used', translation:'[09] moves 8'},
+	{pointerIndex:1660, comment:'Board game - Rival - Card used', translation:'[09] moves 9'},
+	{pointerIndex:1661, comment:'Board game - Rival - Card used', translation:'[09] moves 10'},
+	{pointerIndex:1662, comment:'Board game - Rival - Coins get', translation:'[09] gets [coin][0b][0c]'},
+	{pointerIndex:1663, comment:'Board game - Rival - Card get', translation:'[09] gets [card][0b]'},
+	{pointerIndex:1664, comment:'Board game - Rival - Star get', translation:'[09] gets ★[0b]'},
+	{pointerIndex:1665, comment:'Board game - Rival - Coins stolen', translation:'[09] stole [coin][0b][0c]'},
+	{pointerIndex:1666, comment:'Board game - Rival - Card stolen', translation:'[09] stole [card][0b]'},
+	{pointerIndex:1667, comment:'Board game - Rival - Star stolen', translation:'[09] stole a ★'},
+	{pointerIndex:1668, comment:'Board game - Rival - Coin given', translation:'[09] gave [coin][0b][0c]'},
+	{pointerIndex:1669, comment:'Board game - Rival - Card given', translation:'[09] gave [card][0b]'},
+	{pointerIndex:1670, comment:'Board game - Rival - Star given', translation:'[09] gave a ★'},
+	{pointerIndex:1671, comment:'Board game - Rival - Spent coins???', translation:'[09] spent?[coin][0b][0c]'},
+	{pointerIndex:1672, comment:'Board game - Rival - Card used???', translation:'[09] used [0b] card'},
 
-	{pointerIndex:1641, comment:'Rival - Got coins (big font)', translation:'[09] got [coin][0b][0c][0f]'},
-	{pointerIndex:1642, comment:'Rival - Got cards (big font)', translation:'[09] got [ngp][0b].[0f]'},
-	{pointerIndex:1643, comment:'Rival - Got stars (big font)', translation:'[09] got ★[0b].[0f]'},
+	{pointerIndex:1683, comment:'Board game - Striker side switch (good)', translation:'Striker goes GOOD'},
+	{pointerIndex:1684, comment:'Board game - Striker side switch (evil)', translation:'Striker goes EVIL'},
+
+	{pointerIndex:1686, comment:'Board game - Everyone\'s coins decreased by 25%', translation:'All coins -25%'},
+
+	{pointerIndex:1691, comment:'Board game - Player - Coins lost', translation:'[08] loses [coin][0b][0c]'},
 
 
 
@@ -351,8 +400,8 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1960, comment:'Card description', translation:'Get coins by lv.'},
 	{pointerIndex:1961, comment:'Card description', translation:'Split coins evenly'},
 	{pointerIndex:1962, comment:'Card description', translation:'Swap coin totals.'},
-	{pointerIndex:1963, comment:'Card description', translation:'Random 5[ngp] (good)'},
-	{pointerIndex:1964, comment:'Card description', translation:'Random 5[ngp] (evil)'},
+	{pointerIndex:1963, comment:'Card description', translation:'Random 5[card] (good)'},
+	{pointerIndex:1964, comment:'Card description', translation:'Random 5[card] (evil)'},
 	{pointerIndex:1965, comment:'Card description', translation:'[09] discard(good)'},
 	{pointerIndex:1966, comment:'Card description', translation:'[09] discard(evil)'},
 	{pointerIndex:1967, comment:'Card description', translation:'Warp to a shop.'},

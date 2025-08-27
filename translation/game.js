@@ -458,7 +458,7 @@ const CHAR_TABLE=[
 	{id:0x013d, char:'♪'},
 	{id:0x013e, char:'[heart]'},
 	{id:0x013f, char:'[coin]'},
-	{id:0x0140, char:'[ngp]'},
+	{id:0x0140, char:'[card]'},
 	{id:0x0141, char:'★'},
 	{id:0x0142, char:'Ω'},
 	//{id:0x0143, char:''}, //unused

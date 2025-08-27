@@ -70,6 +70,8 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'tileset', offset:0x0e2a0c, nTiles:15*2, comment:'User - Minigame title #22 (selected)', file:'user_minigame_title_selected_22'},
 	//{type:'tileset', offset:0x12e685, nTiles:15*2, comment:'User - Minigame title #23 (selected)'}, //YO·SA·KU
 
+	{type:'tileset', offset:0x10fce8, nTiles:12, comment:'Minigames - Let\'s dance - Performance'/*, file:'minigame_lets_dance_performance'*/},
+
 	{type:'map', offsetTileset:0x1c94a6, nTiles:158, offsetMap:0x193c64 + ((20*19*2) * 0), width:20, height:19, comment:'Static screen - Game Rules', file:'game_rules/map_game_rules_0'},
 	{type:'map', offsetTileset:0x1d3712, nTiles:225, offsetMap:0x193c64 + ((20*19*2) * 1), width:20, height:19, comment:'Static screen - Game rules 1.1', file:'game_rules/map_game_rules_1_1'},
 	{type:'map', offsetTileset:0x1de80d, nTiles:211, offsetMap:0x193c64 + ((20*19*2) * 2), width:20, height:19, comment:'Static screen - Game rules 1.2', file:'game_rules/map_game_rules_1_2'},
