@@ -68,5 +68,18 @@ const PATCHES=[
 	{offset:0x147bb, name:'Create user - Type name (ABC)', data:['A','B','C',' ']},
 	{offset:0x147bf, name:'Create user - Type name (END)', data:['E','N','D',' ']},
 	{offset:0x144f3, name:'Create user - Type name character check (ABC)', data:['A']},
-	{offset:0x14505, name:'Create user - Type name character check (END)', data:['E']}
+	{offset:0x14505, name:'Create user - Type name character check (END)', data:['E']},
+
+
+
+
+
+
+
+
+
+	/* set big font width to 10 */
+	/* to-do: document */
+	{offset:0x052d56, name:'do not call 0x252e3d', data:[0x00, 0x00]},
+	{offset:0x052e3a, name:'0x252e3d: fix next tile', data:[0x40 / 2]},
 ];

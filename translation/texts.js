@@ -8,8 +8,10 @@ const KNOWN_POINTERS=[
 	{pointerIndex:4, comment:'Communication Error', translation:'CommErr'},
 
 	/* START GAME */
-	{pointerIndex:5, comment:'Start game - Intro (helper)', translation:'Choose\nhelper'},
-	{pointerIndex:6, comment:'Start game - Intro (skill)', translation:'···and\nside?'},
+	//{pointerIndex:5, comment:'Start game - Intro (helper)', translation:'Choose\nhelper'},
+	//{pointerIndex:6, comment:'Start game - Intro (skill)', translation:'···and\nside?'},
+	{pointerIndex:5, comment:'Start game - Intro (helper)', translation:'Choose\nstriker'},
+	{pointerIndex:6, comment:'Start game - Intro (skill)', translation:'…good\nor evil?'},
 	{pointerIndex:7, comment:'Start game - Intro (bottom text)', translation:'USE ←/→'},
 	{pointerIndex:8, comment:'Start game - Intro (bottom text filler)'},
 	{pointerIndex:10, comment:'Start game - Intro (players)', translation:'Player\nnumber'},
