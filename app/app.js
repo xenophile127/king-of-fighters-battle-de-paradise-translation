@@ -86,6 +86,20 @@ const _loadRom=function(arrayBuffer, fileName){
 			document.getElementById('btn-export-texts').disabled=false;
 			div.classList.add('modified');
 		});
+		if(Array.isArray(GAME_INFO.previewBackgrounds) && knownPointer?.preview){
+			const previewBackground=GAME_INFO.previewBackgrounds.find(b => b.background === knownPointer.preview);
+			textareaTranslated.addEventListener('focus', function(evt){
+				RetroTranslationsScreenPreview.setBackground(previewBackground.folder + '/' + previewBackground.background);
+				RetroTranslationsScreenPreview.setText(GAME_INFO.previewFixFn? GAME_INFO.previewFixFn(this.value) : this.value);
+				_showPreviewPopover();
+			});
+			textareaTranslated.addEventListener('blur', function(evt){
+				_hidePreviewPopover();
+			});
+			textareaTranslated.addEventListener('input', function(evt){
+				RetroTranslationsScreenPreview.setText(GAME_INFO.previewFixFn? GAME_INFO.previewFixFn(this.value) : this.value);
+			});
+		}
 
 		div.appendChild(header);
 		div.appendChild(textareaOriginal);
@@ -98,6 +112,17 @@ const _loadRom=function(arrayBuffer, fileName){
 		})
 	});
 
+	if(Array.isArray(GAME_INFO.previewBackgrounds)){
+		const popoverPreview=document.createElement('div');
+		popoverPreview.id='popover-preview';
+		document.body.appendChild(popoverPreview);
+
+		RetroTranslationsScreenPreview.initialize(GAME_INFO.previewBackgrounds);
+		const canvas=RetroTranslationsScreenPreview.getSettings().canvas;
+		popoverPreview.appendChild(canvas);
+	}
+
+	
 	_showLoadingMessage('Rebuilding graphics...');
 	loadingQueue=GRAPHIC_REPLACEMENTS.filter(graphicReplacement => graphicReplacement.file).length;
 	const GRAYSCALE_PALETTE=new PaletteNGPC();
@@ -264,6 +289,13 @@ const _imageDataToCanvas=function(imageData){
 	ctx.putImageData(imageData, 0, 0);
 	return canvas;
 }
+
+const _showPreviewPopover=function(){
+	document.getElementById('popover-preview').className='show';
+};
+const _hidePreviewPopover=function(){
+	document.getElementById('popover-preview').className='';
+};
 
 window.addEventListener('load', function(evt){
 	if(typeof GAME_INFO !== 'object')

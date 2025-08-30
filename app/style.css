@@ -240,3 +240,27 @@ dialog textarea{
 
 
 
+#popover-preview{
+	position:fixed;
+	bottom:8px;
+	left:8px;
+	background-color:white;
+	line-height:0;
+	padding:8px;
+	border-radius:4px;
+	display:none;
+}
+#popover-preview.show{
+	display:block
+}
+#popover-preview canvas{
+	border-radius:inherit;
+}
+#popover-preview canvas.pixelate{
+	image-rendering:optimizeSpeed;
+	image-rendering:-moz-crisp-edges;
+	image-rendering:-webkit-optimize-contrast;
+	image-rendering:optimize-contrast;
+	image-rendering:pixelated;
+	-ms-interpolation-mode:nearest-neighbor;
+}

@@ -1,6 +1,33 @@
 const GAME_INFO={
 	autoloadFile:'King of Fighters, The - Battle de Paradise (Japan).ngc',
-	version: '0.1',
+	version: '0.2',
+
+	previewBackgrounds:[
+		{
+			title: 'King of Fighters: Battle de Paradise - Battle Game',
+			folder: './tools/text-preview/kof_battle_de_paradise_ngpc',
+			background: 'battle_game',
+			font: 'font_big',
+			width: 8, height: 16,
+			x: 12, y: 48, lineHeight: 16
+		},
+		{
+			title: 'King of Fighters: Battle de Paradise - Square Event',
+			folder: './tools/text-preview/kof_battle_de_paradise_ngpc',
+			background: 'square_event',
+			font: 'font_big',
+			width: 8, height: 16,
+			x: 12, y: 96, lineHeight: 16
+		},
+	],
+	previewFixFn:function(text){
+		return text
+			.replace(/\[08\]/, 'PLYR')
+			.replace(/\[09\]/, 'RIVL')
+			.replace(/\[(coin|card)\]/, '*')
+			.replace(/\[(06|0f)\]/, '')
+	},
+
 	checkFile:function(romFile){
 		currentRom.littleEndian=true;
 		const crc32=romFile.hashCRC32();
