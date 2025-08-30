@@ -69,6 +69,12 @@ const PATCHES=[
 	{offset:0x147bf, name:'Create user - Type name (END)', data:['E','N','D',' ']},
 	{offset:0x144f3, name:'Create user - Type name character check (ABC)', data:['A']},
 	{offset:0x14505, name:'Create user - Type name character check (END)', data:['E']},
+	{offset:0x1496d, name:'Create user - Initial avatar names', data:[
+		'Y','U',' ','G',
+		'H','A','T','O',
+		'M','A','S','A',
+		'A','I',0x5f,0x5f
+	]},
 
 
 
