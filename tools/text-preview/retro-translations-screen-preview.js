@@ -97,7 +97,7 @@ const RetroTranslationsScreenPreview=(function(){
 				x=currentBackground.x;
 				y+=currentBackground.lineHeight;
 			}else{
-				const tileInfo=currentBackground.fontTiles[charCode];
+				const tileInfo=currentBackground.fontTiles[charCode] || currentBackground.fontTiles[63];
 				ctx.drawImage(currentBackground.fontImage, tileInfo.x, tileInfo.y, tileInfo.width, currentBackground.height, x, y, tileInfo.width, currentBackground.height)
 				x+=characterWidth;
 			}

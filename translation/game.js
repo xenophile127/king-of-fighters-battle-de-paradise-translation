@@ -22,10 +22,10 @@ const GAME_INFO={
 	],
 	previewFixFn:function(text){
 		return text
-			.replace(/\[08\]/, 'PLYR')
-			.replace(/\[09\]/, 'RIVL')
-			.replace(/\[(coin|card)\]/, '*')
-			.replace(/\[(06|0f)\]/, '')
+			.replace(/\[08\]/g, 'PLYR')
+			.replace(/\[09\]/g, 'RIVL')
+			.replace(/\[(coin|card)\]/g, '*')
+			.replace(/\[(06|0f)\]/g, '')
 	},
 
 	checkFile:function(romFile){
