@@ -1,13 +1,11 @@
 
-
-
-
-
-
 const RetroTranslationsScreenPreview=(function(){
-	var initialized=false;
-	var backgroundsInfo, currentBackground;
-	var canvas, ctx;
+	let backgroundsInfo;
+	const canvas=document.createElement('canvas');
+	canvas.id='canvas-retro-screen-preview';
+	canvas.className='pixelate';
+	const ctx=canvas.getContext('2d');
+	let currentBackground, currentText='', vwf;
 
 	const _onLoadImages=function(evt){
 		if(
@@ -22,7 +20,6 @@ const RetroTranslationsScreenPreview=(function(){
 		for(var i=0; i<currentBackground.fontTiles.length; i++){
 			if(i>=32 && i<=126){
 				currentBackground.fontTiles[i]={x:(i%cols) * currentBackground.width, y:((Math.floor(i/cols)) - 1) * currentBackground.height, width: currentBackground.width};
-				console.log(currentBackground.fontTiles[i]);
 			}else{
 				currentBackground.fontTiles[i]={x:0, y:0, width: currentBackground.width};
 			}
@@ -68,22 +65,22 @@ const RetroTranslationsScreenPreview=(function(){
 			}
 		}
 
-		document.getElementById('select-background').disabled=false;
-		document.getElementById('textarea-text').disabled=false;
-		_zoomCanvas();
-		_refreshCanvas();
+		//document.getElementById('select-background').disabled=false;
+		//document.getElementById('textarea-text').disabled=false;
+
+		_refreshCanvas(true);
 	};
 
-	const _zoomCanvas=function(){
-		canvas.width=currentBackground.backgroundImage.width;
-		canvas.height=currentBackground.backgroundImage.height;
-		canvas.style.width=(currentBackground.backgroundImage.width * 2) + 'px';
-		canvas.style.height=(currentBackground.backgroundImage.height * 2) + 'px';
-	};
-	const _refreshCanvas=function(){
-		const vwf=document.getElementById('checkbox-vwf').checked;
+	const _refreshCanvas=function(zoomCanvas){
+		if(zoomCanvas){
+			canvas.width=currentBackground.backgroundImage.width;
+			canvas.height=currentBackground.backgroundImage.height;
+			canvas.style.width=(currentBackground.backgroundImage.width * 2) + 'px';
+			canvas.style.height=(currentBackground.backgroundImage.height * 2) + 'px';
+		}
+
 		ctx.drawImage(currentBackground.backgroundImage, 0, 0);
-		var text=document.getElementById('textarea-text').value.replace(/\r?\n/g, '\n').replace(/\r/g, '\n');
+		const text=currentText;
 		
 		var x=currentBackground.x;
 		var y=currentBackground.y;
@@ -111,8 +108,8 @@ const RetroTranslationsScreenPreview=(function(){
 	const _setBackground=function(backgroundIndex){
 		currentBackground=backgroundsInfo[backgroundIndex];
 		if(!currentBackground.backgroundImage || !currentBackground.fontImage){
-			document.getElementById('select-background').disabled=true;
-			document.getElementById('textarea-text').disabled=true;
+			//document.getElementById('select-background').disabled=true;
+			//document.getElementById('textarea-text').disabled=true;
 
 			currentBackground.backgroundImage=new Image();
 			currentBackground.backgroundImage.onload=function(){
@@ -132,49 +129,45 @@ const RetroTranslationsScreenPreview=(function(){
 			};
 			currentBackground.fontImage.src=currentBackground.folder+'/'+currentBackground.font+'.png';
 		}else{
-			_zoomCanvas();
-			_refreshCanvas();
+			_refreshCanvas(true);
 		}
 	};
 
 	return {
 		initialize: function(backgroundsInfoParam){
-			if(initialized)
+			if(backgroundsInfo)
 				throw new Error('already initialized');
-			else if(!document.getElementById('canvas-preview'))
-				throw new Error('#canvas-preview not found');
-			else if(!document.getElementById('select-background'))
-				throw new Error('#select-background not found');
-
 
 			backgroundsInfo=backgroundsInfoParam;
-			backgroundsInfo.forEach(function(backgroundInfo, i){
-				var option=document.createElement('option');
-				option.value=i;
-				option.innerHTML=backgroundInfo.title
-				document.getElementById('select-background').appendChild(option);
-			});
 
 
-			canvas=document.getElementById('canvas-preview');
-			ctx=canvas.getContext('2d');
-
-
-			document.getElementById('textarea-text').addEventListener('input', function(evt){
-				_refreshCanvas();
-			});
-
-			document.getElementById('checkbox-vwf').addEventListener('change', function(evt){
-				_refreshCanvas();
-			});
-
-
-			document.getElementById('select-background').addEventListener('change', function(evt){
-				_setBackground(this.selectedIndex);
-			});
 			_setBackground(0);
 
-			initialized=true;
+			return this.getSettings();
+		},
+		getSettings: function(){
+			return {
+				canvas,
+				backgrounds:backgroundsInfo
+			};
+		},
+		setBackground:function(param){
+			if(typeof param==='string')
+				param=backgroundsInfo.findIndex(function(b){ return param===(b.folder+'/'+b.background); });
+
+			if(typeof param==='number' && param>=0 && param<backgroundsInfo.length)
+				_setBackground(param);
+		},
+		setText: function(text){
+			currentText=text.replace(/\r?\n/g, '\n').replace(/\r/g, '\n');
+			_refreshCanvas();
+		},
+		setVWF: function(vwfParam){
+			vwfParam=!!vwfParam;
+			if(vwf!==vwfParam){
+				vwf=vwfParam;
+				_refreshCanvas();
+			}
 		}
 	}
 }());

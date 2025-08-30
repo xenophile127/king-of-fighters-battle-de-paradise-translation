@@ -64,7 +64,25 @@
 					x: 16, y: 80, lineHeight: 16,
 					spaceWidth: 4, letterSpacing: 1
 				}
-			])
+			]);
+
+			document.getElementById('container-canvas').appendChild(RetroTranslationsScreenPreview.getSettings().canvas);
+			RetroTranslationsScreenPreview.getSettings().backgrounds.forEach(function(backgroundInfo, index){
+				var option=document.createElement('option');
+				option.value=index;
+				option.textContent=backgroundInfo.title;
+				document.getElementById('select-background').appendChild(option);
+			});
+			document.getElementById('checkbox-vwf').addEventListener('change', function(evt){
+				RetroTranslationsScreenPreview.setVWF(this.checked);
+			});
+			document.getElementById('textarea-text').addEventListener('input', function(evt){
+				RetroTranslationsScreenPreview.setText(this.value);
+			});
+			document.getElementById('select-background').addEventListener('change', function(evt){
+				RetroTranslationsScreenPreview.setBackground(this.selectedIndex);
+			});
+
 		});
 	</script>
 </head>
@@ -72,7 +90,7 @@
 <body>
 	<label>Game: <select id="select-background"></select></label> <label><input type="checkbox" id="checkbox-vwf" /> VWF</label>
 	<hr />
-	<canvas id="canvas-preview" class="pixelate"></canvas>
+	<div id="container-canvas"></div>
 	<hr />
 	<textarea id="textarea-text" rows="5"></textarea>
 </body>
