@@ -37,6 +37,7 @@ const GAME_INFO={
 		const total=1154 + GRAPHIC_REPLACEMENTS.length;
 		const done=
 			KNOWN_POINTERS.filter((pointer) => pointer.translation).length +
+			43 + //ignored pointers
 			GRAPHIC_REPLACEMENTS.filter((graphicReplacement) => graphicReplacement.file).length;
 		
 		return {
