@@ -24,7 +24,7 @@ const GAME_INFO={
 		return text
 			.replace(/\[08\]/g, 'PLYR')
 			.replace(/\[09\]/g, 'RIVL')
-			.replace(/\[(coin|card)\]/g, '*')
+			.replace(/\[(coin|card|heart)\]/g, '*')
 			.replace(/\[(06|0f)\]/g, '')
 	},
 
@@ -545,22 +545,33 @@ const CHAR_TABLE=[
 	{id:0x017a, char:'画'},
 	{id:0x017b, char:'間'},
 	{id:0x017c, char:'岩'},
+	{id:0x017d, char:'器'}, //to confirm
+	{id:0x017e, char:'奇'}, //to confirm
 	{id:0x0180, char:'金'},
+	{id:0x0181, char:'偶'}, //to confirm
 	{id:0x0182, char:'決'},
 	{id:0x0183, char:'血'},
 	{id:0x0184, char:'見'},
+	{id:0x0185, char:'減'}, //to confirm
 	{id:0x0186, char:'言'},
 	{id:0x0187, char:'効'},
 	{id:0x0188, char:'好'},
 	{id:0x0189, char:'作'},
 	{id:0x018a, char:'札'},
+	{id:0x018b, char:'殺'}, //to confirm
+	{id:0x018c, char:'三'}, //to confirm
 	{id:0x018d, char:'使'},
 	{id:0x018e, char:'死'},
 	{id:0x018f, char:'私'},
+	{id:0x0190, char:'歯'}, //to confirm
 	{id:0x0191, char:'持'},
+	{id:0x0192, char:'時'}, //to confirm
 	{id:0x0193, char:'次'},
+	{id:0x0195, char:'捨'}, //to confirm
 	{id:0x0196, char:'集'},
+	{id:0x0197, char:'十'}, //to confirm
 	{id:0x0198, char:'出'},
+	{id:0x0199, char:'所'}, //to confirm
 	{id:0x019a, char:'少'},
 	{id:0x019b, char:'笑'},
 	{id:0x019c, char:'上'},
@@ -571,8 +582,10 @@ const CHAR_TABLE=[
 	{id:0x01a2, char:'操'},
 	{id:0x01a3, char:'増'},
 	{id:0x01a4, char:'属'},
+	{id:0x01a5, char:'多'}, //to confirm
 	{id:0x01a6, char:'打'},
 	{id:0x01a8, char:'大'},
+	{id:0x01a9, char:'叩'}, //to confirm
 	{id:0x01aa, char:'脱'},
 	{id:0x01ab, char:'超'},
 	{id:0x01ac, char:'定'},
@@ -586,37 +599,48 @@ const CHAR_TABLE=[
 	{id:0x01b5, char:'爆'},
 	{id:0x01b6, char:'発'},
 	{id:0x01b7, char:'飛'},
+	{id:0x01b8, char:'武'}, //to confirm
 	{id:0x01b9, char:'舞'},
 	{id:0x01bc, char:'面'},
 	{id:0x01bd, char:'目'},
+	{id:0x01be, char:'戻'}, //to confirm
+	{id:0x01bf, char:'用'}, //to confirm
 	{id:0x01c0, char:'落'},
 	{id:0x01c1, char:'力'},
 	{id:0x01c2, char:'連'},
 	{id:0x01c3, char:'話'},
 	{id:0x01c6, char:'変'},
 	{id:0x01c7, char:'更'},
+	{id:0x01c8, char:'映'}, //to confirm
 	{id:0x01c9, char:'押'},
 	{id:0x01cb, char:'会'},
 	{id:0x01cc, char:'改'},
 	{id:0x01cd, char:'挌'},
 	{id:0x01ce, char:'獲'},
 	{id:0x01cf, char:'楽'},
+	{id:0x01d0, char:'願'}, //to confirm
 	{id:0x01d1, char:'気'},
 	{id:0x01d2, char:'技'},
 	{id:0x01d3, char:'撃'},
 	{id:0x01d4, char:'光'},
 	{id:0x01d5, char:'攻'},
+	{id:0x01d6, char:'師'}, //to confirm
 	{id:0x01d7, char:'車'},
 	{id:0x01d8, char:'終'},
 	{id:0x01d9, char:'宿'},
+	{id:0x01da, char:'匠'}, //to confirm
+	{id:0x01db, char:'色'}, //to confirm
 	{id:0x01dc, char:'神'},
 	{id:0x01de, char:'星'},
+	{id:0x01df, char:'声'}, //to confirm
 	{id:0x01e1, char:'戦'},
 	{id:0x01e3, char:'組'},
 	{id:0x01e6, char:'知'},
 	{id:0x01e7, char:'仲'},
 	{id:0x01e8, char:'敵'},
 	{id:0x01e9, char:'闘'},
+	{id:0x01ea, char:'扉'}, //to confirm
+	{id:0x01eb, char:'必'}, //to confirm
 	{id:0x01ec, char:'姫'},
 	{id:0x01ed, char:'方'},
 	{id:0x01ee, char:'本'},
@@ -625,12 +649,17 @@ const CHAR_TABLE=[
 	{id:0x01f1, char:'命'},
 	{id:0x01f2, char:'迷'},
 	{id:0x01f3, char:'雷'},
+	{id:0x01f4, char:'両'}, //to confirm
+	{id:0x01f5, char:'料'}, //to confirm
+	{id:0x01f6, char:'理'}, //to confirm
 	{id:0x01f7, char:'良'},
 	{id:0x01f8, char:'輪'},
 	{id:0x01f9, char:'路'},
 	{id:0x01fa, char:'往'},
+	{id:0x01fb, char:'応'}, //to confirm
 	{id:0x01fd, char:'活'},
 	{id:0x01fe, char:'距'},
+	{id:0x01ff, char:'強'}, //to confirm
 
 	//02xx
 	{id:0x0200, char:'経'},
@@ -697,25 +726,44 @@ const CHAR_TABLE=[
 	{id:0x023d, char:'案'}, //not sure
 	{id:0x023e, char:'外'},
 	{id:0x023f, char:'第'},
+	{id:0x0241, char:'留'}, //to confirm
 	{id:0x0245, char:'新'},
 	{id:0x0246, char:'意'},
+	{id:0x0248, char:'燃'}, //to confirm
+	{id:0x024b, char:'焼'}, //to confirm
+	{id:0x024e, char:'教'}, //to confirm
+	{id:0x024f, char:'官'}, //to confirm
+	{id:0x0254, char:'借'}, //to confirm
 	{id:0x0255, char:'行'},
+	{id:0x0256, char:'対'}, //to confirm
+	{id:0x0257, char:'代'}, //to confirm
+	{id:0x0258, char:'令'}, //to confirm
 	{id:0x025a, char:'向'},
 	{id:0x025d, char:'後'},
 	{id:0x0260, char:'遊'},
 	{id:0x0262, char:'然'},
 	{id:0x0263, char:'頭'},
 	{id:0x0266, char:'番'},
+	{id:0x0267, char:'者'}, //to confirm
 	{id:0x0269, char:'中'},
+	{id:0x026b, char:'他'}, //to confirm
 	{id:0x026c, char:'前'},
 	{id:0x026d, char:'通'},
-	{id:0x0270, char:'計'},
+	{id:0x026f, char:'負'}, //to confirm
+	{id:0x0270, char:'信'},
 	{id:0x0271, char:'計'},
 	{id:0x0272, char:'任'},
+	{id:0x0273, char:'緒'}, //to confirm
+	{id:0x0274, char:'要'}, //to confirm
+	{id:0x0277, char:'佐'}, //to confirm
+	{id:0x0278, char:'歌'}, //to confirm
 	{id:0x0279, char:'封'},
 	{id:0x027a, char:'印'},
 	{id:0x027b, char:'平'},
 	{id:0x027c, char:'卒'},
+	{id:0x027d, char:'主'}, //to confirm
+	{id:0x027e, char:'役'}, //to confirm
+	{id:0x027f, char:'修'}, //to confirm
 	{id:0x0289, char:'生'}
 ];
 
