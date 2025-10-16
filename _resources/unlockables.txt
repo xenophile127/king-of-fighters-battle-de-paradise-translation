@@ -42,21 +42,23 @@ ATHENA WORLD	600000
 
 SECRET DATA
 -----------
+No 01           START
+No 09           START
+No 17           START
 No 02           2000
-No 03
-No 04
-No 05
-No 06
-No 07
-No 08
-
-No 10
-No 11
-No 12
-No 13
-No 14
-No 15
-No 16
-No 18
-No 19
-No 20
+No 16			4000
+No 03			6000
+No 19			8000
+No 13			10000
+No 10			16000
+No 14			23000
+No 11			32000
+No 12			40000
+No 06			65000
+No 08			75000
+No 15			85000
+No 07			95000
+No 20			250000
+No 05			350000
+No 04			500000
+No 18			550000
