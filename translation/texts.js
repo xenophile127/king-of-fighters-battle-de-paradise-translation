@@ -10,13 +10,13 @@ const KNOWN_POINTERS=[
 	/* START GAME */
 	//{pointerIndex:5, comment:'Start game - Intro (helper)', translation:'Choose\nhelper'},
 	//{pointerIndex:6, comment:'Start game - Intro (skill)', translation:'···and\nside?'},
-	{pointerIndex:5, comment:'Start game - Intro (helper)', translation:'Choose\nstriker'},
+	{pointerIndex:5, comment:'Start game - Intro (helper)', translation:'Choose a\nstriker'},
 	{pointerIndex:6, comment:'Start game - Intro (skill)', translation:'…good\nor evil?'},
-	{pointerIndex:7, comment:'Start game - Intro (bottom text)', translation:'USE ←/→'},
+	{pointerIndex:7, comment:'Start game - Intro (bottom text)', translation:'Use ←/→'},
 	{pointerIndex:8, comment:'Start game - Intro (bottom text filler)'},
-	{pointerIndex:10, comment:'Start game - Intro (players)', translation:'Player\nnumber'},
-	{pointerIndex:12, comment:'Start game - Intro (turns)', translation:'How\nmany\nturns?'},
-	{pointerIndex:13, comment:'Start game - Intro (map)', translation:'And at\nlast…\nMap?'},
+	{pointerIndex:10, comment:'Start game - Intro (players)', translation:'Player\nnumber?'},
+	{pointerIndex:12, comment:'Start game - Intro (turns)', translation:'How many\nturns?'},
+	{pointerIndex:13, comment:'Start game - Intro (map)', translation:'Finally…\nchoose a\nmap?!'},
 
 	/* CARD SHOP */
 	{pointerIndex:14, comment:'Card shop buy confirm instructions', translation:'A=Buy   B=Cancel'},
@@ -28,29 +28,29 @@ const KNOWN_POINTERS=[
 
 
 	/* MINIGAMES */
-	{pointerIndex:20, comment:'Minigame instructions', preview:'battle_game', translation:'PAIRPAIR GET\nMatch pairs\nof cards for\npoints!\n(Joy:Cursor)\n(A:Choose  )'},
-	{pointerIndex:21, comment:'Minigame instructions', preview:'battle_game', translation:'SYNCRO-FIST\nPress A when\nBenimaru\ncompletes\nhis move!\n(A:Respond )'},
-	{pointerIndex:22, comment:'Minigame instructions', preview:'battle_game', translation:' IT\'S BACK!\nMash buttons\nto beat the\nmachine.\n(A,B:Mash  )'},
-	{pointerIndex:23, comment:'Minigame instructions', preview:'battle_game', translation:'BOUZU?MEKURI\nDraw a card.\nPrincess [heart].\nMonk...?\n(←→:Select )\n(A:Choose  )'},
-	{pointerIndex:24, comment:'Minigame instructions', preview:'battle_game', translation:'NIKUMAN ROAD\nGuide Kensou\nto eat buns.\nWatch out\nfor enemies!\n(Joy:Route )'},
-	{pointerIndex:25, comment:'Minigame instructions', preview:'battle_game', translation:'LET\'S DANCE\nRepeat the\ndance! Time\nit well and\nMai dances[heart]\n(How:Follow)'},
-	{pointerIndex:26, comment:'Minigame instructions', preview:'battle_game', translation:'IKARI TARGET\nShoot the\nenemies! Not\nIkari elite!\n(Joy:Aim   )\n(A:Shoot   )'},
-	{pointerIndex:27, comment:'Minigame instructions', preview:'battle_game', translation:'GREAT ESCAPE\nUse doors to\nescape from\nKim & John.\n(←→:Select )\n(A:Choose  )'},
-	{pointerIndex:28, comment:'Minigame instructions', preview:'battle_game', translation:'BRIAN FLIES!\nRotate the\nJoystick as\nfast as you\ncan!\n(Joy:Rotate)'},
-	{pointerIndex:29, comment:'Minigame instructions', preview:'battle_game', translation:'DUSKCARNIVAL\nTap rapidly\nto help\nShermie pull\nvegetables!\n(A:Tap fast)'},
-	{pointerIndex:30, comment:'Minigame instructions', preview:'battle_game', translation:' YOU DOUBT!\nUse clues to\nfind the odd\none out!\n(←→:Select )\n(A:Choose  )'},
-	{pointerIndex:31, comment:'Minigame instructions', preview:'battle_game', translation:'SHADOW PLAY\nIdentify the\ncharacters\'\nsilhouettes. \n(←→:Select )\n(A:Choose  )'},
-	{pointerIndex:32, comment:'Minigame instructions', preview:'battle_game', translation:'FAST FIGHTER\nStriker race\nchallenge!\nHit A fast\nas you can!\n(A:Tap fast)'},
-	{pointerIndex:33, comment:'Minigame instructions', preview:'battle_game', translation:'TOP PRESENTS\nPull ring to\ndrop items!\nAvoid rocks!\n(←→:Move   )\n(A:Jump    )'},
-	{pointerIndex:34, comment:'Minigame instructions', preview:'battle_game', translation:' COIN JUMP\nJump to drop\ncoins. Good\ntiming for a\nspeed-up!\n(A:Jump    )'},
-	{pointerIndex:35, comment:'Minigame instructions', preview:'battle_game', translation:'   TANK?\nGrab treas-\nure with a\nkawaii TANK!\n(Joy:Move )\n(A:Shoot'},
-	{pointerIndex:36, comment:'Minigame instructions', preview:'battle_game', translation:' DARK MAZE\nIn the dark\nmaze collect\ntreasure and\nfind a goal!\n(Joy:Move )'},
-	{pointerIndex:37, comment:'Minigame instructions', preview:'battle_game', translation:'BOOM!ESCAPE\nRun from the\nexplosion!\nJump cracks!\n(A:Tap run )\n(B:Jump    )'},
-	{pointerIndex:38, comment:'Minigame instructions', preview:'battle_game', translation:'DARUMAOTOSHI\nKrizalid\'s\nclose call.\nTime your\nswing!\n(A:Swing   )'},
-	{pointerIndex:39, comment:'Minigame instructions', preview:'battle_game', translation:'IS IT 2000?\nDodge when\nGoenitz at-\ntacks!\n(←→:Move   )\n(A:Dash!!  )'},
-	{pointerIndex:40, comment:'Minigame instructions', preview:'battle_game', translation:'MOVE: \'NONE\'\nWhen Orochi\nattacks you\nmust dodge.\n(←→:Move   )\n(A:Dash!!  )'},
-	{pointerIndex:41, comment:'Minigame instructions', preview:'battle_game', translation:'BOOM!ESCAPEΩ\nThe blast is\neven bigger!\nJump faults!\n(A:Tap Run )\n(B:Jump    )'},
-	{pointerIndex:42, comment:'Minigame instructions', preview:'battle_game', translation:'  YO·SA·KU\nThe classic!\nCut down all\nthe trees.\n(←→:Move   )\n(A:Axe     )'},
+	{pointerIndex:20, comment:'Minigame instructions', preview:'battle_game', translation:'  PAIRPAIR GET\nMatch card pairs\nfor points!\n\n(Joy:Cursor     )\n(A:Choose       )'},
+	{pointerIndex:21, comment:'Minigame instructions', preview:'battle_game', translation:'   SYNCRO-FIST\nPress A as soon\nas Benimaru\nfinishes his\nmove!\n(A:Respond      )'},
+	{pointerIndex:22, comment:'Minigame instructions', preview:'battle_game', translation:'   IT\'S BACK!\nMash buttons to\nbeat the machine.\n\n\n(A,B:Mash       )'},
+	{pointerIndex:23, comment:'Minigame instructions', preview:'battle_game', translation:'  BOUZU?MEKURI\nDraw a card.\nPrincess [heart].\nMonk...?\n(←→:Select      )\n(A:Draw         )'},
+	{pointerIndex:24, comment:'Minigame instructions', preview:'battle_game', translation:'  NIKUMAN ROAD\nGuide Kensou to\neat meat buns.\nWatch out for\nenemies!\n(Joy:Route      )'},
+	{pointerIndex:25, comment:'Minigame instructions', preview:'battle_game', translation:'   LET\'S DANCE\nRepeat the moves!\nTime it well and\nMai dances[heart]\n\n(How:Follow     )'},
+	{pointerIndex:26, comment:'Minigame instructions', preview:'battle_game', translation:'  IKARI TARGETS\nShoot enemies!\nNot the Ikari\nelite warriors!\n(Joy:Aim        )\n(A:Shoot        )'},
+	{pointerIndex:27, comment:'Minigame instructions', preview:'battle_game', translation:'  GREAT ESCAPE\nChoose doors to\nescape from Kim\nand John.\n(←→:Select      )\n(A:Choose       )'},
+	{pointerIndex:28, comment:'Minigame instructions', preview:'battle_game', translation:'  BRIAN FLIES!\nRotate the\nJoystick as fast\nas you can!\n\n(Joy:Rotate     )'},
+	{pointerIndex:29, comment:'Minigame instructions', preview:'battle_game', translation:' SUNSET CARNIVAL\nTap A rapidly to\nhelp Shermie pull\nup vegetables!\n\n(A:Tap fast     )'},
+	{pointerIndex:30, comment:'Minigame instructions', preview:'battle_game', translation:'   YOU DOUBT!\nUse the clues to\nfind the odd one\nout!\n(←→:Select      )\n(A:Choose       )'},
+	{pointerIndex:31, comment:'Minigame instructions', preview:'battle_game', translation:'   SHADOW PLAY\nIdentify the\ncharacters from\nthe silhouettes. \n(←→:Select      )\n(A:Choose       )'},
+	{pointerIndex:32, comment:'Minigame instructions', preview:'battle_game', translation:'  FAST FIGHTER\nStriker race\nchallenge!\nHit A as fast as\nyou can!\n(A:Tap fast     )'},
+	{pointerIndex:33, comment:'Minigame instructions', preview:'battle_game', translation:'  TOP PRESENTS\nPull the ring to\ndrop items!\nAvoid the rocks!\n(←→:Move        )\n(A:Jump         )'},
+	{pointerIndex:34, comment:'Minigame instructions', preview:'battle_game', translation:'    COIN JUMP\nJump to drop\ncoins. Good\ntiming will get\nyou a speed-up!\n(A:Jump         )'},
+	{pointerIndex:35, comment:'Minigame instructions', preview:'battle_game', translation:'      TANK?\nGrab treasure\nwith your kawaii\nTANK!\n(Joy:Move       )\n(A:Shoot        )'},
+	{pointerIndex:36, comment:'Minigame instructions', preview:'battle_game', translation:'    DARK MAZE\nIn the dark maze\ncollect the most\ntreasure and\nreach the goal!\n(Joy:Move       )'},
+	{pointerIndex:37, comment:'Minigame instructions', preview:'battle_game', translation:'   BOOM! ESCAPE\nEscape from the\nexplosion!\nJump over cracks!\n(A:Tap run      )\n(B:Jump         )'},
+	{pointerIndex:38, comment:'Minigame instructions', preview:'battle_game', translation:'  DARUMA OTOSHI\nKrizalid\'s close\ncall. Time your\nswing to remove\npieces!\n(A:Swing        )'},
+	{pointerIndex:39, comment:'Minigame instructions', preview:'battle_game', translation:'   IS IT 2000?\nDodge Goenitz\'s\nattacks!\nCollect treasure!\n(←→:Move        )\n(A:Dash!!       )'},
+	{pointerIndex:40, comment:'Minigame instructions', preview:'battle_game', translation:'  MOVE: \'NONE\'\nDodge Orochi\'s\nattacks! Collect\ntreasure!\n(←→:Move        )\n(A:Dash!!       )'},
+	{pointerIndex:41, comment:'Minigame instructions', preview:'battle_game', translation:'  BOOM! ESCAPE Ω\nThe blast is even\nbigger this time!\nJump over faults!\n(A:Tap Run      )\n(B:Jump         )'},
+	{pointerIndex:42, comment:'Minigame instructions', preview:'battle_game', translation:'    YO·SA·KU\nThe classic game!\nCut down all the\ntrees.\n(←→:Move        )\n(A:Axe          )'},
 	{pointerIndex:43, comment:'Minigame - YO·SA·KU - B&W intro', translation:'This game\nonly works\non NGPC,\nnot B&W.[06].[06].[06]\nBut...'},
 
 	/* OPTIONS SCREEN */
@@ -97,6 +97,11 @@ const KNOWN_POINTERS=[
 	{pointerIndex:79, comment:'Start game - Good side', translation:'ゔ[0b]×±'}, //×±=Good
 	{pointerIndex:80, comment:'Start game - Evil side', translation:'ゔ[0b]…○'}, //…○=Evil
 
+	/* WIN QUOTES */
+	{pointerIndex:81, comment:'Win quote - Yu G'},
+	{pointerIndex:82, comment:'Win quote - Hatoko'},
+	{pointerIndex:83, comment:'Win quote - Masamune', translation:'Close! But I\nguess soon\nyou\'ll win?'},
+	{pointerIndex:84, comment:'Win quote - Ai', translation:'Too weak!!\nTry using\nyour head?!'},
 
 	/* MINIGAME - COMMON */
 	{pointerIndex:101, comment:'Minigame - your turn', translation:'[08]\'s turn.[0f]'},
@@ -136,12 +141,11 @@ const KNOWN_POINTERS=[
 
 	/* CREATE CHARACTER */
 	{pointerIndex:132, comment:'Set player name - Legend', translation:' A=Accept  B=Del '},
-	{pointerIndex:133, comment:'Default player description - Yu G'},
-	{pointerIndex:134, comment:'Default player description - Hatoko', translation:'A clumsy\ncheerful\ngirl.'},
-	{pointerIndex:135, comment:'Default player description - Masamune'},
-	{pointerIndex:136, comment:'Default player description - Ai'},
+	{pointerIndex:133, comment:'Default player description - Yu G', translation:'He is a\nbit brash &\nwillful.'},
+	{pointerIndex:134, comment:'Default player description - Hatoko', translation:'She can\nbe clumsy,\nbut cheery.'},
+	{pointerIndex:135, comment:'Default player description - Masamune', translation:'A handsome\n& cool gamer.'},
+	{pointerIndex:136, comment:'Default player description - Ai', translation:'HYPERGAL\nwho is also\nnice.'},
 	{pointerIndex:137, comment:'Player select confirmation', translation:'Is it OK?'},
-
 
 
 	/* USER SCREEN */
@@ -558,7 +562,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:2073, comment:'User screen - Minigame titles', translation:'COIN JUMP'},
 	{pointerIndex:2074, comment:'User screen - Minigame titles', translation:'TANK?'},
 	{pointerIndex:2075, comment:'User screen - Minigame titles', translation:'DARK MAZE'},
-	{pointerIndex:2076, comment:'User screen - Minigame titles', translation:'BOOM!ESCAPE?'},
+	{pointerIndex:2076, comment:'User screen - Minigame titles', translation:'BOOM!ESCAPE'},
 	{pointerIndex:2077, comment:'User screen - Minigame titles', translation:'DARUMA OTOSHI'},
 	{pointerIndex:2078, comment:'User screen - Minigame titles', translation:'IS IT 2000?'},
 	{pointerIndex:2079, comment:'User screen - Minigame titles', translation:'MOVE: \'NONE\''},
