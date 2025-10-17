@@ -19,6 +19,14 @@ const GAME_INFO={
 			width: 8, height: 16,
 			x: 12, y: 96, lineHeight: 16
 		},
+		{
+			title: 'King of Fighters: Battle de Paradise - Square Event - Option',
+			folder: './tools/text-preview/kof_battle_de_paradise_ngpc',
+			background: 'square_event_option',
+			font: 'font_big',
+			width: 8, height: 16,
+			x: 12, y: 112, lineHeight: 16
+		},
 	],
 	previewFixFn:function(text){
 		return text

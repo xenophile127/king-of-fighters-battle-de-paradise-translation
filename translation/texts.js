@@ -96,10 +96,10 @@ const KNOWN_POINTERS=[
 	{pointerIndex:80, comment:'Start game - Evil side', translation:'ゔ[0b]…○'}, //…○=Evil
 
 	/* WIN QUOTES */
-	{pointerIndex:81, comment:'Win quote - Yu G'},
-	{pointerIndex:82, comment:'Win quote - Hatoko'},
-	{pointerIndex:83, comment:'Win quote - Masamune', translation:'Close! But I\nguess soon\nyou\'ll win?'},
-	{pointerIndex:84, comment:'Win quote - Ai', translation:'Too weak!!\nTry using\nyour head?!'},
+	{pointerIndex:81, comment:'Win quote - Yu G', preview:'square_event'},
+	{pointerIndex:82, comment:'Win quote - Hatoko', preview:'square_event'},
+	{pointerIndex:83, comment:'Win quote - Masamune', preview:'square_event', translation:'Close! But I\nguess soon\nyou\'ll win?'},
+	{pointerIndex:84, comment:'Win quote - Ai', preview:'square_event', translation:'Too weak!!\nTry using\nyour head?!'},
 
 	/* MINIGAME - COMMON */
 	{pointerIndex:101, comment:'Minigame - your turn', translation:'[08]\'s turn.[0f]'},
@@ -220,6 +220,50 @@ const KNOWN_POINTERS=[
 
 
 
+	/* EVENT SQUARE: striker hit messages */
+	{pointerIndex:314, preview:'square_event', translation:'OOF!!'},
+	{pointerIndex:324, preview:'square_event', translation:'OOF!!'},
+	{pointerIndex:493, preview:'square_event', translation:'OOF!'},
+	{pointerIndex:560, preview:'square_event', translation:'OOF![06]'},
+	{pointerIndex:1064, preview:'square_event', translation:'OOF!'},
+	{pointerIndex:1843, preview:'square_event', translation:'OOF!'},
+
+	{pointerIndex:485, preview:'square_event', translation:'Ugh!'},
+	{pointerIndex:1065, preview:'square_event', translation:'Ugh!!'},
+	{pointerIndex:1851, preview:'square_event', translation:'Ugh!!'},
+
+	{pointerIndex:486, preview:'square_event', translation:'Guh!'},
+	{pointerIndex:535, preview:'square_event', translation:'Guh!!'},
+	{pointerIndex:710, preview:'square_event', translation:'Guh[06]'},
+	{pointerIndex:1853, preview:'square_event', translation:'Guh!!'},
+
+	{pointerIndex:1841, preview:'square_event', translation:'Gua!'},
+
+	{pointerIndex:1854, preview:'square_event', translation:'Gasp!!'},
+
+	{pointerIndex:1840, preview:'square_event', translation:'Argh!'},
+	{pointerIndex:1844, preview:'square_event', translation:'Argh!'},
+
+	{pointerIndex:1863, preview:'square_event', translation:'Yukiiiii!!'},
+
+	/* EVENT SQUARE: to-do: arrange */
+	{pointerIndex:403, comment:'Event Square - Billy Kane (Non-striker?) - Question', preview:'square_event', translation:'Been a while…'},
+	{pointerIndex:405, comment:'Event Square - Billy Kane (Non-striker?) - Option', preview:'square_event_option', translation:'Geese \'dog\'…'},
+	{pointerIndex:420, comment:'Event Square - Billy Kane (Non-striker?) - Option 405 Response', preview:'square_event', translation:'\'Dog\'?[06]\nYou idiot, I\'ll\nbeat you up![0f]'},
+	{pointerIndex:421, comment:'Event Square - Billy Kane (Non-striker?) - Option 405 Response', preview:'square_event', translation:'Are you really\ngonna do that,\nAntonio?[0f]'},
+	{pointerIndex:422, comment:'Event Square - Billy Kane (Non-striker?) - Option 405 Response', preview:'square_event', translation:'Silly, that\'s\nBlue Mary\'s dog![0f]'},
+	{pointerIndex:423, comment:'Event Square - Billy Kane (Non-striker?) - Option 405 Response', preview:'square_event', translation:'I am Lord Geese\'s\nHENCHMAN!![0f]'},
+	{pointerIndex:424, comment:'Event Square - Billy Kane (Non-striker?) - Option 405 Response', preview:'square_event', translation:'Oh, then you are\na DOG after all.[06]\nHahahaha![0f]'},
+	{pointerIndex:406, comment:'Event Square - Billy Kane (Non-striker?) - Option', preview:'square_event_option', translation:'You decide'},
+	{pointerIndex:430, comment:'Event Square - Billy Kane (Non-striker?) - Option 406 Response', preview:'square_event', translation:'Heh [06]\nIf that\'s what\nyou want…[0f]'},
+
+
+	{pointerIndex:753, preview:'square_event', translation:'Does Athena like\nstars?'},
+	{pointerIndex:755, preview:'square_event', translation:'The first star is…'},
+	{pointerIndex:757, preview:'square_event', translation:'KOF astrology?'},
+
+
+
 	/* EVENT SQUARE: player strikers */
 	{pointerIndex:1200, comment:'Event Square - Goro GOOD', preview:'square_event'},
 	{pointerIndex:1205, comment:'Event Square - Goro EVIL', preview:'square_event'},
@@ -229,9 +273,13 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1225, comment:'Event Square - Ryuji EVIL', preview:'square_event'},
 	{pointerIndex:1230, comment:'Event Square - Kyo GOOD', preview:'square_event'},
 	{pointerIndex:1235, comment:'Event Square - Kyo EVIL', preview:'square_event'},
-	{pointerIndex:1240, comment:'Event Square - Chizuru GOOD', preview:'square_event'},
+	{pointerIndex:1240, comment:'Event Square - Chizuru GOOD', preview:'square_event', translation:'●Money Power[0f]'},
+	{pointerIndex:1241, comment:'Event Square - Chizuru GOOD', preview:'square_event', translation:'Rival loses\n[coin]7.[0f]'},
+	{pointerIndex:1244, comment:'Event Square - Chizuru GOOD', preview:'square_event', translation:'Next time I\nwon\'t miss![06]'},
 	{pointerIndex:1245, comment:'Event Square - Chizuru EVIL', preview:'square_event'},
-	{pointerIndex:1250, comment:'Event Square - Athena GOOD', preview:'square_event'},
+	{pointerIndex:1249, comment:'Event Square - Chizuru EVIL', preview:'square_event', translation:'Next time I\nwon\'t miss![06]'},
+	{pointerIndex:1250, comment:'Event Square - Athena GOOD', preview:'square_event', translation:'●Psycho Ball\nAttack.[0f]'},
+	{pointerIndex:1251, comment:'Event Square - Athena GOOD', preview:'square_event', translation:'Opponent loses\n[coin]7 if good,\n[coin]10 if evil.[0f]'},
 	{pointerIndex:1255, comment:'Event Square - Athena EVIL', preview:'square_event'},
 	{pointerIndex:1260, comment:'Event Square - Alfred GOOD', preview:'square_event'},
 	{pointerIndex:1265, comment:'Event Square - Alfred EVIL', preview:'square_event'},
@@ -249,11 +297,13 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1325, comment:'Event Square - Ryuji EVIL', preview:'square_event'},
 	{pointerIndex:1330, comment:'Event Square - Kyo GOOD', preview:'square_event'},
 	{pointerIndex:1335, comment:'Event Square - Kyo EVIL', preview:'square_event'},
-	{pointerIndex:1340, comment:'Event Square - Chizuru GOOD', preview:'square_event'},
-	{pointerIndex:1345, comment:'Event Square - Chizuru EVIL', preview:'square_event'},
+	{pointerIndex:1340, comment:'Event Square - Chizuru GOOD', preview:'square_event', translation:'●Broken Seal.[0f]'},
+	{pointerIndex:1341, comment:'Event Square - Chizuru GOOD', preview:'square_event', translation:'Sister,\nlend me your\nstrength...[0f]'},
+	{pointerIndex:1345, comment:'Event Square - Chizuru EVIL', preview:'square_event', translation:'●Foreclosure[0f]'},
+	{pointerIndex:1346, comment:'Event Square - Chizuru EVIL', preview:'square_event', translation:'There are so\nmany bills![06]It\'s all\nKusanagi and\nYagami\'s fault![0f]'},
 	{pointerIndex:1350, comment:'Event Square - Athena GOOD', preview:'square_event'},
 	{pointerIndex:1355, comment:'Event Square - Athena EVIL - Now On Sale', preview:'square_event'},
-	{pointerIndex:1356, comment:'Event Square - Athena EVIL - Now On Sale', preview:'square_event', translation:'Oh I forgot![06]\nI have a\nsigning at[0f]the record\nshop soon.\nSorry.[heart][0f]'},
+	{pointerIndex:1356, comment:'Event Square - Athena EVIL - Now On Sale', preview:'square_event', translation:'Oh I forgot![06]\nI have a signing\nat the CD shop\nsoon. Sorry.[heart][0f]'},
 	{pointerIndex:1360, comment:'Event Square - Alfred GOOD', preview:'square_event'},
 	{pointerIndex:1365, comment:'Event Square - Alfred EVIL', preview:'square_event'},
 	{pointerIndex:1370, comment:'Event Square - Fio GOOD', preview:'square_event'},
@@ -265,27 +315,31 @@ const KNOWN_POINTERS=[
 
 	/* EVENT SQUARE: non-strikers (can appear with any striker) */
 	{pointerIndex:1400, comment:'Event Square - Shingo', preview:'square_event'},
-	{pointerIndex:1405, comment:'Event Square - Iori', preview:'square_event'},
-	{pointerIndex:1410, comment:'Event Square - Kensou', preview:'square_event'},
+	{pointerIndex:1405, comment:'Event Square - Iori', preview:'square_event', translation:'●Playtime is Over![0f]'},
+	{pointerIndex:1407, comment:'Event Square - Iori', preview:'square_event', translation:'Both players\nlose [coin]25%.[0f]'},
+	{pointerIndex:1410, comment:'Event Square - Kensou', preview:'square_event', translation:'●Nikuman 4U.[0f]'},
+	{pointerIndex:1411, comment:'Event Square - Kensou', preview:'square_event', translation:'Plz accept\nmy feelings.[0f]'},
+	{pointerIndex:1412, comment:'Event Square - Kensou', preview:'square_event', translation:'Your [coin] total\nincreases by 25%.[0f]'},
 	{pointerIndex:1415, comment:'Event Square - Ryo', preview:'square_event'},
-	{pointerIndex:1420, comment:'Event Square - Ralf', preview:'square_event'},
-	{pointerIndex:1425, comment:'Event Square - Leona', preview:'square_event'},
-	{pointerIndex:1430, comment:'Event Square - Seth', preview:'square_event'},
-	{pointerIndex:1435, comment:'Event Square - Vanessa', preview:'square_event'},
-	{pointerIndex:1450, comment:'Event Square - Robert Garcia', preview:'square_event', translation:'●Ease and\ncomfort.[0f]'},
+	{pointerIndex:1420, comment:'Event Square - Ralf', preview:'square_event', translation:'●Ka-BOOM!![0f]'},
+	{pointerIndex:1425, comment:'Event Square - Leona', preview:'square_event', translation:'●Grateful Dead[0f]'},
+	{pointerIndex:1430, comment:'Event Square - Seth', preview:'square_event', translation:'●Operation:193.[0f]'},
+	{pointerIndex:1435, comment:'Event Square - Vanessa', preview:'square_event', translation:'●Operation:815.[0f]'},
+	{pointerIndex:1450, comment:'Event Square - Robert Garcia', preview:'square_event', translation:'●Ease and Comfort.[0f]'},
 	{pointerIndex:1451, comment:'Event Square - Robert Garcia', preview:'square_event', translation:'Psst! Buy a\n★ for [coin]10?[0f]'},
 	{pointerIndex:1452, comment:'Event Square - Robert Garcia', preview:'square_event', translation:'★ for [coin]10...'},
 	{pointerIndex:1453, comment:'Event Square - Robert Garcia', preview:'square_event', translation:'Buy.'},
 	{pointerIndex:1454, comment:'Event Square - Robert Garcia', preview:'square_event', translation:'Don\'t buy.'},
 	{pointerIndex:1455, comment:'Event Square - Robert Garcia', preview:'square_event', translation:'Great deal![0f]'},
-	{pointerIndex:1456, comment:'Event Square - Robert Garcia', preview:'square_event', translation:'Don\'t have\n[coin]10?[06] I can\'t\ngo lower.[0f]'},
+	{pointerIndex:1456, comment:'Event Square - Robert Garcia', preview:'square_event', translation:'Don\'t have [coin]10?[06]\nI can\'t go any\nlower.[0f]'},
 	{pointerIndex:1457, comment:'Event Square - Robert Garcia', preview:'square_event', translation:'See you\nlater.[0f]'},
-	{pointerIndex:1460, comment:'Event Square - Kim', preview:'square_event'},
-	{pointerIndex:1470, comment:'Event Square - Choi & Chang', preview:'square_event'},
-	{pointerIndex:1480, comment:'Event Square - Chris', preview:'square_event'},
-	{pointerIndex:1490, comment:'Event Square - Shermie', preview:'square_event'},
-
-
+	{pointerIndex:1460, comment:'Event Square - Kim', preview:'square_event', translation:'●Rehabilitation\nPlan.[0f]'},
+	{pointerIndex:1470, comment:'Event Square - Choi & Chang', preview:'square_event', translation:'●Escape Plan.[0f]'},
+	{pointerIndex:1480, comment:'Event Square - Chris', preview:'square_event', translation:'●Special Dinner.[0f]'},
+	{pointerIndex:1490, comment:'Event Square - Shermie', preview:'square_event', translation:'●You Won\'t Run\nFrom Me.[0f]'},
+	{pointerIndex:1496, comment:'Event Square - Unknown', preview:'square_event', translation:'I want a KOF\ninvite. I\'ll\nuse force.[heart][0f]'},
+	{pointerIndex:1501, comment:'Event Square - Unknown', preview:'square_event', translation:'Welcome to\nmy stage![0f]I want your\ncards for my\ncollection![0f]I\'ll take\nhalf your [card].[0f]'},
+	{pointerIndex:1510, comment:'Event Square - Unknown', preview:'square_event', translation:'Hehehe[06]\nAdded to my\ncollection.[0f]'},
 
 
 	/* LOSE TURN */
@@ -298,24 +352,33 @@ const KNOWN_POINTERS=[
 	
 
 	/* EVENT SQUARE: Result */
-	{pointerIndex:1612, comment:'Event square result - Player - Got coins', preview:'square_event', translation:'[08] got\n[coin][0b][0c].[0f]'},
-	{pointerIndex:1613, comment:'Event square result - Player - Got cards', preview:'square_event', translation:'[08] got\n[card][0b].[0f]'},
-	{pointerIndex:1614, comment:'Event square result - Player - Got stars', preview:'square_event', translation:'[08] got\n★[0b].[0f]'},
+	{pointerIndex:1612, comment:'Event square result - Player - Got coins', preview:'square_event', translation:'[08] got [coin][0b][0c].[0f]'},
+	{pointerIndex:1613, comment:'Event square result - Player - Got cards', preview:'square_event', translation:'[08] got [card][0b].[0f]'},
+	{pointerIndex:1614, comment:'Event square result - Player - Got stars', preview:'square_event', translation:'[08] got ★[0b].[0f]'},
 
-	{pointerIndex:1621, comment:'Event square result - Player - Coins lost', preview:'square_event', translation:'[08] lost\n[coin][0b][0c].[0f]'},
-	{pointerIndex:1622, comment:'Event square result - Player - Cards lost', preview:'square_event', translation:'[08] lost\n[card][0b].[0f]'},
-	{pointerIndex:1624, comment:'Event square result - Rival - Coins lost', preview:'square_event', translation:'[09] lost\n[coin][0b][0c].[0f]'},
-	{pointerIndex:1625, comment:'Event square result - Rival - Cards lost', preview:'square_event', translation:'[09] lost\n[card][0b].[0f]'},
+	{pointerIndex:1621, comment:'Event square result - Player - Coins lost', preview:'square_event', translation:'[08] lost [coin][0b][0c].[0f]'},
+	{pointerIndex:1622, comment:'Event square result - Player - Cards lost', preview:'square_event', translation:'[08] lost [card][0b].[0f]'},
+	{pointerIndex:1623, comment:'Event square result - Player - Stars lost', preview:'square_event', translation:'[08] lost ★[0b].[0f]'},
+	{pointerIndex:1624, comment:'Event square result - Rival - Coins lost', preview:'square_event', translation:'[09] lost [coin][0b][0c].[0f]'},
+	{pointerIndex:1625, comment:'Event square result - Rival - Cards lost', preview:'square_event', translation:'[09] lost [card][0b].[0f]'},
+	{pointerIndex:1626, comment:'Event square result - Rival - Stars lost', preview:'square_event', translation:'[09] lost ★1.[0f]'},
 
-	{pointerIndex:1633, comment:'Event square result - Striker side switch (good)', preview:'square_event', translation:'switched to\nGOOD side[0f].'},
-	{pointerIndex:1634, comment:'Event square result - Striker side switch (evil)', preview:'square_event', translation:'switched to\nEVIL side[0f].'},
+	{pointerIndex:1633, comment:'Event square result - Striker side switch (good)', preview:'square_event', translation:'switched to\nGOOD side.[0f]'},
+	{pointerIndex:1634, comment:'Event square result - Striker side switch (evil)', preview:'square_event', translation:'switched to\nEVIL side.[0f]'},
 
-	{pointerIndex:1637, comment:'Event square result - Player - Coins increased by 25%', preview:'square_event', translation:'[08]\'s [coin]\nincreased by\n25%.[0f]'},
+	{pointerIndex:1637, comment:'Event square result - Player - Coins increased by 25%', preview:'square_event', translation:'[08] gained [coin]25%.[0f]'},
+	{pointerIndex:1638, comment:'Event square result - Player - Coins decreased by 25%', preview:'square_event', translation:'[08] lost [coin]25%.[0f]'},
+	{pointerIndex:1639, comment:'Event square result - Rival - Coins increased by 25%', preview:'square_event', translation:'[09] gained [coin]25%.[0f]'},
+	{pointerIndex:1640, comment:'Event square result - Rival - Coins decreased by 25%', preview:'square_event', translation:'[09] lost [coin]25%.[0f]'},
+	{pointerIndex:1641, comment:'Event square result - Rival - Got coins', preview:'square_event', translation:'[09] got [coin][0b][0c].[0f]'},
+	{pointerIndex:1642, comment:'Event square result - Rival - Got cards', preview:'square_event', translation:'[09] got [card][0b].[0f]'},
+	{pointerIndex:1643, comment:'Event square result - Rival - Got stars', preview:'square_event', translation:'[09] got ★[0b].[0f]'},
 
-	{pointerIndex:1641, comment:'Event square result - Rival - Got coins', preview:'square_event', translation:'[09] got\n[coin][0b][0c].[0f]'},
-	{pointerIndex:1642, comment:'Event square result - Rival - Got cards', preview:'square_event', translation:'[09] got\n[card][0b].[0f]'},
-	{pointerIndex:1643, comment:'Event square result - Rival - Got stars', preview:'square_event', translation:'[09] got\n★[0b].[0f]'},
+	//{pointerIndex:1644, comment:'Event square result - Player - Coins given', preview:'square_event', translation:'[08] gave [coin][0b][0c].[0f]'},
+	//{pointerIndex:1645, comment:'Event square result - Player - Cards given', preview:'square_event', translation:'[08] gave [card][0b].[0f]'},
+	//{pointerIndex:1646, comment:'Event square result - Player - Stars given', preview:'square_event', translation:'[08] gave ★1.[0f]'},
 
+	{pointerIndex:1647, comment:'Event square result - Rival - Coins halved', preview:'square_event', translation:'[09] [coin] reduced\nby half.[0f]'},
 
 	/* BOARD RIVAL TURN */
 	{pointerIndex:1652, comment:'Board game - Rival turn - Card used', translation:'[09] moves 1'},
@@ -337,20 +400,27 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1668, comment:'Board game - Rival turn - Coin given', translation:'[09] gives [coin][0b][0c]'},
 	{pointerIndex:1669, comment:'Board game - Rival turn - Card given', translation:'[09] gives [card][0b]'},
 	{pointerIndex:1670, comment:'Board game - Rival turn - Star given', translation:'[09] gives a ★'},
+
 	{pointerIndex:1671, comment:'Board game - Rival turn - Spent coins???', translation:'[09] spend?[coin][0b][0c]'},
 	{pointerIndex:1672, comment:'Board game - Rival turn - Card used???', translation:'[09] uses?[0b] card'},
+	{pointerIndex:1673, comment:'Board game - Rival turn - Star lost???', translation:'[09] loses a ★'},
+	{pointerIndex:1674, comment:'Board game - Rival turn - Player loses coin', translation:'[08] loses [coin][0b][0c]'},
+	{pointerIndex:1675, comment:'Board game - Rival turn - Player loses card', translation:'[08] loses [card][0b]'},
+	{pointerIndex:1676, comment:'Board game - Rival turn - Player loses star', translation:'[08] loses a ★'},
 
-	{pointerIndex:1683, comment:'Board game - Rival turn - Striker side switch (good)', translation:'Striker goes GOOD'},
-	{pointerIndex:1684, comment:'Board game - Rival turn - Striker side switch (evil)', translation:'Striker goes EVIL'},
+	{pointerIndex:1683, comment:'Board game - Rival turn - Striker side switch (good)', translation:'Striker now GOOD'},
+	{pointerIndex:1684, comment:'Board game - Rival turn - Striker side switch (evil)', translation:'Striker now EVIL'},
+
 	{pointerIndex:1685, comment:'Board game - Everyone\'s coins decreased by', translation:'All lose [coin][0b][0c]'},
 	{pointerIndex:1686, comment:'Board game - Everyone\'s coins decreased by 25%', translation:'All coins -25%'},
 	{pointerIndex:1687, comment:'Board game - Rival\'s coins increased by 25%', translation:'[09] coins +25%'},
 	{pointerIndex:1688, comment:'Board game - Rival\'s coins decreased by 25%', translation:'[09] coins -25%'},
 	{pointerIndex:1689, comment:'Board game - Player\'s coins increased by 25%', translation:'[08] coins +25%'},
 	{pointerIndex:1690, comment:'Board game - Player\'s coins decreased by 25%', translation:'[08] coins -25%'},
-	{pointerIndex:1691, comment:'Board game - Player - Coins lost', translation:'[08] loses [coin][0b][0c]'},
-
-
+	{pointerIndex:1691, comment:'Board game - Player gets coins', translation:'[08] gets [coin][0b][0c]'},
+	{pointerIndex:1692, comment:'Board game - Player gets cards', translation:'[08] gets [card][0b]'},
+	{pointerIndex:1693, comment:'Board game - Player gets stars', translation:'[08] gets ★[0b]'},
+	{pointerIndex:1694, comment:'Board game - Attack failed', translation:'Attack failed'},
 
 	/* CARD NAMES SHOP */
 	{pointerIndex:1700, comment:'Card name long', translation:'Violent Rush    3[coin]'},
@@ -401,15 +471,15 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1829, comment:'Event Square Results - Striker names', preview:'square_event', translation:'SYO'},
 
 	/* EVENT SQUARE: Shopping dialogues */
-	{pointerIndex:1831, comment:'Event square shopping - Player not enough coins', preview:'square_event', translation:'[08] has no\nenough\n[coin]coins![0f]'},
-	{pointerIndex:1832, comment:'Event square shopping - Rival not enough coins', preview:'square_event', translation:'[09] has no\nenough\n[coin]coins![0f]'},
+	{pointerIndex:1831, comment:'Event square shopping - Player not enough coins', preview:'square_event', translation:'[08] has no\nenough [coin]coins![0f]'},
+	{pointerIndex:1832, comment:'Event square shopping - Rival not enough coins', preview:'square_event', translation:'[09] has no\nenough [coin]coins![0f]'},
 
 	/* STAR SQUARE: Heidern sells you up to three stars for 20 coins each. */
 	{pointerIndex:1870, comment:'Star Square - Heidern', preview:'square_event', translation:'A ★ for [coin]20?'},
 	{pointerIndex:1871, comment:'Star Square - Heidern (unused)', translation:'Yes.'},	/* Unused. Uses #66 instead. */
 	{pointerIndex:1872, comment:'Star Square - Heidern (unused)', translation:'No.'},	/* Unused. Uses #67 instead. */
 	{pointerIndex:1873, comment:'Board game - Rival bought cards', translation:'Bought [0b] cards'},
-	{pointerIndex:1874, comment:'Board game - Rival bought no cards', translation:'No cards bought'},
+	{pointerIndex:1874, comment:'Board game - Rival bought no cards', translation:'Didn\'t buy cards'},
 	{pointerIndex:1875, comment:'Star Square - Heidern', preview:'square_event', translation:'Another ★?'},
 	{pointerIndex:1876, comment:'Star Square - Heidern', preview:'square_event', translation:'That\'s all![0f]'},
 
