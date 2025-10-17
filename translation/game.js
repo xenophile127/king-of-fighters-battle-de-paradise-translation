@@ -22,9 +22,11 @@ const GAME_INFO={
 	],
 	previewFixFn:function(text){
 		return text
+			.replace(/\[0[bc]\]/g, 'X')
 			.replace(/\[08\]/g, 'PLYR')
 			.replace(/\[09\]/g, 'RIVL')
 			.replace(/\[(coin|card|heart)\]/g, '*')
+			.replace(/★/g, '*')
 			.replace(/\[(06|0f)\]/g, '')
 	},
 
@@ -34,10 +36,9 @@ const GAME_INFO={
 		return romFile.fileSize===0x200000 && crc32===0x77e37bac;
 	},
 	getStatus:function(){
-		const total=1154 + GRAPHIC_REPLACEMENTS.length;
+		const total=1154 + GRAPHIC_REPLACEMENTS.length - IGNORED_POINTERS.length;
 		const done=
 			KNOWN_POINTERS.filter((pointer) => pointer.translation).length +
-			43 + //ignored pointers
 			GRAPHIC_REPLACEMENTS.filter((graphicReplacement) => graphicReplacement.file).length;
 		
 		return {

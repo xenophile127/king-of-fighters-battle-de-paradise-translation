@@ -78,6 +78,7 @@ const _loadRom=function(arrayBuffer, fileName){
 
 		const textareaTranslated=document.createElement('textarea');
 		textareaTranslated.value=pretranslatedText? knownPointer.translation : '';
+		textareaTranslated.readOnly=(typeof IGNORED_POINTERS==='object' && IGNORED_POINTERS.includes(pointer.pointerIndex));
 		textareaTranslated.addEventListener('change', function(evt){
 			this.value=this.value.replace(/\r?\n/g, '\n').replace(/\r/g, '\n').replace(/\\n/g, '\n');
 			pointer.modified=2;
