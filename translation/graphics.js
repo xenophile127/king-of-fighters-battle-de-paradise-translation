@@ -118,7 +118,7 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'map', offsetTileset:0x1e0b11, nTiles:182, offsetMap:0x18bcbc + ((20*19*2 * 2) * 18), width:20, height:19, comment:'Secret data 19 (overlay)', file:'secret_data/secret_data19_overlay'},
 	{type:'map', offsetTileset:0x1e3e18, nTiles:198, offsetMap:0x18bcbc + ((20*19*2 * 2) * 19), width:20, height:19, comment:'Secret data 20 (overlay)', file:'secret_data/secret_data20_overlay'},
 
-	//{type:'tileset', offset:0x15562d, nTiles:24, comment:'DC Link - Header?'},
-	//{type:'tileset', offset:0x19b86a, nTiles:59, comment:'DC Link - Header?'},
-	//{type:'tileset', offset:0x19e1b5, nTiles:79, comment:'DC Link - Header?'},
+	{type:'map', offsetTileset:0x19e1b5, nTiles:87, offsetMap:0x187874, width:20, height:19, comment:'DC Link', file:'dc_link'},
+	{type:'tileset', offset:0x15562d, nTiles:29, comment:'DC Link - NGP to DC header', file:'dc_link_ngp2dc_header'},
+	{type:'map', offsetTileset:0x19b86a, nTiles:59, offsetMap:0x18757c, width:20, height:19, comment:'DC Link - DC to NGP', file:'dc_link_dc2ngp'},
 ];
