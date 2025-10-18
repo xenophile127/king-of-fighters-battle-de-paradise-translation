@@ -1,0 +1,16 @@
+SystemID NGP
+02A8	d	u	0	RAM	Total AP
+02AC	b	u	0	RAM	Total STARS
+0	S	_	1		
+021E	w	u	0	RAM	Current turn
+0	S	_	1		
+02BA	w	u	0	RAM	Player coins
+02BC	w	u	0	RAM	Player stars
+02A0	b	u	0	RAM	Player striker
+02A2	b	u	0	RAM	Player striker evil
+0	S	_	1		
+02FC	w	u	0	RAM	CPU coins
+02FE	w	u	0	RAM	CPU stars
+02E2	b	u	0	RAM	CPU striker
+02E4	b	u	0	RAM	CPU striker evil
+
