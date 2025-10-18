@@ -641,6 +641,7 @@ const CHAR_TABLE=[
 	{id:0x01da, char:'匠'}, //to confirm
 	{id:0x01db, char:'色'}, //to confirm
 	{id:0x01dc, char:'神'},
+	{id:0x01dd, char:'酔'},
 	{id:0x01de, char:'星'},
 	{id:0x01df, char:'声'}, //to confirm
 	{id:0x01e1, char:'戦'},
