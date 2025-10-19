@@ -4,6 +4,7 @@
 
 02ba (2 bytes) = current PLAYER coins
 02bc (2 bytes) = current PLAYER stars
+02c6 (2 bytes) = current PLAYER number of cards (cards follow this value)
 08a4 (2 bytes) = current PLAYER coins (copies from above)
 08a6 (2 bytes) = current PLAYER stars (copies from above)
 02a0 (1 byte) = current PLAYER striker
@@ -12,6 +13,7 @@
 
 02fc (2 bytes) = current CPU coins
 02fe (2 bytes) = current CPU stars
+0308 (2 bytes) = current PLAYER number of cards (cards follow this value)
 08e6 (2 bytes) = current CPU coins (copies from above)
 08e8 (2 bytes) = current CPU stars (copies from above)
 02e2 (1 byte) = current CPU striker

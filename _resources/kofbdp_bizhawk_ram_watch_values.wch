@@ -6,11 +6,13 @@ SystemID NGP
 0	S	_	1		
 02BA	w	u	0	RAM	Player coins
 02BC	w	u	0	RAM	Player stars
+02C6	w	u	0	RAM	Player number of cards
 02A0	b	u	0	RAM	Player striker
 02A2	b	u	0	RAM	Player striker evil
 0	S	_	1		
 02FC	w	u	0	RAM	CPU coins
 02FE	w	u	0	RAM	CPU stars
+0308	w	u	0	RAM	CPU number of cards
 02E2	b	u	0	RAM	CPU striker
 02E4	b	u	0	RAM	CPU striker evil
 
