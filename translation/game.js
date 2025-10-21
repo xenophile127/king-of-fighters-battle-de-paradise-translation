@@ -91,8 +91,17 @@ const GAME_INFO={
 	},
 	saveTexts:function(romFile, texts){
 		const clonedRomFile=romFile.slice();
-		var freeOffset=0x1f1200;
+		var currentSafeZone=SAFE_ZONES[0];
+		var freeOffset=currentSafeZone.offset;
 		texts.forEach(function(pointerInfo){
+			if((freeOffset + pointerInfo.data.length) >= currentSafeZone.end){
+				const currentZoneIndex=SAFE_ZONES.indexOf(currentSafeZone);
+				console.info('jumping to safe zone '+(currentZoneIndex + 1) + ' at pointer #'+pointerInfo.pointerIndex);
+				currentSafeZone=SAFE_ZONES[currentZoneIndex + 1];
+				if(typeof currentSafeZone==='undefined')
+					throw new Error('no more safe zones available');
+				freeOffset=currentSafeZone.offset;
+			}
 			clonedRomFile.seek(pointerInfo.pointerOffset);
 			clonedRomFile.writeU32(freeOffset + 0x200000);
 			clonedRomFile.seek(freeOffset);
@@ -197,9 +206,47 @@ const GAME_INFO={
 		}
 		bytes.push(0x00);
 		return bytes;
+	},
+
+	checkPointerDataContinuity:function(){
+		const pointersSortedByOffset=currentPointers.map(function(t) {
+			const knownPointer=_findKnownPointer(t.pointerIndex);
+
+			const pointerData={
+				pointerIndex: t.pointerIndex,
+				pointer: t.pointer,
+				dataLength: t.data.length,
+			};
+			if(knownPointer)
+				pointerData.comment=knownPointer.comment;
+
+			return pointerData;
+		});
+		pointersSortedByOffset.sort((a, b) => a.pointer - b.pointer);
+		for(var i=1; i<pointersSortedByOffset.length; i++){
+			const previous=pointersSortedByOffset[i - 1];
+			const current=pointersSortedByOffset[i];
+			if(previous.pointer + previous.dataLength !== current.pointer){
+				console.warn('pointer #'+previous.pointerIndex+' data does not follow #'+current.pointerIndex);
+			}
+		};
+		return pointersSortedByOffset;
 	}
 };
 
+
+
+const SAFE_ZONES=[
+	{offset:0x1f1200, end:0x1f8000}, // pointers cannot go beyond 1f8000!
+	//if we run out of space at the end of the ROM, start replacing somewhere else
+	{offset:0x087300, end:0x0a0000}, // after minigame instructions, there is a huge chunk of useful free space
+	//hopefully, the free space above is enough to avoid overwriting the original strings
+	{offset:0x082164, end:0x083573}, // square event dialogues 1 (original pointer indexes: 1300 -> 395)
+	{offset:0x083e3f, end:0x084611}, // square event dialogues 2 (original pointer indexes: 1470 -> 292)
+	{offset:0x084afb, end:0x084d5e}, // square event dialogues 3 (original pointer indexes: 903 -> 991)
+	{offset:0x0851e6, end:0x086125}, // square event dialogues 4 (original pointer indexes: 1003 -> 495)
+	{offset:0x086b32, end:0x087266} // minigame instructions (original pointer indexes: 20 -> 42)
+];
 
 const CHAR_TABLE=[
 	{id:0x00, char:''}, //EOS
