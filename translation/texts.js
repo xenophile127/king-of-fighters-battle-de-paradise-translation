@@ -107,10 +107,13 @@ const KNOWN_POINTERS=[
 	{pointerIndex:80, comment:'Start game - Evil side', translation:'ゔ[0b]…○'}, //…○=Evil
 
 	/* WIN QUOTES */
-	{pointerIndex:81, comment:'Win quote - Yu G', preview:'square_event'},
-	{pointerIndex:82, comment:'Win quote - Hatoko', preview:'square_event'},
-	{pointerIndex:83, comment:'Win quote - Masamune', preview:'square_event', translation:'Close! But I\nguess soon\nyou\'ll win?'},
-	{pointerIndex:84, comment:'Win quote - Ai', preview:'square_event', translation:'Too weak!!\nTry using\nyour head?!'},
+	{pointerIndex:81, comment:'Win quote - Yu G', preview:'square_event', translation:'I barely won...\nYou\'re not bad!!\nUntil next time!'},
+	{pointerIndex:82, comment:'Win quote - Hatoko', preview:'square_event', translation:'Yaaaay! Easy win!!\nNow you see my\ntrue powerrr!!'},
+	{pointerIndex:83, comment:'Win quote - Masamune', preview:'square_event', translation:'You were close!\nI\'m sure one day\nyou\'ll win one?'},
+	{pointerIndex:84, comment:'Win quote - Ai', preview:'square_event', translation:'You\'re sooo weak!\nNo contest, like,\nuse your brain?!'},
+	/* In Japanese Hatoko talks about Hatoko in the third person, so two versions were necessary: one with [08] and one with [09]. */
+	/* In Japanese this reads as young--which it doesn't in English--and/or slightly arrogant--which it does to excess in English. */ 
+	{pointerIndex:85, comment:'Win quote - Hatoko (Rival)', preview:'square_event', translation:'Yaaaay! Easy win!!\nNow you see my\ntrue powerrr!!'},
 
 	/* MINIGAME - COMMON */
 	{pointerIndex:101, comment:'Minigame - your turn', translation:'[08]\'s turn.[0f]'},
@@ -151,9 +154,9 @@ const KNOWN_POINTERS=[
 	/* CREATE CHARACTER */
 	{pointerIndex:132, comment:'Set player name - Legend', translation:' A=Accept  B=Del '},
 	{pointerIndex:133, comment:'Default player description - Yu G', translation:'Yu G:He\'s a\nhothead who\nrushes in.'},
-	{pointerIndex:134, comment:'Default player description - Hatoko', translation:'Hatoko:She\ncan be clumsy,\nbut cheery.'},
-	{pointerIndex:135, comment:'Default player description - Masamune', translation:'Masamune: A\ncool gamer\nwith skills.'},
-	{pointerIndex:136, comment:'Default player description - Ai', translation:'Ai: Trendy\nHYPERGAL.\nMaybe nice?'},
+	{pointerIndex:134, comment:'Default player description - Hatoko', translation:'Hatoko:Bright\nand cheery but\na tad clumsy.'},
+	{pointerIndex:135, comment:'Default player description - Masamune', translation:'Masamune:Cool,\nhandsome and a\nskilled gamer.'},
+	{pointerIndex:136, comment:'Default player description - Ai', translation:'Ai:A trendy\nHYPER-GAL, but\nactually nice?'},
 	{pointerIndex:137, comment:'Player select confirmation', translation:'Is it OK?'},
 
 
