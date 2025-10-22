@@ -848,25 +848,25 @@ const KNOWN_POINTERS=[
 
 	{pointerIndex:1540, comment:'Skull Square - Goenitz (Amusement Park)', preview:'square_event', translation:'Long time no see![06]\nI thought we\'d\nnever meet again…[0f]'},
 	{pointerIndex:1541, comment:'Skull Square - Goenitz (Amusement Park)', preview:'square_event', translation:'You a-are…'},
-	{pointerIndex:1542, comment:'Skull Square - Goenitz (Amusement Park)', preview:'square_event'},
+	{pointerIndex:1542, comment:'Skull Square - Goenitz (Amusement Park)', preview:'square_event'}, /* when does it trigger? */
 	{pointerIndex:1543, comment:'Skull Square - Goenitz (Amusement Park) - Follows 1541 and 1542', preview:'square_event', translation:'Goenitz!![0f]'},
 	{pointerIndex:1544, comment:'Skull Square - Goenitz (Amusement Park)', preview:'square_event', translation:'I came here for\ndonations.[06]\nJust [coin]10, please.[0f]'},
 	{pointerIndex:1549, comment:'Skull Square - Goenitz (Amusement Park)', preview:'square_event', translation:'Consider yourself\npunished![0f]'},
 
-	{pointerIndex:1560, comment:'Skull Square - Unknown (Museum?)', preview:'square_event'},
-	{pointerIndex:1561, comment:'Skull Square - Unknown (Museum?)', preview:'square_event'},
-	{pointerIndex:1562, comment:'Skull Square - Unknown (Museum?)', preview:'square_event'},
-	{pointerIndex:1563, comment:'Skull Square - Unknown (Museum?)', preview:'square_event'},
-	{pointerIndex:1564, comment:'Skull Square - Unknown (Museum?)', preview:'square_event'},
+	{pointerIndex:1560, comment:'Skull Square - Orochi (Museum)', preview:'square_event', translation:'Where… am I…?[0f]'},
+	{pointerIndex:1561, comment:'Skull Square - Orochi (Museum)', preview:'square_event', translation:'The Nothingness…[0f]'},
+	{pointerIndex:1562, comment:'Skull Square - Orochi (Museum)', preview:'square_event', translation:'…!!\nThen that\nmeans…!?[0f]'},
+	{pointerIndex:1563, comment:'Skull Square - Orochi (Museum)', preview:'square_event', translation:'No need to rush.\nFate won\'t alter.[06]\nI\'ll take [coin]12.[0f]'},
+	{pointerIndex:1564, comment:'Skull Square - Orochi (Museum)', preview:'square_event', translation:'Now… I\'ll return\nto Nothingness.[0f]'},
 
-	{pointerIndex:1580, comment:'Skull Square - Unknown (Garou Canyon?)', preview:'square_event'},
-	{pointerIndex:1581, comment:'Skull Square - Unknown (Garou Canyon?)', preview:'square_event'},
-	{pointerIndex:1582, comment:'Skull Square - Unknown (Garou Canyon?)', preview:'square_event'},
-	{pointerIndex:1583, comment:'Skull Square - Unknown (Garou Canyon?)', preview:'square_event'},
-	{pointerIndex:1584, comment:'Skull Square - Unknown (Garou Canyon?)', preview:'square_event'},
-	{pointerIndex:1585, comment:'Skull Square - Unknown (Garou Canyon?)', preview:'square_event'},
-	{pointerIndex:1586, comment:'Skull Square - Unknown (Garou Canyon?)', preview:'square_event'},
-	{pointerIndex:1587, comment:'Skull Square - Unknown (Garou Canyon?)', preview:'square_event'},
+	{pointerIndex:1580, comment:'Skull Square - Omega Rugal (Garou Canyon)', preview:'square_event', translation:'Rugal!'},
+	{pointerIndex:1581, comment:'Skull Square - Omega Rugal (Garou Canyon)', preview:'square_event', translation:'We meet again.\nI\'m going to take\n25% of your [coin].[0f]'},
+	{pointerIndex:1582, comment:'Skull Square - Omega Rugal (Garou Canyon)', preview:'square_event', translation:'What?![0f]'},
+	{pointerIndex:1583, comment:'Skull Square - Omega Rugal (Garou Canyon) [Chizuru exclusive]', preview:'square_event', translation:'What did you\nsay?[0f]'},
+	{pointerIndex:1584, comment:'Skull Square - Omega Rugal (Garou Canyon)', preview:'square_event', translation:'This body upgrade\nwas pricey,[06]\nso you\'re paying![0f]'},
+	{pointerIndex:1585, comment:'Skull Square - Omega Rugal (Garou Canyon)', preview:'square_event', translation:'No coins?[06]\nThen die!![0f]'},
+	{pointerIndex:1586, comment:'Skull Square - Omega Rugal (Garou Canyon) - Follows 1580', preview:'square_event', translation:'So it was you![0f]'},
+	{pointerIndex:1587, comment:'Skull Square - Omega Rugal (Garou Canyon) [Chizuru exclusive]', preview:'square_event', translation:'You are alive!?[0f]'},
 
 
 	/* LOSE TURN */
