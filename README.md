@@ -1,7 +1,7 @@
 # The King of Fighters: Battle De Paradise - Translation
 This project aims to translate the Neo Geo Pocket Color exclusive game **The King of Fighters: Battle de Paradise** into English.
 
-If you are looking for the latest patch, [go here](https://www.marcrobledo.com/king-of-fighters-battle-de-paradise-translation/).
+If you are looking for the latest patch, [go here](https://www.marcrobledo.com/neo-geo-pocket/king-of-fighters-battle-de-paradise-english-translation/).
 
 
 ## Contribute

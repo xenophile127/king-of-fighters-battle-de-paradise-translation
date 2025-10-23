@@ -378,6 +378,7 @@ window.addEventListener('load', function(evt){
 				_loadRom(arrayBuffer, GAME_INFO.autoloadFile);
 			})
 			.catch(error => {
+				_showLoadingMessage('Autoload ROM failed');
 				console.error('Failed to autoload ROM:', error);
 			});
 	}
