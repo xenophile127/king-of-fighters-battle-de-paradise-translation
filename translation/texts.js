@@ -108,12 +108,12 @@ const KNOWN_POINTERS=[
 
 	/* WIN QUOTES */
 	{pointerIndex:81, comment:'Win quote - Yu G', preview:'square_event', translation:'I barely won...\nYou\'re not bad!!\nUntil next time!'},
-	{pointerIndex:82, comment:'Win quote - Hatoko', preview:'square_event', translation:'Yaaaay! Easy win!!\nNow you see my\ntrue powerrr!!'},
+	{pointerIndex:82, comment:'Win quote - Hatoko', preview:'square_event', translation:'Yaaay! Easy win!!\nNow you see my\ntrue powerrr!!'},
 	{pointerIndex:83, comment:'Win quote - Masamune', preview:'square_event', translation:'You were close!\nI\'m sure one day\nyou\'ll win one?'},
 	{pointerIndex:84, comment:'Win quote - Ai', preview:'square_event', translation:'You\'re sooo weak!\nNo contest, like,\nuse your brain?!'},
 	/* In Japanese Hatoko talks about Hatoko in the third person, so two versions were necessary: one with [08] and one with [09]. */
 	/* In Japanese this reads as young--which it doesn't in English--and/or slightly arrogant--which it does to excess in English. */ 
-	{pointerIndex:85, comment:'Win quote - Hatoko (Rival)', preview:'square_event', translation:'Yaaaay! Easy win!!\nNow you see my\ntrue powerrr!!'},
+	{pointerIndex:85, comment:'Win quote - Hatoko (Rival)', preview:'square_event', translation:'Yaaay! Easy win!!\nNow you see my\ntrue powerrr!!'},
 
 	/* MINIGAME - COMMON */
 	{pointerIndex:101, comment:'Minigame - your turn', translation:'[08]\'s turn.[0f]'},
@@ -140,8 +140,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:118, comment:'Minigame - Boom Escape', translation:'Game over'},
 
 	/* MINIGAME - BOUZU MEKURI */
-	{pointerIndex:120, comment:'Minigame - Bouzu Mekuri - take a card (unused)'},
-	{pointerIndex:120, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0c][0b][0f]'},
+	{pointerIndex:120, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0c][0b].[0f]'},
 	{pointerIndex:121, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0b].[0f]'},
 	{pointerIndex:122, comment:'Minigame - Bouzu Mekuri - Great Lord', translation:'Boss:Got 1.[0f]'},
 	{pointerIndex:123, comment:'Minigame - Bouzu Mekuri - Lord', translation:'Lord:Drop 1.[0f]'},
@@ -1248,7 +1247,6 @@ const IGNORED_POINTERS=[
 	99,
 	100,
 	110,
-	120,
 	129,
 	130,
 	131,
