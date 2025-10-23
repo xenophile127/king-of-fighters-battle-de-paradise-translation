@@ -31,7 +31,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:22, comment:'Minigame instructions', preview:'battle_game', translation:'   IT\'S BACK!\nMash buttons to\nbeat the machine.\n\n\n(A,B:Mash       )'},
 	{pointerIndex:23, comment:'Minigame instructions', preview:'battle_game', translation:'  BOUZU?MEKURI\nDraw a card.\nPrincess [heart].\nMonk...?\n(←→:Select      )\n(A:Draw         )'},
 	{pointerIndex:24, comment:'Minigame instructions', preview:'battle_game', translation:'  NIKUMAN ROAD\nGuide Kensou to\neat meat buns.\nWatch out for\nenemies!\n(Joy:Route      )'},
-	{pointerIndex:25, comment:'Minigame instructions', preview:'battle_game', translation:'   LET\'S DANCE\nRepeat the moves!\nTime it well and\nMai dances[heart]\n\n(How:Follow     )'},
+	{pointerIndex:25, comment:'Minigame instructions', preview:'battle_game', translation:'   LET\'S DANCE\nRepeat the moves!\nTime it well and\nMai dances[heart]\n(Joy and buttons:\n    Follow steps)'},
 	{pointerIndex:26, comment:'Minigame instructions', preview:'battle_game', translation:'  IKARI TARGETS\nShoot enemies!\nNot the Ikari\nelite warriors!\n(Joy:Aim        )\n(A:Shoot        )'},
 	{pointerIndex:27, comment:'Minigame instructions', preview:'battle_game', translation:'  GREAT ESCAPE\nChoose doors to\nescape from Kim\nand John.\n(←→:Select      )\n(A:Choose       )'},
 	{pointerIndex:28, comment:'Minigame instructions', preview:'battle_game', translation:'  BRIAN FLIES!\nRotate the\nJoystick as fast\nas you can!\n\n(Joy:Rotate     )'},
