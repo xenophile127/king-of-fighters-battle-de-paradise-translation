@@ -1063,9 +1063,16 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1868, comment:'Event Square - Event fail yells - Gai 3', preview:'square_event', translation:'I\'m burned out!!'},
 	{pointerIndex:1869, comment:'Event Square - Event fail yells - Syo 3', preview:'square_event', translation:'Next time, I will\nbe the staaaaar!'},
 
-	/* EVENT SQUARE: Shopping dialogues */
-	{pointerIndex:1831, comment:'Event square shopping - Player not enough coins', preview:'square_event', translation:'[08] has no\nenough [coin]coins![0f]'},
-	{pointerIndex:1832, comment:'Event square shopping - Rival not enough coins', preview:'square_event', translation:'[09] has no\nenough [coin]coins![0f]'},
+	/* EVENT/SKULL SQUARE: fail dialogues */
+	{pointerIndex:1831, comment:'Event/skull square fail - Player not enough coins', preview:'square_event', translation:'[08] has no\nenough [coin]coins![0f]'},
+	{pointerIndex:1832, comment:'Event/skull square fail - Rival not enough coins', preview:'square_event', translation:'[09] has no\nenough [coin]coins![0f]'},
+	{pointerIndex:1833, comment:'Event/skull square fail - Player not enough coins', preview:'square_event', translation:'[08] has no\nenough [card]cards![0f]'},
+	{pointerIndex:1834, comment:'Event/skull square fail - Rival not enough coins', preview:'square_event', translation:'[09] has no\nenough [card]cards![0f]'},
+	{pointerIndex:1835, comment:'Event/skull square fail - Player not enough coins', preview:'square_event', translation:'[08] has no\nenough ★![0f]'},
+	{pointerIndex:1836, comment:'Event/skull square fail - Rival not enough coins', preview:'square_event', translation:'[09] has no\nenough ★![0f]'},
+	{pointerIndex:1837, comment:'Event/skull square fail?', preview:'square_event'},
+	{pointerIndex:1838, comment:'Event/skull square fail?', preview:'square_event'},
+	{pointerIndex:1839, comment:'Event/skull square fail - Max cards', preview:'square_event', translation:'You cannot have\nmore than 8[card].[0f]'},
 
 	/* STAR SQUARE: Heidern sells you up to three stars for 20 coins each. */
 	{pointerIndex:1870, comment:'Star Square - Heidern', preview:'square_event', translation:'A ★ for [coin]20?'},
