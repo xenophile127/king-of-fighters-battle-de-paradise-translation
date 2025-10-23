@@ -115,7 +115,7 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'map', offsetTileset:0x1c8b91, nTiles:146, offsetMap:0x18bcbc + ((20*19*2 * 2) * 12), width:20, height:19, comment:'Secret data 13 (overlay)'/*, file:'secret_data/secret_data13_overlay'*/},
 	{type:'map', offsetTileset:0x1ce159, nTiles:156, offsetMap:0x18bcbc + ((20*19*2 * 2) * 13), width:20, height:19, comment:'Secret data 14 (overlay)'/*, file:'secret_data/secret_data14_overlay'*/},
 	{type:'map', offsetTileset:0x1d2d5d, nTiles:156, offsetMap:0x18bcbc + ((20*19*2 * 2) * 14), width:20, height:19, comment:'Secret data 15 (overlay)'/*, file:'secret_data/secret_data15_overlay'*/},
-	{type:'map', offsetTileset:0x1dad83, nTiles:172, offsetMap:0x18bcbc + ((20*19*2 * 2) * 15), width:20, height:19, comment:'Secret data 16 (overlay)'/*, file:'secret_data/secret_data16_overlay'*/},
+	{type:'map', offsetTileset:0x1dad83, nTiles:172, offsetMap:0x18bcbc + ((20*19*2 * 2) * 15), width:20, height:19, comment:'Secret data 16 (overlay)', file:'secret_data/secret_data16_overlay'},
 	{type:'map', offsetTileset:0x1dddd8, nTiles:164, offsetMap:0x18bcbc + ((20*19*2 * 2) * 16), width:20, height:19, comment:'Secret data 17 (overlay)', file:'secret_data/secret_data17_overlay'},
 	{type:'map', offsetTileset:0x1df53d, nTiles:160, offsetMap:0x18bcbc + ((20*19*2 * 2) * 17), width:20, height:19, comment:'Secret data 18 (overlay)'/*, file:'secret_data/secret_data18_overlay'*/},
 	{type:'map', offsetTileset:0x1e0b11, nTiles:182, offsetMap:0x18bcbc + ((20*19*2 * 2) * 18), width:20, height:19, comment:'Secret data 19 (overlay)'/*, file:'secret_data/secret_data19_overlay'*/},
