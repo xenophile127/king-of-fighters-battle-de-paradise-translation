@@ -13,6 +13,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:7, comment:'Start game - Intro (bottom text)', translation:'Use ←/→'},
 	{pointerIndex:8, comment:'Start game - Intro (bottom text filler)'},
 	{pointerIndex:10, comment:'Start game - Intro (players)', translation:'Player\nnumber?'},
+	{pointerIndex:11, comment:'Start game - Intro (multiplayer?)'},
 	{pointerIndex:12, comment:'Start game - Intro (turns)', translation:'How many\nturns?'},
 	{pointerIndex:13, comment:'Start game - Intro (map)', translation:'Finally…\nchoose a\nmap?!'},
 
@@ -22,6 +23,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:16, comment:'Card shop buy confirm', translation:'This\ncard?'},
 	{pointerIndex:17, comment:'Card shop goodbye', translation:'Come\nagain!'},
 	{pointerIndex:18, comment:'Card shop full', translation:'Hand\'s\nfull!'},
+	{pointerIndex:19, comment:'Minigame instructions - Header (unused?)'},
 
 
 
@@ -54,6 +56,7 @@ const KNOWN_POINTERS=[
 	/* OPTIONS SCREEN */
 	{pointerIndex:46, comment:'Options - Save Data', translation:'Save data?'},
 	{pointerIndex:47, comment:'Options - Save Data', translation:'Saved!'},
+	{pointerIndex:48, comment:'Options - Save Data', translation:'Error.'},
 
 
 
@@ -115,6 +118,15 @@ const KNOWN_POINTERS=[
 	/* In Japanese this reads as young--which it doesn't in English--and/or slightly arrogant--which it does to excess in English. */ 
 	{pointerIndex:85, comment:'Win quote - Hatoko (Rival)', preview:'square_event', translation:'Yaaay! Easy win!!\nNow you see my\ntrue powerrr!!'},
 
+	/* UNKNOWN */
+	{pointerIndex:89, comment:'Unknown'},
+	{pointerIndex:90, comment:'Unknown'},
+	{pointerIndex:91, comment:'Unknown'},
+	{pointerIndex:92, comment:'Unknown'},
+	{pointerIndex:93, comment:'Unknown'},
+	{pointerIndex:94, comment:'Unknown'},
+	{pointerIndex:95, comment:'Unknown'},
+
 	/* MINIGAME - COMMON */
 	{pointerIndex:101, comment:'Minigame - your turn', translation:'[08]\'s turn.[0f]'},
 	{pointerIndex:102, comment:'Minigame - rival turn', translation:'[09]\'s turn.[0f]'},
@@ -140,6 +152,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:118, comment:'Minigame - Boom Escape', translation:'Game over'},
 
 	/* MINIGAME - BOUZU MEKURI */
+	{pointerIndex:119, comment:'Minigame - Bouzu Mekuri (unused, maybe multiplayer?)'},
 	{pointerIndex:120, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0c][0b].[0f]'},
 	{pointerIndex:121, comment:'Minigame - Bouzu Mekuri - Princess', translation:'Prin[heart]:Got [0b].[0f]'},
 	{pointerIndex:122, comment:'Minigame - Bouzu Mekuri - Great Lord', translation:'Boss:Got 1.[0f]'},
@@ -185,6 +198,10 @@ const KNOWN_POINTERS=[
 	{pointerIndex:153, comment:'User screen - Level up - Ask?', translation:'Upgrade to next ゔ?'},
 	{pointerIndex:154, comment:'User screen - Level up - LvX Good side', translation:'ゔ[0b] ×±'}, //×±=Good
 	{pointerIndex:155, comment:'User screen - Level up - LvX Evil side', translation:'ゔ[0b] …○'}, //…○=Evil
+
+	{pointerIndex:156, comment:'Unknown difficulty strings (unused?'},
+	{pointerIndex:157, comment:'Unknown difficulty strings (unused?'},
+	{pointerIndex:158, comment:'Unknown difficulty strings (unused?'},
 
 
 
@@ -878,6 +895,17 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1600, comment:'Event Square/Board game - Player - Lose Turn', translation:'[08] loses a turn.[0f]'},
 	{pointerIndex:1601, comment:'Event Square/Board game - Rival - Lose Turn', translation:'[09] loses a turn.[0f]'},
 
+
+	{pointerIndex:1602, comment:'Event Square/Board game - Player (unused? maybe multiplayer only?)'},
+	{pointerIndex:1603, comment:'Event Square/Board game - Player (unused? maybe multiplayer only?)'},
+	{pointerIndex:1604, comment:'Event Square/Board game - Player (unused? maybe multiplayer only?)'},
+	{pointerIndex:1605, comment:'Event Square/Board game - Player (unused? maybe multiplayer only?)'},
+	{pointerIndex:1606, comment:'Event Square/Board game - Player (unused? maybe multiplayer only?)'},
+	{pointerIndex:1607, comment:'Event Square/Board game - Player (unused? maybe multiplayer only?)'},
+	{pointerIndex:1608, comment:'Event Square/Board game - Player (unused? maybe multiplayer only?)'},
+	{pointerIndex:1609, comment:'Event Square/Board game - Player (unused? maybe multiplayer only?)'},
+	{pointerIndex:1610, comment:'Event Square/Board game - Player (unused? maybe multiplayer only?)'},
+	{pointerIndex:1611, comment:'Event Square/Board game - Player (unused? maybe multiplayer only?)'},
 	
 
 	/* EVENT SQUARE: Result */
@@ -1055,6 +1083,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:1883, comment:'Event square fail results', preview:'square_event', translation:'[09] has no\n[card]cards![0f]'},
 	{pointerIndex:1884, comment:'Event square fail results', preview:'square_event', translation:'[08] has no\n★stars![0f]'},
 	{pointerIndex:1885, comment:'Event square fail results', preview:'square_event', translation:'[09] has no\n★stars![0f]'},
+	{pointerIndex:1889, comment:'Event square fail results?', preview:'square_event'},
 
 	/* CARD NAMES SHORT */
 	{pointerIndex:1900, comment:'Card name short', translation:'Violent Rush'},
@@ -1091,38 +1120,36 @@ const KNOWN_POINTERS=[
 
 
 	/* CARD DESCRIPTIONS */
-	{pointerIndex:1950, comment:'Card description', translation:'Move 1.'},
-	{pointerIndex:1951, comment:'Card description', translation:'Move 2 nonstop.'},
-	{pointerIndex:1952, comment:'Card description', translation:'Move 3 nonstop.'},
-	{pointerIndex:1953, comment:'Card description', translation:'Move 4 nonstop.'},
-	{pointerIndex:1954, comment:'Card description', translation:'Move 5 nonstop.'},
-	{pointerIndex:1955, comment:'Card description', translation:'Move 6 nonstop.'},
-	{pointerIndex:1956, comment:'Card description', translation:'Get +25%c.  (good)'},
-	{pointerIndex:1957, comment:'Card description', translation:'[09] -25%c. (evil)'},
-	{pointerIndex:1958, comment:'Card description', translation:'Get 10 coins(good)'},
-	{pointerIndex:1959, comment:'Card description', translation:'Get 10 coins(evil)'},
-	{pointerIndex:1960, comment:'Card description', translation:'Get coins by lv.'},
+	{pointerIndex:1950, comment:'Card description', translation:'Move 1'},
+	{pointerIndex:1951, comment:'Card description', translation:'Move 2 nonstop'},
+	{pointerIndex:1952, comment:'Card description', translation:'Move 3 nonstop'},
+	{pointerIndex:1953, comment:'Card description', translation:'Move 4 nonstop'},
+	{pointerIndex:1954, comment:'Card description', translation:'Move 5 nonstop'},
+	{pointerIndex:1955, comment:'Card description', translation:'Move 6 nonstop'},
+	{pointerIndex:1956, comment:'Card description', translation:'You +25%[coin] (×±)'}, //×±=Good
+	{pointerIndex:1957, comment:'Card description', translation:'Rival -25%[coin] (…○)'}, //…○=Evil
+	{pointerIndex:1958, comment:'Card description', translation:'Get [coin]10 (×±)'}, //×±=Good
+	{pointerIndex:1959, comment:'Card description', translation:'Get [coin]10 (…○)'}, //…○=Evil
+	{pointerIndex:1960, comment:'Card description', translation:'Get coins by lvl'},
 	{pointerIndex:1961, comment:'Card description', translation:'Split coins evenly'},
-	{pointerIndex:1962, comment:'Card description', translation:'Swap coin totals.'},
-	{pointerIndex:1963, comment:'Card description', translation:'Random 5[card] (good)'},
-	{pointerIndex:1964, comment:'Card description', translation:'Random 5[card] (evil)'},
-	{pointerIndex:1965, comment:'Card description', translation:'[09] discard(good)'},
-	{pointerIndex:1966, comment:'Card description', translation:'[09] discard(evil)'},
-	{pointerIndex:1967, comment:'Card description', translation:'Warp to a shop.'},
-	{pointerIndex:1968, comment:'Card description', translation:'Get a star. (good)'},
-	{pointerIndex:1969, comment:'Card description', translation:'Rival -1star(evil)'},
-	{pointerIndex:1970, comment:'Card description', translation:'Steal one star.'},
+	{pointerIndex:1962, comment:'Card description', translation:'Swap coin totals'},
+	{pointerIndex:1963, comment:'Card description', translation:'Refill [card]5 (×±)'}, //×±=Good
+	{pointerIndex:1964, comment:'Card description', translation:'Refill [card]5 (…○)'}, //…○=Evil
+	{pointerIndex:1965, comment:'Card description', translation:'Rival discards(×±)'}, //×±=Good
+	{pointerIndex:1966, comment:'Card description', translation:'Rival discards(…○)'}, //…○=Evil
+	{pointerIndex:1967, comment:'Card description', translation:'Warp to a shop'},
+	{pointerIndex:1968, comment:'Card description', translation:'Get a ★ (×±)'}, //×±=Good
+	{pointerIndex:1969, comment:'Card description', translation:'Rival loses ★1(…○)'}, //…○=Evil
+	{pointerIndex:1970, comment:'Card description', translation:'Steal a ★'},
 	{pointerIndex:1971, comment:'Card description', translation:'Get ★1 per [coin]25'},
-	{pointerIndex:1972, comment:'Card description', translation:'All coins 1/2.'},
-	{pointerIndex:1973, comment:'Card description', translation:'All discard all.'},
+	{pointerIndex:1972, comment:'Card description', translation:'All coins 1/2'},
+	{pointerIndex:1973, comment:'Card description', translation:'All discard'},
 	{pointerIndex:1974, comment:'Card description', translation:'Rival loses 1 turn'},
 	{pointerIndex:1975, comment:'Card description', translation:'2xcoin for 3 turns'},
 	{pointerIndex:1976, comment:'Card description', translation:'Swap Striker align'},
-	{pointerIndex:1977, comment:'Card description', translation:'Tap A to move.'},
-	{pointerIndex:1978, comment:'Card description', translation:'Lose cards. +25%[coin].'},
+	{pointerIndex:1977, comment:'Card description', translation:'Swap boss/★ square'},
+	{pointerIndex:1978, comment:'Card description', translation:'Lose cards, +25%[coin]'},
 	{pointerIndex:1979, comment:'Card description', translation:'Loser gets coins!'},
-
-
 
 	/* MINIGAME - YOU DOUBT */
 	{pointerIndex:1999, comment:'Minigame - You Doubt', translation:'Round one.'},
@@ -1207,7 +1234,6 @@ const KNOWN_POINTERS=[
 	{pointerIndex:2079, comment:'User screen - Minigame titles', translation:'MOVE: \'NONE\''},
 	{pointerIndex:2080, comment:'User screen - Minigame titles', translation:'BOOM!ESCAPEΩ'},
 	{pointerIndex:2081, comment:'User screen - Minigame titles', translation:'YO·SA·KU'},
-	{pointerIndex:2082, comment:'Empty'},
 
 	/* MINIGAME - PAIRPAIR GET - SHINGO */
 	{pointerIndex:2083, comment:'Minigame - PairPair Get - Shingo - appears', translation:'Shingo!'},
@@ -1227,6 +1253,7 @@ const KNOWN_POINTERS=[
 	{pointerIndex:2122, comment:'Options - DC Link - DC -> NGPC', translation:'DC?'},
 	{pointerIndex:2123, comment:'Options - DC Link', translation:'CommunicationError'},
 	{pointerIndex:2124, comment:'Options - DC Link'},
+	{pointerIndex:2125, comment:'Options - DC Link'},
 
 
 
