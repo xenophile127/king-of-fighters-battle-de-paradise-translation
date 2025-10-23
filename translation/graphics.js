@@ -73,6 +73,7 @@ const GRAPHIC_REPLACEMENTS=[
 	{type:'map', offsetTileset:0x1a4edd, nTiles:52, offsetMap:0x18b0dc, width:20, height:19, comment:'Shop', file:'shop'},
 
 	{type:'tileset', offset:0x10fce8, nTiles:12, comment:'Minigames - Let\'s dance - Performance', file:'minigame_lets_dance_performance'},
+	{type:'tileset', offset:0x1a4602, nTiles:28, comment:'Minigames - Bouzu Mekuri', file:'minigame_bouzu_mekuri'},
 
 	{type:'map', offsetTileset:0x1c94a6, nTiles:158, offsetMap:0x193c64 + ((20*19*2) * 0), width:20, height:19, comment:'Static screen - Game Rules', file:'game_rules/map_game_rules_0'},
 	{type:'map', offsetTileset:0x1d3712, nTiles:225, offsetMap:0x193c64 + ((20*19*2) * 1), width:20, height:19, comment:'Static screen - Game rules 1.1', file:'game_rules/map_game_rules_1_1'},
