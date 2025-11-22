@@ -54,7 +54,6 @@ const PATCHES=[
 		0xba, 0x32, 0x02, 0xa0, 0x00, //original code: ld (XDE+0x32), 0x00a0
 		0xba, 0x34, 0x02, /* width */ 0x0c + 3, /* height */ 0x03 //original code: ld (XDE+0x34), 0x030c
 	]},
-
 	{offset:0x013b38, name:'Select avatar - hide avatar name position (when entering screen)', data:[ /* hide it (by writing it off screen), full name will be added in character description insted */
 		0x30, 0x02 + 19*2, 0x94 //original code: ld WA, 0x9402
 	]},
@@ -66,6 +65,16 @@ const PATCHES=[
 	]},
 	{offset:0x013ea9, name:'Select avatar - set avatar name starting tile index (when changing character)', data:[ /* needed if we expand the character description */
 		0x41, 0xf0 + 12, 0x00, 0x04 /* length */, 0x01 //original code: ld XBC, 0x010400f0
+	]},
+	{offset:0x013efc, name:'Select avatar - confirm prompt blank', data:[
+		0xf5, 0xf1, 0x02, 0x0a - 2, 0x93, //original code: ld (XIX+),0x930a   
+		0xf5, 0xf1, 0x02, 0x00, 0x00, //original code: ld (XIX+),0x0000
+		0xf5, 0xf1, 0x02, 0x0e + 1, 0x06 //original code: ld (XIX+),0x060e
+	]},
+	{offset:0x014098, name:'Select avatar - confirm prompt line', data:[
+		0xba, 0x28, 0x02, 0x0a - 2, 0x93, //original code: ld (XDE+0x28), 0x930a,
+		0xba, 0x32, 0x02, 0xa0, 0x00, //original code: ld (XDE+0x32), 0x00a0
+		0xba, 0x34, 0x02, /* width */ 0x0e + 1, /* height */ 0x01 //original code: ld (XDE+0x34), 0x010e
 	]},
 
 	/* Create user - Type name */
